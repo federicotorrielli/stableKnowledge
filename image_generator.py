@@ -24,7 +24,6 @@ class ImageGenerator:
                 scheduler=euler_scheduler,
                 revision="fp16",
                 torch_dtype=torch.float16).to("cuda")
-            self.pipe.enable_attention_slicing()
             # self.pipe.enable_sequential_cpu_offload()
         else:
             self.pipe = StableDiffusionPipeline.from_pretrained(
@@ -32,7 +31,7 @@ class ImageGenerator:
                 device_map="auto",
                 scheduler=euler_scheduler,
                 torch_dtype=torch.float32).to("cuda")
-
+        self.pipe.enable_attention_slicing()
         torch.backends.cudnn.benchmark = True
         torch.backends.cuda.matmul.allow_tf32 = True
         # self.pipe.enable_xformers_memory_efficient_attention()
@@ -43,7 +42,7 @@ class ImageGenerator:
         Warmup pass to initialize the model
         """
         fake_prompt = "A photo of an astronaut riding a horse on mars"
-        self.pipe(fake_prompt, num_inference_steps=1)
+        self.pipe(fake_prompt, num_inference_steps=5)
         print("Warmup pass complete || READY TO GENERATE IMAGES")
 
     def generate_images(self, steps=30):
