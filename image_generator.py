@@ -17,9 +17,9 @@ class ImageGenerator:
         # The user needs to be logged-in with huggingface-cli
         euler_scheduler = EulerDiscreteScheduler.from_config("runwayml/stable-diffusion-v1-5", subfolder="scheduler")
         self.generator = self._initialize_generator()
+        torch.backends.cudnn.benchmark = True
+        torch.backends.cudnn.enabled = True
         if not powerful_gpu:
-            torch.backends.cudnn.benchmark = True
-            torch.backends.cudnn.enabled = True
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 "runwayml/stable-diffusion-v1-5",
                 device_map="auto",
@@ -32,6 +32,7 @@ class ImageGenerator:
                 device_map="auto",
                 scheduler=euler_scheduler).to("cuda")
         self.pipe.enable_attention_slicing()
+        self.pipe.enable_sequential_cpu_offload()
         # self.pipe.enable_xformers_memory_efficient_attention()
         self.warmup_pass()
 
