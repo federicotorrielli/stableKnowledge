@@ -78,6 +78,13 @@ class ImageGenerator:
         seed = 1117437330
         return gen.manual_seed(seed)
 
+    def set_prompt_list(self, prompt_list):
+        self.prompt_list = prompt_list
+
+    def set_folder_name(self, folder_name):
+        self.folder_name = folder_name
+        self._mkdir_if_not_exists(folder_name)
+
 
 if __name__ == "__main__":
     prompt_list = []

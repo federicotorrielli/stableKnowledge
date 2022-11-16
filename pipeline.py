@@ -9,12 +9,13 @@ def generate():
     synset_titles = itc.get_synset_titles()
     hyponym_titles = itc.get_hyponym_titles()
     synset_hyponym_couples = itc.get_synset_hyponym()
-    # Time to generate the images for synsets
-    # ig = ImageGenerator(synset_titles, powerful_gpu=True, folder_name="generated_images_synsets")
-    # ig.generate_images(steps=30)
-    # Time to generate the images for hyponyms
-    ig2 = ImageGenerator(hyponym_titles, powerful_gpu=True, folder_name="generated_images_hyponyms")
-    ig2.generate_images(steps=30)
+    # Then, generate the images for the middle concepts (synsets)
+    ig = ImageGenerator(synset_titles, powerful_gpu=True, folder_name="generated_images_synsets")
+    ig.generate_images(steps=30)
+    # Generate the images for the advanced concepts (hyponyms)
+    ig.set_prompt_list(hyponym_titles)
+    ig.set_folder_name("generated_images_hyponyms")
+    ig.generate_images(steps=30)
 
 
 def interrogate():
