@@ -1,0 +1,7 @@
+diffusers~=0.7.2
+tqdm~=4.64.1
+pillow~=9.2.0
+ftfy~=6.1.1
+timm~=0.4.12
+fairscale~=0.4.6
+simple-term-menu~=1.5.2
