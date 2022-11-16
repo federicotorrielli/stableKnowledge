@@ -30,8 +30,7 @@ class ImageGenerator:
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 "runwayml/stable-diffusion-v1-5",
                 device_map="auto",
-                scheduler=euler_scheduler,
-                torch_dtype=torch.float32).to("cuda")
+                scheduler=euler_scheduler).to("cuda")
         self.pipe.enable_attention_slicing()
         # self.pipe.enable_xformers_memory_efficient_attention()
         self.warmup_pass()
