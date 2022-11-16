@@ -10,8 +10,8 @@ def generate():
     hyponym_titles = itc.get_hyponym_titles()
     synset_hyponym_couples = itc.get_synset_hyponym()
     # Time to generate the images for synsets
-    ig = ImageGenerator(synset_titles, powerful_gpu=True, folder_name="generated_images_synsets")
-    ig.generate_images(steps=30)
+    # ig = ImageGenerator(synset_titles, powerful_gpu=True, folder_name="generated_images_synsets")
+    # ig.generate_images(steps=30)
     # Time to generate the images for hyponyms
     ig2 = ImageGenerator(hyponym_titles, powerful_gpu=True, folder_name="generated_images_hyponyms")
     ig2.generate_images(steps=30)
