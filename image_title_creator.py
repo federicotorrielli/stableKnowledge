@@ -38,7 +38,7 @@ class ImageTitleCreator:
 
 if __name__ == "__main__":
     itc = ImageTitleCreator()
-    synset_hyponym = itc.get_synset_hyponym()
+    hyponyms = itc.get_hyponym_titles()
     from pprint import pprint
 
-    pprint(synset_hyponym)
+    pprint(hyponyms)
