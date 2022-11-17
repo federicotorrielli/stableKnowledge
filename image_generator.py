@@ -23,14 +23,16 @@ class ImageGenerator:
                 device_map="auto",
                 scheduler=euler_scheduler,
                 revision="fp16",
-                torch_dtype=torch.float16).to("cuda")
+                torch_dtype=torch.float16,
+                safety_checker=None).to("cuda")
             # self.pipe.enable_sequential_cpu_offload()
         else:
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 "runwayml/stable-diffusion-v1-5",
                 device_map="auto",
                 scheduler=euler_scheduler,
-                torch_dtype=torch.float32).to("cuda")
+                torch_dtype=torch.float32,
+                safety_checker=None).to("cuda")
         self.pipe.enable_attention_slicing()
         torch.backends.cudnn.benchmark = True
         torch.backends.cuda.matmul.allow_tf32 = True
@@ -55,6 +57,7 @@ class ImageGenerator:
             if not os.path.exists(f"{self.folder_name}/{prompt.replace(' ', '_').replace(',', '-')}.png"):
                 pbar.set_description(f"Generating: {prompt}")
                 image = self.pipe(prompt,
+                                  negative_prompt="writing, letters, handwriting, words",
                                   num_inference_steps=steps,
                                   generator=self.generator,
                                   guidance_scale=7.5).images[0]
