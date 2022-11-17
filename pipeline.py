@@ -8,7 +8,7 @@ def generate():
     itc = ImageTitleCreator()
     synset_titles = itc.get_synset_titles()
     hyponym_titles = itc.get_hyponym_titles()
-    synset_hyponym_couples = itc.get_synset_hyponym()
+    # synset_hyponym_couples = itc.get_synset_hyponym()
     # Then, generate the images for the middle concepts (synsets)
     ig = ImageGenerator(synset_titles, powerful_gpu=True, folder_name="generated_images_synsets")
     ig.generate_images(steps=30)
