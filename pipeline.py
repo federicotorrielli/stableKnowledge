@@ -34,10 +34,14 @@ def interrogate():
 
 
 def pipeline():
-    if input("Do you want to generate images? (y/n) ") == "y":
-        generate()
-    if input("Do you want to interrogate images? (y/n) ") == "y":
-        interrogate()
+    # Take arguments from the command line
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "generate":
+            generate()
+        elif sys.argv[1] == "interrogate":
+            interrogate()
+        else:
+            print("Invalid argument. Please use 'generate' or 'interrogate' as argument.")
 
 
 if __name__ == "__main__":
