@@ -966,7 +966,7 @@ function,mathematical function,single-valued function,map,mapping
 point,tip,peak
 art,fine art
 homo,man,human being,human
-world power,major power,great power,power,superpower
+world power,major power,power,superpower
 sports fan,fan,rooter
 space,blank space,place
 experience
