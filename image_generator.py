@@ -52,6 +52,7 @@ class ImageGenerator:
         Generates images for each prompt in self.prompt_list
         """
         pbar = tqdm(self.prompt_list)
+        i = 0
         for prompt in pbar:
             # Don't generate if the image already exists
             if not os.path.exists(f"{self.folder_name}/{prompt.replace(' ', '_').replace(',', '-')}.png"):
@@ -61,7 +62,8 @@ class ImageGenerator:
                                   num_inference_steps=steps,
                                   generator=self.generator,
                                   guidance_scale=7.5).images[0]
-                image.save(f"{self.folder_name}/{prompt.replace(' ', '_').replace(',', '-')}.png")
+                image.save(f"{self.folder_name}/{i}_{prompt.replace(' ', '_').replace(',', '-')}.png")
+                i += 1
 
     def generate_one_test_image(self):
         """

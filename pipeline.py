@@ -1,6 +1,12 @@
 import sys
 
 
+def flush_dict_to_file(dictionary, file_path):
+    with open(file_path, "w") as f:
+        for key, value in dictionary.items():
+            f.write(f"{key} -> {value}\n")
+
+
 def generate():
     from image_generator import ImageGenerator
     from image_title_creator import ImageTitleCreator
@@ -8,7 +14,6 @@ def generate():
     itc = ImageTitleCreator()
     synset_titles = itc.get_synset_titles()
     hyponym_titles = itc.get_hyponym_titles()
-    # synset_hyponym_couples = itc.get_synset_hyponym()
     # Then, generate the images for the middle concepts (synsets)
     ig = ImageGenerator(synset_titles, powerful_gpu=True, folder_name="generated_images_synsets")
     ig.generate_images(steps=30)
@@ -16,6 +21,7 @@ def generate():
     ig.set_prompt_list(hyponym_titles)
     ig.set_folder_name("generated_images_hyponyms")
     ig.generate_images(steps=30)
+    flush_dict_to_file(itc.get_synset_hyponym(), "synset_hyponym.txt")
 
 
 def interrogate():
