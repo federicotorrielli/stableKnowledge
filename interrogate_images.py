@@ -44,7 +44,7 @@ class ImageInterrogator:
         for image_name, image in pbar:
             pbar.set_description(f"Interrogating {image_name}")
             interrogation = ci.interrogate(image)  # this or interrogate_fast?
-            self.interrogations[image] = interrogation
+            self.interrogations[image_name] = interrogation
             with open(self.save_path, "a") as f:
                 f.write(interrogation + "\n")
 

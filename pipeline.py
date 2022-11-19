@@ -48,6 +48,8 @@ def pipeline():
             interrogate()
         else:
             print("Invalid argument. Please use 'generate' or 'interrogate' as argument.")
+    else:
+        print("Please provide an argument. Use 'generate' or 'interrogate' as argument.")
 
 
 if __name__ == "__main__":
