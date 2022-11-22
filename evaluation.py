@@ -10,7 +10,7 @@ class Evaluation:
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
         self.embeddings1 = self.model.encode(self.original_words, convert_to_tensor=True)
         self.embeddings2 = self.model.encode(self.generated_phrases, convert_to_tensor=True)
-        self.cosine_scores = util.cos_sin(self.embeddings1, self.embeddings2)
+        self.cosine_scores = util.cos_sim(self.embeddings1, self.embeddings2)
 
     def load_original_words(self) -> list:
         with open(self.original_words_path, "r") as f:
