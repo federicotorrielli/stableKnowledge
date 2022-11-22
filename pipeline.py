@@ -39,6 +39,14 @@ def interrogate():
     hyponyms_interrogations = ii2.get_interrogations()
 
 
+def evaluate():
+    from evaluation import Evaluation
+    ev = Evaluation("synsets.txt", "generated_images_synsets.txt")
+    ev.print_to_file()
+    ev = Evaluation("hyponyms.txt", "generated_images_hyponyms.txt")
+    ev.print_to_file()
+
+
 def pipeline():
     # Take arguments from the command line
     if len(sys.argv) > 1:
@@ -46,10 +54,12 @@ def pipeline():
             generate()
         elif sys.argv[1] == "interrogate":
             interrogate()
+        elif sys.argv[1] == "evaluate":
+            evaluate()
         else:
-            print("Invalid argument. Please use 'generate' or 'interrogate' as argument.")
+            print("Invalid argument. Please use 'generate' or 'interrogate' or 'evaluate' as argument.")
     else:
-        print("Please provide an argument. Use 'generate' or 'interrogate' as argument.")
+        print("Please provide an argument. Use 'generate' or 'interrogate' or 'evaluate' as argument.")
 
 
 if __name__ == "__main__":
