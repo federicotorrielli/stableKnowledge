@@ -17,12 +17,12 @@ class Evaluation:
 
     def normalize_scores(self) -> list:
         """
-        Normalize the cosine scores to be between 0 and 10
+        Normalize the cosine scores to be between 1 and 10
         :return:
         """
         normalized_scores = []
         for i, row in enumerate(self.cosine_scores):
-            normalized_scores.append(row * 10)
+            normalized_scores.append(row / row.max() * 10)
         return normalized_scores
 
     def load_original_words(self) -> list:
@@ -71,9 +71,9 @@ class Evaluation:
         :return:
         """
         with open("cosine_scores.txt", "w") as f:
-            for i, row in enumerate(self.cosine_scores):
-                f.write(f"{i}: {row}\n")
+            for i in range(len(self.original_words)):
+                f.write(f"{i}: {self.cosine_scores[i][i]}\n")
 
         with open("normalized_scores.txt", "w") as f:
-            for i, row in enumerate(self.normalized_scores):
-                f.write(f"{i}: {row}\n")
+            for i in range(len(self.original_words)):
+                f.write(f"{i}: {self.normalized_scores[i][i]}\n")
