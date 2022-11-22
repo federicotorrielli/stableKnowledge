@@ -11,6 +11,19 @@ class Evaluation:
         self.embeddings1 = self.model.encode(self.original_words, convert_to_tensor=True)
         self.embeddings2 = self.model.encode(self.generated_phrases, convert_to_tensor=True)
         self.cosine_scores = util.cos_sim(self.embeddings1, self.embeddings2)
+        # It returns in the above example a 3x3 matrix with the respective cosine similarity scores for
+        # all possible pairs between embeddings1 and embeddings2.
+        self.normalized_scores = self.normalize_scores()
+
+    def normalize_scores(self) -> list:
+        """
+        Normalize the cosine scores to be between 0 and 10
+        :return:
+        """
+        normalized_scores = []
+        for i, row in enumerate(self.cosine_scores):
+            normalized_scores.append(row * 10)
+        return normalized_scores
 
     def load_original_words(self) -> list:
         with open(self.original_words_path, "r") as f:
@@ -49,6 +62,9 @@ class Evaluation:
     def get_embeddings2(self) -> list:
         return self.embeddings2
 
+    def get_normalized_scores(self) -> list:
+        return self.normalized_scores
+
     def print_to_file(self) -> None:
         """
         Print to a file the number of the phrase and the cosine score
@@ -56,4 +72,8 @@ class Evaluation:
         """
         with open("cosine_scores.txt", "w") as f:
             for i, row in enumerate(self.cosine_scores):
+                f.write(f"{i}: {row}\n")
+
+        with open("normalized_scores.txt", "w") as f:
+            for i, row in enumerate(self.normalized_scores):
                 f.write(f"{i}: {row}\n")
