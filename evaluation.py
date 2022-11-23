@@ -70,10 +70,11 @@ class Evaluation:
         Print to a file the number of the phrase and the cosine score
         :return:
         """
-        with open(cosine_scores_filename, "w") as f:
+        folder_path = "scores"
+        with open(f"{folder_path}/{cosine_scores_filename}", "w") as f:
             for i in range(len(self.original_words)):
                 f.write(f"{i}: {self.cosine_scores[i][i]}\n")
 
-        with open(normalized_scores_filename, "w") as f:
+        with open(f"{folder_path}/{normalized_scores_filename}", "w") as f:
             for i in range(len(self.original_words)):
                 f.write(f"{i}: {self.normalized_scores[i][i]}\n")
