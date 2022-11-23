@@ -1,7 +1,7 @@
 import os
 
 import torch
-from diffusers import StableDiffusionPipeline, EulerDiscreteScheduler
+from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 from tqdm import tqdm
 
 
@@ -15,28 +15,25 @@ class ImageGenerator:
         self._mkdir_if_not_exists(folder_name)
         self.folder_name = folder_name
         # The user needs to be logged-in with huggingface-cli
-        euler_scheduler = EulerDiscreteScheduler.from_config("runwayml/stable-diffusion-v1-5", subfolder="scheduler")
         self.generator = self._initialize_generator()
         if not powerful_gpu:
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 "runwayml/stable-diffusion-v1-5",
                 device_map="auto",
-                scheduler=euler_scheduler,
                 revision="fp16",
                 torch_dtype=torch.float16,
                 safety_checker=None).to("cuda")
             # self.pipe.enable_sequential_cpu_offload()
+            torch.backends.cudnn.benchmark = True
+            torch.backends.cuda.matmul.allow_tf32 = True
         else:
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 "runwayml/stable-diffusion-v1-5",
                 device_map="auto",
-                scheduler=euler_scheduler,
                 torch_dtype=torch.float32,
                 safety_checker=None).to("cuda")
+        self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
         self.pipe.enable_attention_slicing()
-        torch.backends.cudnn.benchmark = True
-        torch.backends.cuda.matmul.allow_tf32 = True
-        # self.pipe.enable_xformers_memory_efficient_attention()
         self.warmup_pass()
 
     def warmup_pass(self):

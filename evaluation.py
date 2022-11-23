@@ -65,15 +65,15 @@ class Evaluation:
     def get_normalized_scores(self) -> list:
         return self.normalized_scores
 
-    def print_to_file(self) -> None:
+    def print_to_file(self, cosine_scores_filename: str, normalized_scores_filename: str) -> None:
         """
         Print to a file the number of the phrase and the cosine score
         :return:
         """
-        with open("cosine_scores.txt", "w") as f:
+        with open(cosine_scores_filename, "w") as f:
             for i in range(len(self.original_words)):
                 f.write(f"{i}: {self.cosine_scores[i][i]}\n")
 
-        with open("normalized_scores.txt", "w") as f:
+        with open(normalized_scores_filename, "w") as f:
             for i in range(len(self.original_words)):
                 f.write(f"{i}: {self.normalized_scores[i][i]}\n")
