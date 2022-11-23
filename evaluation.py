@@ -1,4 +1,5 @@
 from sentence_transformers import SentenceTransformer, util
+import os
 
 
 class Evaluation:
@@ -71,6 +72,9 @@ class Evaluation:
         :return:
         """
         folder_path = "scores"
+        # Create the folder if it doesn't exist
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
         with open(f"{folder_path}/{cosine_scores_filename}", "w") as f:
             for i in range(len(self.original_words)):
                 f.write(f"{i}: {self.cosine_scores[i][i]}\n")
