@@ -10,7 +10,7 @@ Creating only one for two will cause dependency problems.
 ```bash
 conda create -n StableDiffusion
 conda activate StableDiffusion
-conda install -c conda-forge -c "xformers/label/dev" diffusers transformers accelerate ftfy tqdm xformers
+conda install -c conda-forge diffusers transformers accelerate ftfy tqdm
 ```
 
 ### Image interrogator module
@@ -19,6 +19,6 @@ conda install -c conda-forge -c "xformers/label/dev" diffusers transformers acce
 python3 -m venv ci_env
 source ci_env/bin/activate
 pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
-pip install -e git+https://github.com/pharmapsychotic/BLIP.git@lib#egg=blip
+pip install -e git+https://github.com/AdamOswald/BLIP.git@lib#egg=blip
 pip install clip-interrogator
 ```
