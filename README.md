@@ -10,8 +10,7 @@ Creating only one for two will cause dependency problems.
 ```bash
 conda create -n StableDiffusion
 conda activate StableDiffusion
-conda install -c conda-forge diffusers transformers accelerate ftfy tqdm
-conda install -c "xformers/label/dev" xformers
+conda install -c conda-forge -c "xformers/label/dev" diffusers transformers accelerate ftfy tqdm xformers
 ```
 
 ### Image interrogator module

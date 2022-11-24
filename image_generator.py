@@ -1,7 +1,7 @@
 import os
 
 import torch
-from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
+from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler, EulerDiscreteScheduler
 from tqdm import tqdm
 
 
@@ -13,7 +13,8 @@ class ImageGenerator:
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
         weights = "stabilityai/stable-diffusion-2"
-        scheduler = DPMSolverMultistepScheduler.from_pretrained(weights, subfolder="scheduler")
+        # scheduler = DPMSolverMultistepScheduler.from_pretrained(weights, subfolder="scheduler")
+        scheduler = EulerDiscreteScheduler.from_pretrained(weights, subfolder="scheduler")
         if not powerful_gpu:
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 weights,
