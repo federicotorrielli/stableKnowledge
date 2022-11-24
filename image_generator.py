@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 
 class ImageGenerator:
-    def __init__(self, prompt_list: list, powerful_gpu: bool = False, folder_name="generated_images") -> None:
+    def __init__(self, prompt_list: list, powerful_gpu: bool = False, folder_name="output") -> None:
         self.prompt_list = prompt_list
         self._mkdir_if_not_exists(folder_name)
         self.folder_name = folder_name
@@ -46,27 +46,22 @@ class ImageGenerator:
         Generates images for each prompt in self.prompt_list
         """
         pbar = tqdm(self.prompt_list)
-        i = 0
+        i = 1
         for prompt in pbar:
-            # Don't generate if the image already exists
-            if not os.path.exists(f"{self.folder_name}/{prompt.replace(' ', '_').replace(',', '-')}.png"):
+            # Don't generate if the folder already exists
+            subfolder_name = prompt.replace(' ', '_').replace(',', '-')
+            if not os.path.exists(f"{self.folder_name}/{subfolder_name}/"):
+                os.mkdir(f"{self.folder_name}/{subfolder_name}/")
                 pbar.set_description(f"Generating: {prompt}")
                 image = self.pipe(prompt,
                                   negative_prompt="writing, letters, handwriting, words",
                                   num_inference_steps=steps,
                                   generator=self.generator,
-                                  guidance_scale=7.5).images[0]
-                image.save(f"{self.folder_name}/{i}_{prompt.replace(' ', '_').replace(',', '-')}.png")
+                                  guidance_scale=7.5,
+                                  num_images_per_prompt=5)
+                for j, img in enumerate(image.images):
+                    img.save(f"{self.folder_name}/{subfolder_name}/{i}_{j}.png")
                 i += 1
-
-    def generate_one_test_image(self):
-        """
-        Generates one test image: useful for debugging
-        """
-        prompt = "An astronaut riding a horse on mars"
-        image = self.pipe(prompt, num_inference_steps=30).images[0]
-        image.save(f"{self.folder_name}/{prompt.replace(' ', '_').replace(',', '-')}.png")
-        print(f"Generated images for prompt: {prompt}")
 
     def _mkdir_if_not_exists(self, param):
         if not os.path.exists(param):
@@ -74,7 +69,7 @@ class ImageGenerator:
 
     def _initialize_generator(self):
         gen = torch.Generator(device='cuda')
-        seed = 1117437330
+        seed = 26111998
         return gen.manual_seed(seed)
 
     def set_prompt_list(self, prompt_list):
@@ -83,12 +78,3 @@ class ImageGenerator:
     def set_folder_name(self, folder_name):
         self.folder_name = folder_name
         self._mkdir_if_not_exists(folder_name)
-e):
-        self.folder_name = folder_name
-        self._mkdir_if_not_exists(folder_name)
-
-
-if __name__ == "__main__":
-    prompt_list = []
-    ig = ImageGenerator(prompt_list, powerful_gpu=True)
-    ig.generate_one_test_image()
