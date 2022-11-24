@@ -8,9 +8,14 @@ Creating only one for two will cause dependency problems.
 ### Image generator module
 
 ```bash
-conda create -n federicotorrielli
-conda activate federicotorrielli
-conda install -c conda-forge -c pytorch -c nvidia diffusers[torch] transformers accelerate ftfy tqdm
+conda create -n StableDiffusion
+conda activate StableDiffusion
+conda install -c conda-forge -c pytorch -c nvidia diffusers cuda-nvcc transformers gcc gxx_linux-64=9.5.0 accelerate ftfy tqdm
+git clone https://github.com/facebookresearch/xformers.git
+cd xformers
+git submodule update --init --recursive
+pip install -r requirements.txt
+pip install -e .
 ```
 
 ### Image interrogator module
@@ -21,4 +26,5 @@ source ci_env/bin/activate
 pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
 pip install -e git+https://github.com/pharmapsychotic/BLIP.git@lib#egg=blip
 pip install clip-interrogator
+```tor
 ```

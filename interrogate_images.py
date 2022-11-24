@@ -4,15 +4,6 @@ from PIL import Image
 from clip_interrogator import Interrogator, Config
 from tqdm import tqdm
 
-"""
-pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
-pip install -e git+https://github.com/pharmapsychotic/BLIP.git@lib#egg=blip
-pip install clip-interrogator
-"""
-
-
-# We can use Lavis as an alternative to clip-interrogator, if necessary
-
 
 class ImageInterrogator:
     def __init__(self, images_path: str, save_path: str = "interrogations.txt") -> None:
@@ -39,7 +30,6 @@ class ImageInterrogator:
         Interrogates images in self.images and saves the results in self.save_path
         """
         ci = Interrogator(Config(clip_model_name="ViT-L/14"))
-        # TODO: verify best model for this task
         pbar = tqdm(self.images.items())
         for image_name, image in pbar:
             pbar.set_description(f"Interrogating {image_name}")

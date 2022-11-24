@@ -16,9 +16,10 @@ class ImageGenerator:
         self.folder_name = folder_name
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
+        weights = "stabilityai/stable-diffusion-2"
         if not powerful_gpu:
             self.pipe = StableDiffusionPipeline.from_pretrained(
-                "runwayml/stable-diffusion-v1-5",
+                weights,
                 device_map="auto",
                 revision="fp16",
                 torch_dtype=torch.float16,
@@ -28,7 +29,7 @@ class ImageGenerator:
             torch.backends.cuda.matmul.allow_tf32 = True
         else:
             self.pipe = StableDiffusionPipeline.from_pretrained(
-                "runwayml/stable-diffusion-v1-5",
+                weights,
                 device_map="auto",
                 torch_dtype=torch.float32,
                 safety_checker=None).to("cuda")
