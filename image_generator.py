@@ -5,10 +5,6 @@ from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 from tqdm import tqdm
 
 
-# pip install --upgrade diffusers[torch]
-# conda install xformers -c xformers/label/dev
-
-
 class ImageGenerator:
     def __init__(self, prompt_list: list, powerful_gpu: bool = False, folder_name="generated_images") -> None:
         self.prompt_list = prompt_list
@@ -85,6 +81,9 @@ class ImageGenerator:
         self.prompt_list = prompt_list
 
     def set_folder_name(self, folder_name):
+        self.folder_name = folder_name
+        self._mkdir_if_not_exists(folder_name)
+e):
         self.folder_name = folder_name
         self._mkdir_if_not_exists(folder_name)
 

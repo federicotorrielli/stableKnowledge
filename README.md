@@ -10,7 +10,7 @@ Creating only one for two will cause dependency problems.
 ```bash
 conda create -n StableDiffusion
 conda activate StableDiffusion
-conda install -c conda-forge -c pytorch -c nvidia diffusers cuda-nvcc transformers gcc gxx_linux-64=9.5.0 accelerate ftfy tqdm
+conda install -c conda-forge -c pytorch -c nvidia diffusers cuda-nvcc transformers gcc gxx_linux-64 accelerate ftfy tqdm
 git clone https://github.com/facebookresearch/xformers.git
 cd xformers
 git submodule update --init --recursive
@@ -26,5 +26,4 @@ source ci_env/bin/activate
 pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
 pip install -e git+https://github.com/pharmapsychotic/BLIP.git@lib#egg=blip
 pip install clip-interrogator
-```tor
 ```
