@@ -38,10 +38,10 @@ def interrogate():
 
 def evaluate():
     from evaluation import Evaluation
-    ev = Evaluation("synsets.txt", "generated_images_synsets.txt")
-    ev.print_to_file("cosine_scores_synsets.txt", "normalized_scores_synsets.txt")
-    ev = Evaluation("hyponyms.txt", "generated_images_hyponyms.txt")
-    ev.print_to_file("cosine_scores_hyponyms.txt", "normalized_scores_hyponyms.txt")
+    ev = Evaluation("synsets.txt", "output_middle")
+    ev.print_to_file()
+    ev = Evaluation("hyponyms.txt", "output_advanced")
+    ev.print_to_file()
 
 
 def pipeline():

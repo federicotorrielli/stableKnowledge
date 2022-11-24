@@ -3,82 +3,72 @@ import os
 
 
 class Evaluation:
-    def __init__(self, original_words_path: str, generated_phrases_path: str):
-        self.original_words_path = original_words_path
-        self.generated_phrases_path = generated_phrases_path
+    def __init__(self, original_words_path_txt: str, generated_phrases_path_folder: str):
+        self.original_words_path_txt = original_words_path_txt
+        self.generated_phrases_path = generated_phrases_path_folder
         self.original_words = self.load_original_words()
-        self.generated_phrases = self.load_generated_phrases()
+        gp_1, gp_2, gp_3, gp_4, gp_5 = self.load_generated_phrases()
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
-        self.embeddings1 = self.model.encode(self.original_words, convert_to_tensor=True)
-        self.embeddings2 = self.model.encode(self.generated_phrases, convert_to_tensor=True)
-        self.cosine_scores = util.cos_sim(self.embeddings1, self.embeddings2)
-        # It returns in the above example a 3x3 matrix with the respective cosine similarity scores for
-        # all possible pairs between embeddings1 and embeddings2.
-        self.normalized_scores = self.normalize_scores()
+        self.embeddings_original = self.model.encode(self.original_words, convert_to_tensor=True)
+        emb_1, emb_2, emb_3, emb_4, emb_5 = self.load_embeddings(gp_1, gp_2, gp_3, gp_4, gp_5)
+        self.cosine_scores = self.compute_cosine_scores(emb_1, emb_2, emb_3, emb_4, emb_5)
+        self.normalized_scores = self.compute_normalized_scores()
 
-    def normalize_scores(self) -> list:
+    def compute_normalized_scores(self):
         """
-        Normalize the cosine scores to be between 1 and 10
+        Normalize the cosine scores from 1 to 10
         :return:
         """
         normalized_scores = []
-        for i, row in enumerate(self.cosine_scores):
-            normalized_scores.append(row / row.max() * 10)
+        for i in range(5):
+            normalized_scores.append(self.cosine_scores[i] * 9 + 1)
         return normalized_scores
 
     def load_original_words(self) -> list:
-        with open(self.original_words_path, "r") as f:
+        with open(self.original_words_path_txt, "r") as f:
             original_words = f.readlines()
         return original_words
 
-    def load_generated_phrases(self) -> list:
-        with open(self.generated_phrases_path, "r") as f:
-            generated_phrases = f.readlines()
-        return generated_phrases
+    def load_generated_phrases(self) -> (list, list, list, list, list):
+        # For every folder in the generated_phrases_path_folder
+        # read the file 'interrogations.txt' and put in each list
+        # the first, second, third, fourth and fifth phrase in the file
 
-    def get_cosine_scores(self) -> list:
-        return self.cosine_scores
+        gp_1, gp_2, gp_3, gp_4, gp_5 = [], [], [], [], []
+        for folder in os.listdir(self.generated_phrases_path):
+            with open(f"{self.generated_phrases_path}/{folder}/interrogations.txt", "r") as f:
+                lines = f.readlines()
+                gp_1.append(lines[0].strip())
+                gp_2.append(lines[1].strip())
+                gp_3.append(lines[2].strip())
+                gp_4.append(lines[3].strip())
+                gp_5.append(lines[4].strip())
+        return gp_1, gp_2, gp_3, gp_4, gp_5
 
-    def get_top_k(self, k: int) -> list:
-        top_k = []
-        for i, row in enumerate(self.cosine_scores):
-            top_k.append(row.topk(k=k, largest=True, sorted=True))
-        return top_k
-
-    def get_top_k_indices(self, k: int) -> list:
-        top_k_indices = []
-        for i, row in enumerate(self.cosine_scores):
-            top_k_indices.append(row.topk(k=k, largest=True, sorted=True).indices)
-        return top_k_indices
-
-    def get_top_k_values(self, k: int) -> list:
-        top_k_values = []
-        for i, row in enumerate(self.cosine_scores):
-            top_k_values.append(row.topk(k=k, largest=True, sorted=True).values)
-        return top_k_values
-
-    def get_embeddings1(self) -> list:
-        return self.embeddings1
-
-    def get_embeddings2(self) -> list:
-        return self.embeddings2
-
-    def get_normalized_scores(self) -> list:
-        return self.normalized_scores
-
-    def print_to_file(self, cosine_scores_filename: str, normalized_scores_filename: str) -> None:
+    def print_to_file(self) -> None:
         """
-        Print to a file the number of the phrase and the cosine score
-        :return:
+        Print the results to two files "cosine_scores.txt" and "normalized_scores.txt"
+        for each folder, grouping the content of each cosine similarity and normalized similarity
         """
-        folder_path = "scores"
-        # Create the folder if it doesn't exist
-        if not os.path.exists(folder_path):
-            os.makedirs(folder_path)
-        with open(f"{folder_path}/{cosine_scores_filename}", "w") as f:
-            for i in range(len(self.original_words)):
-                f.write(f"{i}: {self.cosine_scores[i][i]}\n")
+        for folder in os.listdir(self.generated_phrases_path):
+            with open(f"{self.generated_phrases_path}/{folder}/cosine_scores.txt", "w") as f:
+                for i in range(5):
+                    f.write(f"{self.cosine_scores[i][1][1]}\n")
+            with open(f"{self.generated_phrases_path}/{folder}/normalized_scores.txt", "w") as f:
+                for i in range(5):
+                    f.write(f"{self.normalized_scores[i][1][1]}\n")
 
-        with open(f"{folder_path}/{normalized_scores_filename}", "w") as f:
-            for i in range(len(self.original_words)):
-                f.write(f"{i}: {self.normalized_scores[i][i]}\n")
+    def load_embeddings(self, gp_1, gp_2, gp_3, gp_4, gp_5):
+        embeddings1 = self.model.encode(gp_1, convert_to_tensor=True)
+        embeddings2 = self.model.encode(gp_2, convert_to_tensor=True)
+        embeddings3 = self.model.encode(gp_3, convert_to_tensor=True)
+        embeddings4 = self.model.encode(gp_4, convert_to_tensor=True)
+        embeddings5 = self.model.encode(gp_5, convert_to_tensor=True)
+        return embeddings1, embeddings2, embeddings3, embeddings4, embeddings5
+
+    def compute_cosine_scores(self, emb_1, emb_2, emb_3, emb_4, emb_5):
+        return [util.pytorch_cos_sim(emb_1, self.embeddings_original),
+                util.pytorch_cos_sim(emb_2, self.embeddings_original),
+                util.pytorch_cos_sim(emb_3, self.embeddings_original),
+                util.pytorch_cos_sim(emb_4, self.embeddings_original),
+                util.pytorch_cos_sim(emb_5, self.embeddings_original)]
