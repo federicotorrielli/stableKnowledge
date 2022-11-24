@@ -13,12 +13,14 @@ class ImageGenerator:
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
         weights = "stabilityai/stable-diffusion-2"
+        scheduler = DPMSolverMultistepScheduler.from_pretrained(weights, subfolder="scheduler")
         if not powerful_gpu:
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 weights,
                 device_map="auto",
                 revision="fp16",
                 torch_dtype=torch.float16,
+                scheduler=scheduler,
                 safety_checker=None).to("cuda")
             # self.pipe.enable_sequential_cpu_offload()
             torch.backends.cudnn.benchmark = True
@@ -28,8 +30,8 @@ class ImageGenerator:
                 weights,
                 device_map="auto",
                 torch_dtype=torch.float32,
+                scheduler=scheduler,
                 safety_checker=None).to("cuda")
-        self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
         self.pipe.enable_attention_slicing()
         self.warmup_pass()
 
