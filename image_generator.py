@@ -12,7 +12,8 @@ class ImageGenerator:
         self.folder_name = folder_name
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
-        weights = "stabilityai/stable-diffusion-2"
+        # weights = "stabilityai/stable-diffusion-2"
+        weights = "runwayml/stable-diffusion-v1-5"
         scheduler = DPMSolverMultistepScheduler.from_pretrained(weights, subfolder="scheduler")
         if not powerful_gpu:
             self.pipe = StableDiffusionPipeline.from_pretrained(
