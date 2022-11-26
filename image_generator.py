@@ -13,7 +13,7 @@ class ImageGenerator:
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
         weights = "stabilityai/stable-diffusion-2"
-        torch.backends.cudnn.benchmark = True # enabling cuDNN auto-tuner for faster convolution
+        torch.backends.cudnn.benchmark = True  # enabling cuDNN auto-tuner for faster convolution
         if not powerful_gpu:
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 weights,
@@ -23,6 +23,7 @@ class ImageGenerator:
                 safety_checker=None)
             # self.pipe.enable_sequential_cpu_offload()
             torch.backends.cuda.matmul.allow_tf32 = True
+            self.pipe.enable_attention_slicing()
         else:
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 weights,
@@ -30,7 +31,6 @@ class ImageGenerator:
                 safety_checker=None)
         self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
         self.pipe = self.pipe.to("cuda")
-        self.pipe.enable_attention_slicing()
         self.warmup_pass()
 
     def warmup_pass(self):
