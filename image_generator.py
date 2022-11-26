@@ -6,31 +6,24 @@ from tqdm import tqdm
 
 
 class ImageGenerator:
-    def __init__(self, prompt_list: list, powerful_gpu: bool = False, folder_name="output") -> None:
+    def __init__(self, prompt_list: list, folder_name="output") -> None:
         self.prompt_list = prompt_list
         self._mkdir_if_not_exists(folder_name)
         self.folder_name = folder_name
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
         weights = "stabilityai/stable-diffusion-2"
+
         torch.backends.cudnn.benchmark = True  # enabling cuDNN auto-tuner for faster convolution
-        if not powerful_gpu:
-            self.pipe = StableDiffusionPipeline.from_pretrained(
-                weights,
-                device_map="auto",
-                revision="fp16",
-                torch_dtype=torch.float16,
-                safety_checker=None)
-            # self.pipe.enable_sequential_cpu_offload()
-            torch.backends.cuda.matmul.allow_tf32 = True
-            self.pipe.enable_attention_slicing()
-        else:
-            self.pipe = StableDiffusionPipeline.from_pretrained(
-                weights,
-                device_map="auto",
-                safety_checker=None)
+        self.pipe = StableDiffusionPipeline.from_pretrained(
+            weights,
+            device_map="auto",
+            revision="fp16",
+            torch_dtype=torch.float16,
+            safety_checker=None)
         self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
         self.pipe = self.pipe.to("cuda")
+        self.pipe.enable_attention_slicing()
         self.warmup_pass()
 
     def warmup_pass(self):

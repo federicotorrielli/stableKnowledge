@@ -15,7 +15,7 @@ def generate():
     synset_titles = itc.get_synset_titles()
     hyponym_titles = itc.get_hyponym_titles()
     # Then, generate the images for the middle concepts (synsets)
-    ig = ImageGenerator(synset_titles, powerful_gpu=True, folder_name="output_middle")
+    ig = ImageGenerator(synset_titles, folder_name="output_middle")
     ig.generate_images(steps=30)
     # Generate the images for the advanced concepts (hyponyms)
     ig.set_prompt_list(hyponym_titles)
