@@ -21,7 +21,6 @@ class ImageGenerator:
                 torch_dtype=torch.float16,
                 safety_checker=None)
             # self.pipe.enable_sequential_cpu_offload()
-            self.pipe.enable_attention_slicing()
             torch.backends.cudnn.benchmark = True
             torch.backends.cuda.matmul.allow_tf32 = True
         else:
@@ -32,6 +31,7 @@ class ImageGenerator:
                 safety_checker=None)
         self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
         self.pipe = self.pipe.to("cuda")
+        self.pipe.enable_attention_slicing()
         self.warmup_pass()
 
     def warmup_pass(self):
