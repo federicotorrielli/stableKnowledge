@@ -12,7 +12,6 @@ class ImageGenerator:
         self.folder_name = folder_name
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
-        # weights = "stabilityai/stable-diffusion-2"
         weights = "stabilityai/stable-diffusion-2"
         if not powerful_gpu:
             self.pipe = StableDiffusionPipeline.from_pretrained(
@@ -31,8 +30,8 @@ class ImageGenerator:
                 torch_dtype=torch.float32,
                 safety_checker=None)
         self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
-        self.pipe = self.pipe.to("cuda")
         self.pipe.enable_attention_slicing()
+        self.pipe = self.pipe.to("cuda")
         self.warmup_pass()
 
     def warmup_pass(self):
@@ -40,7 +39,7 @@ class ImageGenerator:
         Warmup pass to initialize the model
         """
         fake_prompt = "A photo of an astronaut riding a horse on mars"
-        self.pipe(fake_prompt, num_inference_steps=5)
+        self.pipe(fake_prompt, num_inference_steps=1)
         print("Warmup pass complete || READY TO GENERATE IMAGES")
 
     def generate_images(self, steps=30):
