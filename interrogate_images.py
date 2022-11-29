@@ -37,9 +37,11 @@ class ImageInterrogator:
         ci = Interrogator(Config(clip_model_name="ViT-L/14"))
         pbar = tqdm(self.images.items())
         for folder, images in pbar:
-            pbar.set_description(f"Interrogating images from {folder}")
-            self.interrogations[folder] = self.interrogate_folder(ci, images)
-            self.save_interrogations(folder)
+            # Interrogate folder only if it has not been interrogated yet (so there is not a interrogations.txt file)
+            if not os.path.exists(os.path.join(self.images_path, folder, "interrogations.txt")):
+                pbar.set_description(f"Interrogating images from {folder}")
+                self.interrogations[folder] = self.interrogate_folder(ci, images)
+                self.save_interrogations(folder)
 
     def interrogate_folder(self, ci, images: list) -> list:
         """
