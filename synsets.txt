@@ -1,1000 +1,1000 @@
-business,stage business,byplay
-visitor,visitant
-comb
-meal,repast
-actor,doer,worker
-promise,hope
-resort area,playground,vacation spot
-line
-thickness
-length
-condition
-guide
-crux,crux of the matter
-kiss,buss,osculation
-prayer book,prayerbook
-experience
-tooth
-wave,undulation
-horse,Equus caballus
-cabinet
-trotting horse,trotter
-hearing,audition,auditory sense,sense of hearing,auditory modality
-lake
-reminder
-linguist,polyglot
-trouser,pant
-ring,band
-breeze,zephyr,gentle wind,air
-frank,frankfurter,hotdog,hot dog,dog,wiener,wienerwurst,weenie
-elevator,lift
-principle,rule
-approval
-wanton
-plate
-engraving,etching
-ledge,shelf
-office,power
-ball,globe,orb
-draftsman,drawer
-turnover
-idol,matinee idol
-jewelry maker,jeweler,jeweller
-grader
-town,townspeople,townsfolk
-death
-appearance
-wind,air current,current of air
-brick
-week,hebdomad
-sum,sum of money,amount,amount of money
-jean,blue jean,denim
-discovery,find,uncovering
-weight unit,weight
-booklet,brochure,folder,leaflet,pamphlet
-beauty
-medicine,medication,medicament,medicinal drug
-olfactory property,smell,aroma,odor,odour,scent
-opportunity,chance
-mattress
-photograph,photo,exposure,picture,pic
-promontory,headland,head,foreland
-claw
-rose,rosebush
-garment
-cadet,plebe
-military position,position
-efficiency
-bag,handbag,pocketbook,purse
-banana,banana tree
-thirst,thirstiness
-railroad track,railroad,railway
-dominance,ascendance,ascendence,ascendancy,ascendency,control
-death,decease,expiry
-entomologist,bugologist,bug-hunter
-harvester,reaper
-stomach,tummy,tum,breadbasket
-currency
-harmony,musical harmony
-reference point,point of reference,reference
-pimple,hickey,zit
-energy,push,get-up-and-go
-plaything,toy
-medic,medick,trefoil
-roll of tobacco,smoke
-user
-red deer,elk,American elk,wapiti,Cervus elaphus
-mound,hill
-nut
-flint
-self-restraint,temperateness
-balance
-care,attention,aid,tending
-school
-wedge
-way,path,way of life
-grief,heartache,heartbreak,brokenheartedness
-university
-firearm,piece,small-arm
-party
-self
-jail,jailhouse,gaol,clink,slammer,poky,pokey
-system,system of rules
-liquid
-frequency,frequence,oftenness
-president,chairman,chairwoman,chair,chairperson
-cornet,horn,trumpet,trump
-hen,biddy
-picture,image,icon,ikon
-hostel,hostelry,inn,lodge,auberge
-dissemination,airing,public exposure,spreading
-bridgehead,foothold
-gesture,motion
-carbohydrate,saccharide,sugar
-roof
-touch,hint,tinge,mite,pinch,jot,speck,soupcon
-swing
-basket,handbasket
-accompaniment,musical accompaniment,backup,support
-violence,force
-suit,suit of clothes
-crush,crunch,compaction
-part,piece
-gravy boat,gravy holder,sauceboat,boat
-diligence,industriousness,industry
-line
-mouth,oral cavity,oral fissure,rima oris
-hearing
-homo,man,human being,human
-impression,effect
-head,chief,top dog
-quartz
-hook
-soup
-observation,observance,watching
-informer,betrayer,rat,squealer,blabber
-rate
-looseness,play
-person,individual,someone,somebody,mortal,soul
-addict,nut,freak,junkie,junky
-status,position
-view,aspect,prospect,scene,vista,panorama
-company
-point
-mansion,mansion house,manse,hall,residence
-horn
-direction
-conclusion,end,close,closing,ending
-talk,talking
-earth,ground
-book,volume
-chain
-gradient,slope
-power,powerfulness
-bowed stringed instrument,string
-rule
-value
-experience
-bridge player,hand
-cutting,slip
-pin
-parturition,birth,giving birth,birthing
-while,piece,spell,patch
-lock
-oral sex,head
-wheel
-quarter
-stick
-turn,bout,round
-table
-relative,relation
-operation,surgery,surgical operation,surgical procedure,surgical process
-character,role,theatrical role,part,persona
-way
-thing
-domestic ass,donkey,Equus asinus
-feather,plume,plumage
-hosiery,hose
-beef,beef cattle
-desire
-template,templet,guide
-bucket,pail
-painting,picture
-grain,caryopsis
-grass
-cry,outcry,call,yell,shout,vociferation
-meeting,encounter
-string
-animal foot,foot
-reading
-expression,look,aspect,facial expression,face
-handcart,pushcart,cart,go-cart
-space
-achiever,winner,success,succeeder
-notebook
-change
-mask
-bell,toll
-point
-nation,land,country
-process,physical process
-trade,craft
-shock,blow
-club,social club,society,guild,gild,lodge,order
-cast,roll
-blood
-duck
-star,principal,lead
-judgment,judgement,mind
-company
-nucleotide,base
-skin,tegument,cutis
-pain,painfulness
-hair
-hole
-curtain,drape,drapery,mantle,pall
-seaport,haven,harbor,harbour
-behavior,behaviour,conduct,doings
-motivation,motive,need
-ocean trip,voyage
-thousand,one thousand,1000,M,K,chiliad,G,grand,thou,yard
-thread,yarn
-birth,nativity,nascency,nascence
-respite,rest,relief,rest period
-writing,written material,piece of writing
-activity
-branch
-position,view,perspective
-consequence,aftermath
-action,activity,activeness
-hoop,ring
-copy
-spoon
-bomb
-leg
-hiker,tramp,tramper
-notebook,notebook computer
-multitude,masses,mass,hoi polloi,people,the great unwashed
-dance step,step
-cannon
-land,dry land,earth,ground,solid ground,terra firma
-burn
-joining,connection,connexion
-doorkeeper,doorman,door guard,hall porter,porter,gatekeeper,ostiary
-reading,meter reading,indication
-wash,washing,lavation
-representative
-frog,toad,toad frog,anuran,batrachian,salientian
-news,intelligence,tidings,word
-metrical foot,foot,metrical unit
-interest,involvement
-topographic point,place,spot
-feeling
-flower
-randomness,haphazardness,stochasticity,noise
-conveyance,transport
-servant,retainer
-band,banding,stria,striation
-ball,formal
-receipt
-choice,selection,option,pick
-condition,status
-mistake,error,fault
-entertainment,amusement
-food,food for thought,intellectual nourishment
-tree
-pubic hair,bush,crotch hair
-weather,weather condition,conditions,atmospheric condition
-ray
-rock 'n' roll,rock'n'roll,rock-and-roll,rock and roll,rock,rock music
-evaluator,judge
-drum,membranophone,tympan
-dining table,board
-holiday
-tree,tree diagram
-plot,plot of land,plot of ground,patch
-cream,ointment,emollient
-boundary line,border,borderline,delimitation,mete
-death
-system
-goldfish,Carassius auratus
-machine,simple machine
-authority
 sound,auditory sensation
-phone,speech sound,sound
-dwelling,home,domicile,abode,habitation,dwelling house
-art,artistic creation,artistic production
-board,plank
-snail
-pot,flowerpot
-move,relocation
-locomotive,engine,locomotive engine,railway locomotive
-bite,collation,snack
-grape,grapevine,grape vine
-notice,observation,observance
-construction,building
-size
-discussion,give-and-take,word
-writing,authorship,composition,penning
-wrench,twist,pull
-sleep,nap
-change,alteration,modification
-deed,deed of conveyance,title
+recurrence,return
+grain
+desk
+B-complex vitamin,B complex,vitamin B complex,vitamin B,B vitamin,B
+cake,bar
+submission,compliance
+turner,food turner
+bank
+stay
+top,cover
+pie
+change of location,travel
 man,piece
-opinion,legal opinion,judgment,judgement
-edge
-jest,joke,jocularity
-pate,poll,crown
-situation,position
-record
-building,edifice
-thought
-cad,bounder,blackguard,dog,hound,heel
-strip,slip
-heat,warmth,passion
-imp,scamp,monkey,rascal,rapscallion,scalawag,scallywag
-allowance,adjustment
-smell,sense of smell,olfaction,olfactory modality
-engine
-state,nation,country,land,commonwealth,res publica,body politic
-bread,breadstuff,staff of life
-walk,walking
-thing
-buddy,brother,chum,crony,pal,sidekick
-family
-principle,rule
-hill
-hose,hosepipe
-direction,instruction
-attire,garb,dress
-mouth
-need,demand
-root
-aroma,fragrance,perfume,scent
-teaching,precept,commandment
-change
-sofa,couch,lounge
-layer,bed
-crowd
-basin
-reward
-big cat,cat
-flag
-hook
-line
-chess,chess game
-hat,chapeau,lid
-coach,private instructor,tutor
-crow
+preference,penchant,predilection,taste
+poker,poker game
+golf stroke,golf shot,swing
+kin,kinsperson,family
+flow,flow rate,rate of flow
 baseball,baseball game
-arch
-sheet,flat solid
-relation
-market,marketplace,market place
-care,maintenance,upkeep
-room
-line
-side,face
-polish
-fact
+bearing,comportment,presence,mien
+sieve,screen
+biologist,life scientist
+can,tin,tin can
+visit
+bedroom,sleeping room,sleeping accommodation,chamber,bedchamber
+shooting,shot
+neurotic,psychoneurotic,mental case
+point
+position,post,berth,office,spot,billet,place,situation
+morsel,bit,bite
+stomach,tummy,tum,breadbasket
+mound,hill
+statistics
+reading,meter reading,indication
 wine,vino
-scene
-milk
-touch,touching
-trail
-model,example
-memory,retention,retentiveness,retentivity
-instruction,command,statement,program line
-paper
-owner,possessor
-mass
-joke,gag,laugh,jest,jape
-position
-sister
-letter,letter of the alphabet,alphabetic character
-unit,social unit
-numeral,number
-drug
-jar
-infantry,foot
-bear
-company,troupe
-reading,reading material
-body of water,water
-flat coat,ground,primer,priming,primer coat,priming coat,undercoat
-growth
-hallway,hall
-record,record book,book
-wood
-scarf
-stop,stoppage
-hospital,infirmary
-drink
-turn,turning
-scale
-plate
-journey,journeying
-key
-belief
-bridge,bridge deck
-face
-face lift,facelift,lift,face lifting,cosmetic surgery,rhytidectomy,rhytidoplasty,nip and tuck
-puff,drag,pull
-knot
-opinion,ruling
-box
+collar,neckband
+farm
+hood
 trade,patronage
-parent
-point
-silence,quiet
-peer,equal,match,compeer
-polish,gloss,glossiness,burnish
-kick,boot,kicking
-reward
-handwriting,hand,script
-guidance,counsel,counseling,counselling,direction
-window
-flower,bloom,blossom
-education,instruction,teaching,pedagogy,didactics,educational activity
-cook
-deal,trade,business deal
-bush
-word
-spirit,tone,feel,feeling,flavor,flavour,look,smell
-monetary value,price,cost
-curve,curved shape
-push button,push,button
-weight
-penny,cent,centime
-brother
-wit,humor,humour,witticism,wittiness
-position,posture,attitude
-country,rural area
-whip
-fire
-management,direction
-mother,female parent
-bottle
-house
-heat,heat energy
-cherry,cherry tree
-statement
-motion
-passenger car,coach,carriage
-food,solid food
-commercial enterprise,business enterprise,business
-crack,cleft,crevice,fissure,scissure
-bed
-needle
-calendar
-unit
-magic,thaumaturgy
-value
-man,adult male
-estate,land,landed estate,acres,demesne
-blow,bump
-machine
-exponent,power,index
-water,H2O
-smell,odor,odour,olfactory sensation,olfactory perception
-compass point,point
-car,railcar,railway car,railroad car
-marble
-estimate,estimation,approximation,idea
-crack
-cheese
-point
-government,governing,governance,government activity,administration
-authority,authorization,authorisation,potency,dominance,say-so
-golf club,golf-club,club
-natural language,tongue
-hole,hollow
-scene,shot
-movie,film,picture,moving picture,moving-picture show,motion picture,motion-picture show,picture show,pic,flick
-work
-source,seed,germ
-measure,step
-agency,federal agency,government agency,bureau,office,authority
+governor
 nozzle,nose
-movement,social movement,front
-unit,building block
-fog
-tramp,hobo,bum
-semen,seed,seminal fluid,ejaculate,cum,come
-voice
-fog,fogginess,murk,murkiness
-serviceman,military man,man,military personnel
-goal,end
-hour,time of day
-discussion,treatment,discourse
-mathematical process,mathematical operation,operation
-contest,competition
-value,economic value
-taste,appreciation,discernment,perceptiveness
-move
-surprise
-weight,free weight,exercising weight
-stop
-underwear,underclothes,underclothing
-message,content,subject matter,substance
-circle
-lumber,timber
-point
-finger
-skirt
-roll
-cloud
-branch
+front
+band
+transportation,transport,transfer,transferral,conveyance
+creole
+appeal,appealingness,charm
+bed
+scale,scale leaf
+pipe,pipage,piping
+replica,replication,reproduction
+air,aura,atmosphere
+direction
+theologian,theologist,theologizer,theologiser
+party
+motion
+wrench,twist,pull
+falcon
+cord,corduroy
+company
+school
+municipality
+report,study,written report
+nucleotide,base
+spear,gig,fizgig,fishgig,lance
+brim,rim,lip
+hoop,ring
+distorted shape,distortion
 mass
-writer
-spot
-snow
-rate,charge per unit
-meaning,substance
-glass,drinking glass
-rainstorm
-view,survey,sight
-blow,puff
-wave,undulation
-marble
-frame
-kind,sort,form,variety
-smudge,spot,blot,daub,smear,smirch,slur
-bat
-workplace,work
-cracker
-universe,existence,creation,world,cosmos,macrocosm
-crown,diadem
-glass
-operation
-bone,os
-crown,treetop
-hike,hiking,tramp
-shop,store
-descent,declivity,fall,decline,declination,declension,downslope
-guitar
-nest
-catch,stop
-writing
-eruditeness,erudition,learnedness,learning,scholarship,encyclopedism,encyclopaedism
-leaf,folio
-ice,water ice
-farmer,husbandman,granger,sodbuster
-gust,blast,blow
-repose,quiet,placidity,serenity,tranquillity,tranquility
-milkshake,milk shake,shake
-road,route
-fact
-laugh,laughter
-space
-tendency,inclination
-ice
-zinc,Zn,atomic number 30
-condition,precondition,stipulation
-business
-opinion,view
-swimming,swim
-human body,physical body,material body,soma,build,figure,physique,anatomy,shape,bod,chassis,frame,form,flesh
-pan
-iron
-narrative,narration,story,tale
-air
-peak,crown,crest,top,tip,summit
-opinion,sentiment,persuasion,view,thought
-region,part
-pear
+plot,secret plan,game
+polarity,sign
+utility,public utility,public utility company,public-service corporation
+shining,polishing
+workshop,shop
+wrestler,grappler,matman
+woodwind,woodwind instrument,wood
+breath
+move,relocation
+body,organic structure,physical structure
+expressive style,style
+airport,airdrome,aerodrome,drome
+cupboard,closet
+absence
+picture,image,icon,ikon
+olfactory property,smell,aroma,odor,odour,scent
+standard,criterion,measure,touchstone
+pump
+set,circle,band,lot
+nationalist
+bribery,graft
+report,account
+vein,mineral vein
+coil,spiral,volute,whorl,helix
+insincerity,falseness,hollowness
+flower,prime,peak,heyday,bloom,blossom,efflorescence,flush
+movement,social movement,front
+signal
+admirer,adorer
+brother
+meeting,get together
+mass
+music
+meeting,group meeting
+resort area,playground,vacation spot
+aggression,hostility
+rise
+conic section,conic
+quality,character,lineament
+need,demand
+schoolchild,school-age child,pupil
+meeting,coming together
+droppings,dung,muck
+end,ending
+pricing
+thinking,thought,thought process,cerebration,intellection,mentation
+healing
+spirit,disembodied spirit
+process,physical process
+cur
+anger,angriness
+highjacking,hijacking
+woman,adult female
+value,economic value
+software,software program,computer software,software system,software package,package
+authority
+screen,cover,covert,concealment
+argument,argumentation,debate
+dawdler,drone,laggard,lagger,trailer,poke
+company
 experience
+resident,occupant,occupier
+character,role,theatrical role,part,persona
+flash
+reaction,response
+toy dog,toy
+unit of measurement,unit
+while,piece,spell,patch
+hook,claw
+church,Christian church
+party
+sofa,couch,lounge
+railway,railroad,railroad line,railway line,railway system
+furniture,piece of furniture,article of furniture
+imp,scamp,monkey,rascal,rapscallion,scalawag,scallywag
+pot
+cloud
+darling,favorite,favourite,pet,dearie,deary,ducky
+pier,wharf,wharfage,dock
+string
+place,station
+hammer
+line
+art,artistic creation,artistic production
 pipe,tobacco pipe
 seed
-pain,hurting
-meat
-spokesperson,interpreter,representative,voice
-action,action mechanism
-brim,rim,lip
-interpretation,reading,version
-bird,fowl
-Mass
-patch
-cup,loving cup
-cattle,cows,kine,oxen,Bos taurus
-umbrella
-rain,rainfall
-reliever,relief pitcher,fireman
-pipe,pipage,piping
-distribution
-increase,increment,growth
-forefather,father,sire
-verse,verse line
-van
-beggar,mendicant
-leather
-rod
-battle,conflict,fight,engagement
-shame,disgrace,ignominy
-clock
-annoyance,bother,botheration,pain,infliction,pain in the neck,pain in the ass
-marketplace,market place,mart,market
-number,figure
-top
-principal,school principal,head teacher,head
-basis,base,foundation,fundament,groundwork,cornerstone
-church,church building
-seat
-game
-excerpt,excerption,extract,selection
-angle
-watch,vigil
-operation,military operation
-ball
-rampart,bulwark,wall
-mountain,mount
-edge,border
-action
-spinal column,vertebral column,spine,backbone,back,rachis
-rub,wipe
-berry
-menu,bill of fare,card,carte du jour,carte
-alarm,warning device,alarm system
-meal
-floor,level,storey,story
-touch,touching
-basin
-clique,coterie,ingroup,inner circle,pack,camp
-setting,scene
-actor,histrion,player,thespian,role player
-attempt,effort,endeavor,endeavour,try
-board
-circumstance,condition,consideration
-employment,work
-side
-nail
-pier,wharf,wharfage,dock
-lamp
-face
-procedure,process
-ball,clod,glob,lump,clump,chunk
-sports fan,fan,rooter
-calculator,reckoner,figurer,estimator,computer
-day
-fan,buff,devotee,lover
-line
-kin,kinsperson,family
-snow,snowfall
-coil,spiral,volute,whorl,helix
-attention,attending
-tiger,Panthera tigris
-book
-rule,linguistic rule
-blow
-taste,mouthful
-point,point in time
-badge
-hit,smash,smasher,strike,bang
-air,aura,atmosphere
-silk
-army,regular army,ground forces
-cemetery,graveyard,burial site,burial ground,burying ground,memorial park,necropolis
-syndicate,crime syndicate,mob,family
-sail,canvas,canvass,sheet
-head covering,veil
-unit of measurement,unit
-cord,corduroy
-aerodynamic lift,lift
-reaction
-walk
-act,deed,human action,human activity
-camp,encampment,cantonment,bivouac
-authority
-string,twine
-exchange
-scale,musical scale
-brass
-star
-friend
-keystone,key,headstone
-darling,favorite,favourite,pet,dearie,deary,ducky
-ribbon,thread
-society
-payment
-clasp,clench,clutch,clutches,grasp,grip,hold
-voice
-inclination,disposition,tendency
-border
-eminence,distinction,preeminence,note
-coat
-causal agent,cause,causal agency
-land
-current,electric current
-room,way,elbow room
-path,route,itinerary
-stew
-hole,golf hole
-language,linguistic communication
-flock
-school,schoolhouse
-coach,manager,handler
-chair
-care,charge,tutelage,guardianship
-music
-handle,grip,handgrip,hold
-business,concern,business concern,business organization,business organisation
-storehouse,depot,entrepot,storage,store
-bit,chip,flake,fleck,scrap
-art,artistry,prowess
-fireman,firefighter,fire fighter,fire-eater
-woman,adult female
-sawhorse,horse,sawbuck,buck
-roof
-profit,gain
-produce,green goods,green groceries,garden truck
-fairy,faery,faerie,fay,sprite
-drum,drumfish
-meeting,get together
-ally,friend
-chaff,husk,shuck,stalk,straw,stubble
-yoke
-pivot,pin
-matter,affair,thing
-operation
-choice,pick,selection
-weight
-house
-couple,pair,twosome,twain,brace,span,yoke,couplet,distich,duo,duet,dyad,duad
-look,looking,looking at
-money
-body,dead body
-chicken,Gallus gallus
-theory
-salt
-set,circle,band,lot
-day,twenty-four hours,twenty-four hour period,24-hour interval,solar day,mean solar day
-world power,major power,great power,power,superpower
-function,office,part,role
-argument,argumentation,debate
-calculator,calculating machine
-size
-stream,watercourse
-nation
-turning,turn
-top,cover
-street
-baby buggy,baby carriage,carriage,perambulator,pram,stroller,go-cart,pushchair,pusher
-axial rotation,axial motion,roll
-report,account
-rule,formula
-distribution,dispersion
-spy,undercover agent
-acoustics
-dress,frock
-postbox,mailbox,letter box
-cake
-exemplar,example,model,good example
-blade,vane
-bill,note,government note,bank bill,banker's bill,bank note,banknote,Federal Reserve note,greenback
-throne
-photographic print,print
-juice
-loss
-stove,kitchen stove,range,kitchen range,cooking stove
-sexual intercourse,intercourse,sex act,copulation,coitus,coition,sexual congress,congress,sexual relation,relation,carnal knowledge
-laborer,manual laborer,labourer,jack
-shoe
-transportation,shipping,transport
-function,purpose,role,use
-news
-request,asking
-vein,mineral vein
-determination,purpose
-wool
-berry
-maid,maiden
-queen,queen regnant,female monarch
-playing field,athletic field,playing area,field
-brush,clash,encounter,skirmish
-fan
-tank,storage tank
-hotness,heat,high temperature
-transportation,transport,transfer,transferral,conveyance
-walk,walkway,paseo
-approach,attack,plan of attack
-noise
-couple,mates,match
-telegram,wire
-frame of reference,frame
-peace
-whole,unit
-chemical reaction,reaction
-lineage,line,line of descent,descent,bloodline,blood line,blood,pedigree,ancestry,origin,parentage,stemma,stock
-treatment,intervention
-campaign,cause,crusade,drive,movement,effort
-playing period,period of play,play
-coil
-bridge,span
-loaf
+infantry,foot
 airplane,aeroplane,plane
-golf stroke,golf shot,swing
-screw
-fang
-wealth
-canvas,canvass
-wilderness,wild
-cliff,drop,drop-off
-cake,bar
-seat
-soil,dirt
-affection,affectionateness,fondness,tenderness,heart,warmness,warmheartedness,philia
-groove,channel
-increase,increment
-ball
-sound
-phase,stage
-advice
-ghost
-smoke,smoking
-desire
-crate
-motion,movement,move
-stop,stopover,layover
-social organization,social organisation,social structure,social system,structure
-fender,wing
-answer
-leg
-boldness,nerve,brass,face,cheek
-ladybug,ladybeetle,lady beetle,ladybird,ladybird beetle
-side
-lawyer,attorney
-band
-passenger,rider
-effect
-book
-range
-wood
-end,last,final stage
-party
-end,terminal
-rock,stone
-seal,stamp
-glove
-chime,bell,gong
-flight,flying
-anger,angriness
-body
-year,twelvemonth,yr
-flavor,flavour
-porter
-rail
-sea
-outburst,burst,flare-up
-light,lightness
-rail
-current,stream
-front
-line
-wealth,wealthiness
-weapon,arm,weapon system
-musical instrument,instrument
-spot,speckle,dapple,patch,fleck,maculation
-seat,place
-top,top side,upper side,upside
-animal,animate being,beast,brute,creature,fauna
-beverage,drink,drinkable,potable
-wealth,riches
-pitch,rake,slant
-preference,penchant,predilection,taste
-bedroom,sleeping room,sleeping accommodation,chamber,bedchamber
-railway,railroad,railroad line,railway line,railway system
-baby,babe,infant
-driving
-loss
-thinking,thought,thought process,cerebration,intellection,mentation
-cup
-support,supporting
-feeling
-house
-coil
-corn,edible corn
-stalk,stem
-blade
-hair,fuzz,tomentum
-wing
-family,family line,folk,kinfolk,kinsfolk,sept,phratry
-respect,esteem,regard
-form,word form,signifier,descriptor
-self,ego
-face
-signal,signaling,sign
-pot
-touch,touch sensation,tactual sensation,tactile sensation,feeling
-footrace,foot race,run
-business
-footfall,footstep,step
-luminosity,brightness,brightness level,luminance,luminousness,light
-symmetry,symmetricalness,correspondence,balance
-game
-vessel,watercraft
-loss
-shirt
-time
-band
-cave
-family,family unit
-skill,science
-plot,secret plan,game
-pouch,pocket
-contribution,part,share
-spider
-tax,taxation,revenue enhancement
-cause
-meeting,coming together
-base,alkali
-creator
-jump,jumping
-store,stock,fund
-beginning,start,commencement
-place,station
-boat
-condition,shape
-balance,equilibrium,equipoise,counterbalance
-hall
-scissors,pair of scissors
-protest,objection,dissent
-brass,brass instrument
-color,colour,coloring,colouring
-support,keep,livelihood,living,bread and butter,sustenance
-yam,yam plant
-sign
-manipulation,use
-hand,manus,mitt,paw
-goose
-fire,firing
-behavior,behaviour
-wash
-means,agency,way
-polarity,sign
-swallow,drink,deglutition
-plate,scale,shell
-gate
-dog,domestic dog,Canis familiaris
-being,beingness,existence
-pain,pain sensation,painful sensation
-bag
-turn,play
-bait,decoy,lure
-trajectory,flight
-light,light source
-burn
-meeting,group meeting
-bill,account,invoice
-forest,wood,woods
-arrangement,organization,organisation,system
-edge
-denture,dental plate,plate
-reward,reinforcement
-story
-congregation,fold,faithful
 tooth
-brush,brushwood,coppice,copse,thicket
-island
-arithmetic
-detail,particular,item
-smell,smelling
-phonograph record,phonograph recording,record,disk,disc,platter
+country,state,land
+means,substance
+sign,mark
+coal
+noise
+tank,storage tank
+death
+skirt
+effect
+belief
+club
+market,securities industry
+child,kid
+board
+statement
+rule,formula
+bucket,pail
+size
+owner,proprietor
+change,alteration,modification
+bubble
+window
+chemical reaction,reaction
+body
+line
+denture,dental plate,plate
+source,seed,germ
+mask
+fire,firing
+apple
+power,force
+relative,relation
+iron,Fe,atomic number 26
+nerve impulse,nervous impulse,neural impulse,impulse
+club,social club,society,guild,gild,lodge,order
+fog
+violence,force
+machine
+bridge
+pipe
 activeness,activity
-sound
-spring,fountain,outflow,outpouring,natural spring
-Godhead,Lord,Creator,Maker,Divine,God Almighty,Almighty,Jehovah
-vase
-train,railroad train
+trouser,pant
+smile,smiling,grin,grinning
+carriage,bearing,posture
+oral sex,head
+oven
+movement,motion
+rate
+table,tabular array
+share,portion,part,percentage
+light,visible light,visible radiation
+process,unconscious process
+education
+accompaniment,musical accompaniment,backup,support
+garden
+mouth,oral cavity,oral fissure,rima oris
+self
+request,petition,postulation
+condition,status
+family,family unit
+skate
+death
+gesture,motion
+conveyance,transport
+shape,form,configuration,contour,conformation
+hair
+military unit,military force,military group,force
+kind,sort,form,variety
+dock,dockage,docking facility
+increase,increment,growth
+reward
+egg
+exchange,interchange
+position
+wheel
 flag,signal flag
-humor,humour
-sword,blade,brand,steel
-ear,spike,capitulum
-pump
-governor
-fall,pin
-workshop,shop
-back,backrest
-recess,niche
-government,authorities,regime
-pull,pulling
-sink
-bodily process,body process,bodily function,activity
-blanket,cover
-sense,sensation,sentience,sentiency,sensory faculty
-package,parcel
-game
-package,bundle,packet,parcel
-cord
-hammer
-number
-rifle
-fastball,heater,smoke,hummer,bullet
-pan,cooking pan
-female child,girl,little girl
-firecracker,cracker,banger
+prison,prison house
+newspaper,paper
+menu,bill of fare,card,carte du jour,carte
+bowed stringed instrument,string
+increase,step-up
+peel,skin
+house
+grain,food grain,cereal
+voice,vocalization,vocalisation,vocalism,phonation,vox
+deal,trade,business deal
+friend
+kernel,substance,core,center,centre,essence,gist,heart,heart and soul,inwardness,marrow,meat,nub,pith,sum,nitty-gritty
+world power,major power,great power,power,superpower
+scarf
+path,route,itinerary
+opinion,legal opinion,judgment,judgement
+committee,commission
+baby,babe,infant
+part,portion
+position,stance,posture
+unit,social unit
+rate,charge per unit
+point
+chain
+place
+fire
+cannon
+sawhorse,horse,sawbuck,buck
+nest
 party,political party
-standard,criterion,measure,touchstone
-detail,item,point
-slip,trip
+rule,ruler
+degree,level,stage,point
+balance,equilibrium,equipoise,counterbalance
+shop,store
+land,ground,soil
+scout,pathfinder,guide
+cause
+knife
+paint,pigment
+magic trick,conjuring trick,trick,magic,legerdemain,conjuration,thaumaturgy,illusion,deception
+fact
+wave,undulation
+crack,cleft,crevice,fissure,scissure
+change
+payment,defrayal,defrayment
+soil,dirt
+flock
+inlet,recess
+motivation,motive,need
+line
+bridge,span
+grip,grasp
+number,figure
+basis,base,foundation,fundament,groundwork,cornerstone
+sock
+kick,kicking
+function,office,part,role
+line,dividing line,demarcation,contrast
+engine
+course,course of study,course of instruction,class
+breath
+station
+handcart,pushcart,cart,go-cart
+ledge,shelf
+child,kid,youngster,minor,shaver,nipper,small fry,tiddler,tike,tyke,fry,nestling
+circumstance,condition,consideration
+branch,leg,ramification
+soup
+stove,kitchen stove,range,kitchen range,cooking stove
+ability,power
+canvas tent,canvas,canvass
+compass point,point
+semblance,gloss,color,colour
+heat,warmth,passion
+ice,water ice
+string
+cart
+contribution,part,share
+breeze,zephyr,gentle wind,air
+color,colour,coloring,colouring
+baby buggy,baby carriage,carriage,perambulator,pram,stroller,go-cart,pushchair,pusher
+package,bundle,packet,parcel
+glass
+act,routine,number,turn,bit
+eye,oculus,optic
+wind instrument,wind
+use,usage,utilization,utilisation,employment,exercise
+family
+jean,blue jean,denim
+golf club,golf-club,club
+procedure,process
+lineage,line,line of descent,descent,bloodline,blood line,blood,pedigree,ancestry,origin,parentage,stemma,stock
+weight unit,weight
+sound
+pancake,battercake,flannel cake,flannel-cake,flapcake,flapjack,griddlecake,hotcake,hot cake
+sail,canvas,canvass,sheet
+branch
+habit,use
+noise,interference,disturbance
+desire
+metallic element,metal
+answer
+desire
+star
+handwriting,hand,script
+canvas,canvass
+team
+learning,acquisition
+cliff,drop,drop-off
+queen,queen regnant,female monarch
+blood
+nail
+mistake,error,fault
+contest,competition
+hair
+income
+direction,way
+gradient,slope
+feeling,intuitive feeling
+kiss,buss,osculation
+instruction,command,statement,program line
+collaborator,cooperator,partner,pardner
+water,H2O
+support,keep,livelihood,living,bread and butter,sustenance
+stick
+hope
+guy,cat,hombre,bozo
+holiday
+pan,cooking pan
+judgment,judgement,mind
+store,stock,fund
+shaking,shakiness,trembling,quiver,quivering,vibration,palpitation
+power
+way
+walk
+stitch
+wall
+shame,disgrace,ignominy
+top,top side,upper side,upside
+recitation,recital,reading
+cloud
+weight,free weight,exercising weight
+horn
+ball
+operation,military operation
+vibration,quiver,quivering
+ally,friend
+wrench,spanner
+bag,traveling bag,travelling bag,grip,suitcase
+cherry,cherry tree
+stop
+scale,musical scale
+face
+hired hand,hand,hired man
+wish,wishing,want
+principal,school principal,head teacher,head
+education,instruction,teaching,pedagogy,didactics,educational activity
+roof
+side
+animal,animate being,beast,brute,creature,fauna
+fruit
+mountain,mount
+cheese
+scenery,scene
+wind,air current,current of air
+writer,author
+chicken,poulet,volaille
+emergence,outgrowth,growth
+bridge player,hand
+arch
+cake
+adjustment,accommodation,fitting
+chain,chemical chain
+swimming,swim
+catch,stop
+sheet,piece of paper,sheet of paper
+hall
+battle,conflict,fight,engagement
+gem,gemstone,stone
+face
+school
+passenger car,coach,carriage
+library
+domain,demesne,land
+ring,band
+meal
+crow
+crown,treetop
+camp,encampment,cantonment,bivouac
+locomotive,engine,locomotive engine,railway locomotive
+fender,wing
+power,powerfulness
+heading,header,head
+root
+fire,flame,flaming
+firecracker,cracker,banger
+lettuce
+pin
+sweater,jumper
+touch,touch sensation,tactual sensation,tactile sensation,feeling
+action,action mechanism
+tramp,hobo,bum
+use,enjoyment
+farmer,husbandman,granger,sodbuster
+allowance,adjustment
+smell,sense of smell,olfaction,olfactory modality
+railroad track,railroad,railway
+snow,snowfall
+amount
+wood
+body
+fight,fighting,combat,scrap
+alarm,alert,warning signal,alarum
+lighter,light,igniter,ignitor
+bite,chomp
+part,section,division
+desire
+spy,undercover agent
+knot
+bath
+photographic print,print
+weather,weather condition,conditions,atmospheric condition
+issue,number
+seat
+flower
+board
+test,trial,run
+chaff,husk,shuck,stalk,straw,stubble
+hit,smash,smasher,strike,bang
+lace
+writing,committal to writing
+pain,pain sensation,painful sensation
+process,outgrowth,appendage
+approval
+function,purpose,role,use
+pain,painfulness
+grape
+brick
+notebook
+engine
+management,direction
+theme,melodic theme,musical theme,idea
+tendency,inclination
+examination,exam,test
+pen
+art,artistry,prowess
+hat,chapeau,lid
+game
+experience
+rod
+value
+writing
+balance
+space,blank space,place
+symmetry,symmetricalness,correspondence,balance
+sword,blade,brand,steel
+gelatin,jelly
+stew
+attire,garb,dress
+reading
+bird
+roll
+energy,push,get-up-and-go
+body
+part,piece
+silence,quiet
+acoustics
+muscle,musculus
+knife
+exploitation,development
+tree,tree diagram
+table
+ribbon,thread
+looseness,play
+curve,curved shape
+shape,form
+education
+head,chief,top dog
+unit,building block
+beginning,origin,root,rootage,source
+hour,time of day
+care,attention,aid,tending
+leg
+trade,craft
+governor,regulator
+meaning,substance
+shame
+couple,mates,match
+island
+attention,attending
+war,warfare
 rock,stone
+price,terms,damage
+dance step,step
+earth,ground
+produce,green goods,green groceries,garden truck
+fix,hole,jam,mess,muddle,pickle,kettle of fish
+time
+crush,jam,press
+discussion,give-and-take,word
+painting,picture
+reliever,relief pitcher,fireman
+game
+juice
+current,stream
+measuring stick,measure,measuring rod
+church,church building
+fall,pin
+linen
+sleep,nap
+trace,hint,suggestion
+marble
+profit,gain
+puff,drag,pull
+answer
+money
+drug
+arithmetic
+camp
+range
+bush
+horn
+playing period,period of play,play
+vein,vena,venous blood vessel
+part,portion,component part,component,constituent
+harmony
+seat
+quartz
+fun,play,sport
+muscle,muscular tissue
+domestic ass,donkey,Equus asinus
+meter,metre,measure,beat,cadence
+business
+yam,yam plant
+town
+detail,item,point
+tent,collapsible shelter
+degree,grade,level
+bean
+wilderness,wild
+umbrella
+blade
+education
+oeuvre,work,body of work
+gravy boat,gravy holder,sauceboat,boat
+thing
+wealth
+bill,note,government note,bank bill,banker's bill,bank note,banknote,Federal Reserve note,greenback
+game
+street
+exchange
+leaf,folio
+yard,grounds,curtilage
+sister
+money
+fly,fly ball
+natural process,natural action,action,activity
+syndicate,crime syndicate,mob,family
+Holy Order,Order
+meeting,encounter
+hair,fuzz,tomentum
+sign
+bee
+aerodynamic lift,lift
+plane,carpenter's plane,woodworking plane
+fastball,heater,smoke,hummer,bullet
+support,supporting
+wash
+step
+achiever,winner,success,succeeder
+light,light source
+direction,instruction
+spy
+big cat,cat
+porter
+field
+pen
+clam
+esteem,regard,respect
+promise,hope
+line
+message,content,subject matter,substance
+van
+bread,breadstuff,staff of life
+chicken,Gallus gallus
+calculator,calculating machine
+numeral,number
+marketplace,market place,mart,market
+sack,poke,paper bag,carrier bag
+space
+luminosity,brightness,brightness level,luminance,luminousness,light
+care,maintenance,upkeep
+basin
+tray
+beef,boeuf
+coil
+goose
+ball,formal
+family,fellowship
+stage
+aroma,fragrance,perfume,scent
+point
+day,daytime,daylight
+side
+frame
+nut
+writer
+field,field of force,force field
+smoke,smoking
+frame of reference,frame
+game
+attention
+transportation,shipping,transport
+news,intelligence,tidings,word
+thought
+book,volume
+scale,weighing machine
+boot
+recess,niche
+window
+crate
+toilet,lavatory,lav,can,john,privy,bathroom
+keystone,key,headstone
+movie,film,picture,moving picture,moving-picture show,motion picture,motion-picture show,picture show,pic,flick
+food,nutrient
+basket,handbasket
+sum,sum of money,amount,amount of money
+principle,rule
+system,scheme
+weight
+promontory,headland,head,foreland
+face,human face
+cap
+heat,heat energy
+wire,conducting wire
+supporter,protagonist,champion,admirer,booster,friend
+burn
+consequence,aftermath
+book
+manipulation,use
+house
+value
+oil
+rifle
+giant
+convention,normal,pattern,rule,formula
+glove
+rail
+suit
+cemetery,graveyard,burial site,burial ground,burying ground,memorial park,necropolis
+conclusion,end,close,closing,ending
+owner,possessor
+repose,quiet,placidity,serenity,tranquillity,tranquility
+rock,stone
+unit
+theory
+business,concern,business concern,business organization,business organisation
+iron
+window
+opportunity,chance
+memory
+discussion,treatment,discourse
+actor,doer,worker
+butt,goat,laughingstock,stooge
+social organization,social organisation,social structure,social system,structure
+temper,mood,humor,humour
+song,vocal
+increase
+neck,neck opening
+start
+fabrication,fiction,fable
+edge
+strait,sound
+brass
+monetary value,price,cost
+sheet,flat solid
+car,auto,automobile,machine,motorcar
+debt
+protest,objection,dissent
+rainstorm
+aid,assist,assistance,help
+hose,hosepipe
+bean,edible bean
+means,agency,way
+base,pedestal,stand
+slob,sloven,pig,slovenly person
+talk,talking
+founder,beginner,founding father,father
+Godhead,Lord,Creator,Maker,Divine,God Almighty,Almighty,Jehovah
+mass
+back,backrest
+book
+beam
+cutting,slip
+multitude,masses,mass,hoi polloi,people,the great unwashed
+reading,reading material
+pot,flowerpot
+target,mark
+circle
+cook
+space,infinite
+estimate,estimation,approximation,idea
+act,enactment
+ship
+taste,appreciation,discernment,perceptiveness
+addict,nut,freak,junkie,junky
+operation
+rule
+television camera,tv camera,camera
+head,caput
+goldfish,Carassius auratus
+duct,epithelial duct,canal,channel
+wave,undulation
+handle,grip,handgrip,hold
+brush,brushwood,coppice,copse,thicket
+insurance
+card
+crown,diadem
+hill
+hike,hiking,tramp
+authority
+deed,deed of conveyance,title
+move
+thousand,one thousand,1000,M,K,chiliad,G,grand,thou,yard
+school,schoolhouse
+speech,speech communication,spoken communication,spoken language,language,voice communication,oral communication
+seaport,haven,harbor,harbour
+death,dying,demise
+team,squad
+office,power
+tooth
+trail
+authority,authorization,authorisation,potency,dominance,say-so
+activity
+interest,interestingness
+couple,pair,twosome,twain,brace,span,yoke,couplet,distich,duo,duet,dyad,duad
+song,strain
+dog,domestic dog,Canis familiaris
+self,ego
+answer,reply,response
+bed,bottom
+discovery,find,uncovering
+meal,repast
+attempt,effort,endeavor,endeavour,try
+post,station
+distribution
+signboard,sign
+hearing,audition,auditory sense,sense of hearing,auditory modality
+fan,buff,devotee,lover
+earthquake,quake,temblor,seism
+kick,boot,kicking
+ardor,ardour,fervor,fervour,fervency,fire,fervidness
+branch
+cap
+determination,purpose
+week,hebdomad
+military position,position
+faucet,spigot
+increase,increment
+representative
+leg
+value
+bridge,bridge deck
+pace,rate
+respect,esteem,regard
+beginning,commencement,first,outset,get-go,start,kickoff,starting time,showtime,offset
+shelf
+stamp,impression
+story
+rest,ease,repose,relaxation
+male child,boy
+cup
+crowd
+jewel,gem,precious stone
+thing
+writing,authorship,composition,penning
+change
+position,place
+footrace,foot race,run
+bead
+gun
+ball
+word
+record,record book,book
+marker,marking,mark
+guidebook,guide
+curtain,drape,drapery,mantle,pall
+lamp
+quarter
+machine,simple machine
+forest,wood,woods
+machine
+corn,edible corn
+ad,advertisement,advertizement,advertising,advertizing,advert
+bicycle,bike,wheel,cycle
+peak,crown,crest,top,tip,summit
+rod
+yoke
+apparatus,setup
+scene
+distribution,dispersion
+orange,orangeness
+ice
+telegram,wire
+teaching,precept,commandment
+edge
+form,shape,pattern
+journey,journeying
+chime,bell,gong
+ocean
+calendar month,month
+treatment,handling
+stead,position,place,lieu
+artillery,heavy weapon,gun,ordnance
+statement,financial statement
+sports fan,fan,rooter
+hole
+water
+police,police force,constabulary,law
+sink
+touch,hint,tinge,mite,pinch,jot,speck,soupcon
+lawyer,attorney
+military action,action
+comb
+position,view,perspective
+scissors,pair of scissors
+approval,commendation
+room
+rule,prescript
+commercial enterprise,business enterprise,business
+moment,minute,second,instant
+company
+mouth
+beverage,drink,drinkable,potable
+hen,biddy
+cast,cast of characters,dramatis personae
+report,news report,story,account,write up
+line
+fish
+seat,place
+dwelling,home,domicile,abode,habitation,dwelling house
+stalk,stem
+move
+exemplar,example,model,good example
+operation
+form
+personnel casualty,loss
+whole,unit
+trajectory,flight
+fly
+party
+clasp,clench,clutch,clutches,grasp,grip,hold
+playing field,athletic field,playing area,field
+system
+thing
+probability,chance
+work force,workforce,manpower,hands,men
+trade
+music
+drum,drumfish
+hiker,tramp,tramper
+tail
+wool
+suit,suit of clothes
+fabric,cloth,material,textile
+judge,justice,jurist
+bit,chip,flake,fleck,scrap
+spinal column,vertebral column,spine,backbone,back,rachis
+rock 'n' roll,rock'n'roll,rock-and-roll,rock and roll,rock,rock music
+carriage,equipage,rig
+hypothesis,possibility,theory
+doll,dolly
+pin
+year,twelvemonth,yr
+leaf,leafage,foliage
+position,spatial relation
+gust,blast,blow
+page
+weight
+jest,joke,jocularity
+end,terminal
+universe,existence,creation,world,cosmos,macrocosm
+axial rotation,axial motion,roll
+flow,stream
+informer,betrayer,rat,squealer,blabber
+pivot,pin
+operation,surgery,surgical operation,surgical procedure,surgical process
+harmony,musical harmony
 scale,scale of measurement,graduated table,ordered series
+taste,taste sensation,gustatory sensation,taste perception,gustatory perception
+horn
+decision,determination,conclusion
+space
+arrest,check,halt,hitch,stay,stop,stoppage
+tank,army tank,armored combat vehicle,armoured combat vehicle
+flavor,flavour
+sphere,domain,area,orbit,field,arena
+humor,humour
+fairy,faery,faerie,fay,sprite
+template,templet,guide
+direction
+semen,seed,seminal fluid,ejaculate,cum,come
+polish,gloss,glossiness,burnish
+slip,trip
+blow
+glass,drinking glass
+hole
+region,part
+town,townspeople,townsfolk
+support
+bone,os
+roll,roster
+fireman,firefighter,fire fighter,fire-eater
+cry,outcry,call,yell,shout,vociferation
+jump,parachuting
+artwork,art,graphics,nontextual matter
+day,twenty-four hours,twenty-four hour period,24-hour interval,solar day,mean solar day
+spider
+record
+side,face
+alarm,warning device,alarm system
+homo,man,human being,human
+brass section,brass
+loss
+beggar,mendicant
+look,looking,looking at
+human body,physical body,material body,soma,build,figure,physique,anatomy,shape,bod,chassis,frame,form,flesh
+motion,movement,move,motility
+plaything,toy
+beginning,start,commencement
+motion,movement,move
+parturition,birth,giving birth,birthing
+art,fine art
+care,charge,tutelage,guardianship
+haircut
+food,food for thought,intellectual nourishment
+randomness,haphazardness,stochasticity,noise
+ovolo,thumb,quarter round
+nation,land,country
+feather,plume,plumage
+line
+vessel
+internal-combustion engine,ICE
+table
+swing
+time
+workplace,work
+thread,yarn
+situation,position
+ancestor,ascendant,ascendent,antecedent,root
+boundary line,border,borderline,delimitation,mete
+explosion,burst
+squirrel
+observation,observance,watching
+scene,shot
+action,activity,activeness
+sound
+writing
+observation
+female child,girl,little girl
+Mass
+pan
+form
+writing,written material,piece of writing
+loss
+jail,jailhouse,gaol,clink,slammer,poky,pokey
