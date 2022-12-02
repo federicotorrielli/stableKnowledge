@@ -26,7 +26,8 @@ class ImageInterrogator:
             pbar.set_description(f"Loading images from {folder}")
             images[folder] = []
             for image in os.listdir(os.path.join(self.images_path, folder)):
-                images[folder].append(Image.open(os.path.join(self.images_path, folder, image)).convert("RGB"))
+                if image.endswith(".png"):
+                    images[folder].append(Image.open(os.path.join(self.images_path, folder, image)).convert("RGB"))
         return images
 
     def interrogate(self) -> None:
