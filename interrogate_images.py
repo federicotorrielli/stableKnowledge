@@ -34,7 +34,7 @@ class ImageInterrogator:
         For each folder in self.images, interrogate the images in that folder
         And save in that folder a txt file with the interrogations
         """
-        ci = Interrogator(Config(clip_model_name="ViT-L/14"))
+        ci = Interrogator(Config(clip_model_name="ViT-H-14/laion2b_s32b_b79k"))
         pbar = tqdm(self.images.items())
         for folder, images in pbar:
             # Interrogate folder only if it has not been interrogated yet (so there is not a interrogations.txt file)
