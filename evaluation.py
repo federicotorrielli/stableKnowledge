@@ -42,5 +42,5 @@ class Evaluation:
             cosine_scores[folder] = []
             for i, p in enumerate(phrases):
                 cosine_scores[folder].append(util.cos_sim(self.model.encode(p, convert_to_tensor=True),
-                                                          self.model.encode(folder, convert_to_tensor=True))[0])
+                                                          self.model.encode(folder, convert_to_tensor=True)).item())
         return cosine_scores
