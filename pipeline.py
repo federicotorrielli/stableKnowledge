@@ -38,9 +38,9 @@ def interrogate():
 
 def evaluate():
     from evaluation import Evaluation
-    ev = Evaluation("synsets.txt", "output_middle")
+    ev = Evaluation("output_middle")
     ev.print_to_file()
-    ev = Evaluation("hyponyms.txt", "output_advanced")
+    ev = Evaluation("output_advanced")
     ev.print_to_file()
 
 
