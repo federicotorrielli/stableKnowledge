@@ -12,14 +12,12 @@ class ImageGenerator:
         self.folder_name = folder_name
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
-        weights = "stabilityai/stable-diffusion-2"
+        weights = "stabilityai/stable-diffusion-2-1-base"
 
         torch.backends.cudnn.benchmark = True  # enabling cuDNN auto-tuner for faster convolution
         self.pipe = StableDiffusionPipeline.from_pretrained(
             weights,
             device_map="auto",
-            revision="fp16",
-            torch_dtype=torch.float16,
             safety_checker=None)
         self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
         self.pipe = self.pipe.to("cuda")
