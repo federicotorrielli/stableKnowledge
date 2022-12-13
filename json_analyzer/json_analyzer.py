@@ -1,37 +1,33 @@
 import glob
 import json
 import sys
-
+import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 from nltk import agreement
 
 
 def plot_seconds(data: list[dict]) -> None:
-    # TODO: fix this
-    # Convert the seconds to a numpy array
-    seconds = []
-    for d in data:
-        if "timeDiffs" in d:
-            seconds.append(np.array(d["timeDiffs"]))
-        else:
-            print(f"Warning: {d['name']} has no timeDiffs")
-    seconds = np.array(seconds)
+    new_data = np.array([d["timeDiffs"] for d in data])
 
-    # Calculate the mean and standard deviation of the seconds
-    mean = np.mean(seconds)
-    std = np.std(seconds)
+    mu = np.mean(new_data)
+    sigma = np.std(new_data)
 
-    # Create a range of values for the x-axis
-    x = np.linspace(seconds.min(), seconds.max(), 100)
+    # Define the threshold for identifying outliers
+    threshold = 3 * sigma
 
-    # Calculate the y-values for the Gaussian distribution
-    y = 1 / (std * np.sqrt(2 * np.pi)) * np.exp(- (x - mean) ** 2 / (2 * std ** 2))
+    # Remove any values that fall outside the threshold
+    filtered_data = new_data[np.abs(new_data - mu) < threshold]
 
-    # Plot the Gaussian distribution
-    plt.plot(x, y)
+    plt.title("Time differences between answers")
+    plt.xlabel("Time difference (seconds)")
 
-    # Show the plot
+    sns.set_style("whitegrid")
+    sns.kdeplot(data=filtered_data, bw_method=0.5)
+    plt.axvline(filtered_data.mean(), color='k', linestyle='dashed', linewidth=1)
+    min_ylim, max_ylim = plt.ylim()
+    plt.text(filtered_data.mean() * 1.1, max_ylim * 0.9, 'Mean: {:.2f}'.format(filtered_data.mean()))
+    plt.hist(filtered_data, bins=100, density=True)
     plt.show()
 
 
