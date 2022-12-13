@@ -1,13 +1,21 @@
 import glob
 import json
 import sys
+from pprint import pprint
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 from nltk import agreement
+from collections import Counter
 
 
 def plot_seconds(data: list[dict]) -> None:
+    """
+    Plot the time spent on each question.
+    :param data: The data to analyze.
+    :return: None
+    """
     new_data = np.array([d["timeDiffs"] for d in data])
 
     mu = np.mean(new_data)
@@ -32,6 +40,11 @@ def plot_seconds(data: list[dict]) -> None:
 
 
 def calculate_agreement(data: list[dict]) -> None:
+    """
+    Calculate the agreement between the annotators.
+    :param data: The data to analyze.
+    :return: None
+    """
     # Truncate the arrays to the lower of them if they are different in size
     length = min([len(d["answers"]) for d in data])
 
@@ -51,13 +64,40 @@ def calculate_agreement(data: list[dict]) -> None:
     print("scotts " + str(ratingtask.pi()))
 
 
+def common_hard_answers(data: list[dict], n=10) -> None:
+    """
+    Find the common answers for the hard questions.
+    :param n: The number of common answers to print.
+    :param data: The data to analyze.
+    :return: None
+    """
+    # Find the common answers for the hard questions
+    hard_answers = []
+    for d in data:
+        for i, is_hard in enumerate(d["isHard"]):
+            if is_hard:
+                hard_answers.append(d["answers"][i])
+
+    # Associate each answer to the synset in the dataset
+    hard_answers_synsets = []
+    for i, d in enumerate(data):
+        for j, is_hard in enumerate(d["isHard"]):
+            if is_hard:
+                hard_answers_synsets.append((d["dataset"][j], hard_answers[i]))
+
+    counter = Counter(hard_answers_synsets)
+    pprint(counter.most_common(n))
+
+
 def load_json_files() -> list[dict]:
     """
     Load all the json files in the current directory.
 
-    Every dict is of the form: {"name": "name",
+    Every dict is of the form:
+    {"name": "name",
     "answers": ["answer1", "answer2", ...],
-    "i": number, "dataset": ["synset1", "synset2", ...],
+    "i": number,
+    "dataset": ["synset1", "synset2", ...],
     "date": {'nanoseconds': number, 'seconds': number},
     "isHard": [True, False, ...],
     "timeDiffs": [number, number, ...]}
@@ -65,10 +105,8 @@ def load_json_files() -> list[dict]:
     """
     # Check if there are arguments
     if len(sys.argv) > 1:
-        num_of_files = len(sys.argv) - 1
         files = sys.argv[1:]
     else:
-        num_of_files = len(glob.glob("*.json"))
         files = glob.glob("*.json")
 
     # create an empty list to store the dictionaries
@@ -85,10 +123,15 @@ def load_json_files() -> list[dict]:
     return dicts
 
 
-def main():
+def main() -> None:
+    """
+    Main function.
+    :return: None
+    """
     data = load_json_files()
     calculate_agreement(data)
     plot_seconds(data)
+    common_hard_answers(data, 10)
 
 
 if __name__ == "__main__":
