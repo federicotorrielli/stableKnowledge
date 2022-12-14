@@ -18,7 +18,9 @@ class ImageGenerator:
         self.pipe = StableDiffusionPipeline.from_pretrained(
             weights,
             device_map="auto",
-            safety_checker=None)
+            safety_checker=None,
+            revision="fp16",
+            torch_dtype=torch.float16)
         self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
         self.pipe = self.pipe.to("cuda")
         self.pipe.enable_attention_slicing()
