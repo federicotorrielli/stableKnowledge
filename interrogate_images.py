@@ -1,7 +1,8 @@
 import os
 
 from PIL import Image
-from clip_interrogator import Interrogator, Config
+import torch
+from lavis.models import load_model_and_preprocess
 from tqdm import tqdm
 
 
@@ -11,6 +12,7 @@ class ImageInterrogator:
         print("Loading images...")
         self.images = self.load_images()
         self.interrogations = {}
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print("Loaded images - Ready to interrogate")
 
     def load_images(self) -> dict:
@@ -35,22 +37,24 @@ class ImageInterrogator:
         For each folder in self.images, interrogate the images in that folder
         And save in that folder a txt file with the interrogations
         """
-        ci = Interrogator(Config(clip_model_name="ViT-H-14/laion2b_s32b_b79k"))
+        model, vis_processors, _ = load_model_and_preprocess(name="blip_caption", model_type="base_coco",
+                                                             is_eval=True, device=self.device)
         pbar = tqdm(self.images.items())
         for folder, images in pbar:
             # Interrogate folder only if it has not been interrogated yet (so there is not a interrogations.txt file)
             if not os.path.exists(os.path.join(self.images_path, folder, "interrogations.txt")):
                 pbar.set_description(f"Interrogating images from {folder}")
-                self.interrogations[folder] = self.interrogate_folder(ci, images)
+                self.interrogations[folder] = self.interrogate_folder(images, vis_processors, model)
                 self.save_interrogations(folder)
 
-    def interrogate_folder(self, ci, images: list) -> list:
+    def interrogate_folder(self, images: list, vis_processors, model) -> list:
         """
         Interrogates a list of images
         """
         interrogations = []
-        for image in images:
-            interrogations.append(ci.interrogate(image))
+        for raw_image in images:
+            image = vis_processors["eval"](raw_image).unsqueeze(0).to(self.device)
+            interrogations.append(model.generate({"image": image})[0])
         return interrogations
 
     def save_interrogations(self, folder: str) -> None:
