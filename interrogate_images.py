@@ -1,7 +1,7 @@
 import os
 
-from PIL import Image
 import torch
+from PIL import Image
 from lavis.models import load_model_and_preprocess
 from tqdm import tqdm
 
@@ -37,7 +37,7 @@ class ImageInterrogator:
         For each folder in self.images, interrogate the images in that folder
         And save in that folder a txt file with the interrogations
         """
-        model, vis_processors, _ = load_model_and_preprocess(name="blip_caption", model_type="base_coco",
+        model, vis_processors, _ = load_model_and_preprocess(name="blip_caption", model_type="large_coco",
                                                              is_eval=True, device=self.device)
         pbar = tqdm(self.images.items())
         for folder, images in pbar:
