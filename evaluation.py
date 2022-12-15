@@ -26,11 +26,13 @@ class Evaluation:
         for each folder, grouping the content of each cosine similarity and normalized similarity
         """
         for folder in self.cosine_scores:
-            with open(f"{self.generated_phrases_path}/{folder.replace(' ', '_').replace(',', '-')}/cosine_scores.txt",
-                      "w") as f:
-                for score in self.cosine_scores[folder]:
-                    f.write(f"{score}\n")
-                f.write(f"Mean: {sum(self.cosine_scores[folder]) / len(self.cosine_scores[folder])}\n")
+            if len(self.cosine_scores[folder]) > 0:
+                with open(
+                        f"{self.generated_phrases_path}/{folder.replace(' ', '_').replace(',', '-')}/cosine_scores.txt",
+                        "w") as f:
+                    for score in self.cosine_scores[folder]:
+                        f.write(f"{score}\n")
+                    f.write(f"Mean: {sum(self.cosine_scores[folder]) / len(self.cosine_scores[folder])}\n")
 
     def compute_cosine_scores(self):
         """

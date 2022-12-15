@@ -1,13 +1,13 @@
 import glob
 import json
 import sys
+from collections import Counter
 from pprint import pprint
 
-import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 from nltk import agreement
-from collections import Counter
 
 
 def plot_seconds(data: list[dict]) -> None:
@@ -52,7 +52,8 @@ def calculate_agreement(data: list[dict]) -> None:
     taskdata = []
     for i in range(length):
         for coder in data:
-            taskdata.append((coder["name"], i, coder["answers"][i]))
+            taskdata.append((coder["name"], coder["dataset"][i], coder["answers"][i]))
+            # print(coder["name"], coder["dataset"][i], coder["answers"][i])
 
     # Create the AnnotationTask object
     ratingtask = agreement.AnnotationTask(data=taskdata)
