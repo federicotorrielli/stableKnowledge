@@ -10,6 +10,13 @@ import seaborn as sns
 from nltk import agreement
 
 
+def reject_outliers(data, m=2.):
+    d = np.abs(data - np.median(data))
+    mdev = np.median(d)
+    s = d / mdev if mdev else 0.
+    return data[s < m]
+
+
 def plot_seconds(data: list[dict]) -> None:
     """
     Plot the time spent on each question.
@@ -18,24 +25,18 @@ def plot_seconds(data: list[dict]) -> None:
     """
     new_data = np.array([d["timeDiffs"] for d in data])
 
-    mu = np.mean(new_data)
-    sigma = np.std(new_data)
-
-    # Define the threshold for identifying outliers
-    threshold = 3 * sigma
-
     # Remove any values that fall outside the threshold
-    filtered_data = new_data[np.abs(new_data - mu) < threshold]
+    filtered_data = reject_outliers(new_data, m=4.)
 
-    plt.title("Time differences between answers")
-    plt.xlabel("Time difference (seconds)")
-
-    sns.set_style("whitegrid")
-    sns.kdeplot(data=filtered_data, bw_method=0.5)
+    sns.displot(data=filtered_data, kde=True, bins=120)
+    # Set the title to the sns plot
+    plt.title("Time spent on each question")
+    plt.xlabel("Seconds")
+    # Make the plot bigger
+    plt.gcf().set_size_inches(20, 10)
     plt.axvline(filtered_data.mean(), color='k', linestyle='dashed', linewidth=1)
     min_ylim, max_ylim = plt.ylim()
     plt.text(filtered_data.mean() * 1.1, max_ylim * 0.9, 'Mean: {:.2f}'.format(filtered_data.mean()))
-    plt.hist(filtered_data, bins=100, density=True)
     plt.show()
 
 
@@ -45,7 +46,7 @@ def calculate_agreement(data: list[dict]) -> None:
     :param data: The data to analyze.
     :return: None
     """
-    # Truncate the arrays to the lower of them if they are different in size
+    # Truncate the arrays to the lowest of them if they are different in size
     length = min([len(d["answers"]) for d in data])
 
     # Create a list of tuples (coder, item, label)
@@ -132,7 +133,7 @@ def main() -> None:
     data = load_json_files()
     calculate_agreement(data)
     plot_seconds(data)
-    common_hard_answers(data, 10)
+    # common_hard_answers(data, 10)
 
 
 if __name__ == "__main__":
