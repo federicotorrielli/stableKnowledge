@@ -66,6 +66,33 @@ def calculate_agreement(data: list[dict]) -> None:
     print("scotts " + str(ratingtask.pi()))
 
 
+def calculate_coherence_index(data: list[dict]) -> None:
+    """
+    For each annotator, calculate the coherence index
+    using a Kendall's tau function.
+    :param data:
+    :return:
+    """
+    for d in data:
+        # Take the dataset
+        dataset = d["dataset"]
+        # Take the answers of the annotator
+        answers = d["answers"][:len(dataset)]
+        number_of_concordant_pairs = 0
+        number_of_discordant_pairs = 0
+        number_of_pairs = 0
+        for i in range(len(dataset)):
+            for j in range(i + 1, len(dataset)):
+                if dataset[i] == dataset[j]:
+                    number_of_pairs += 1
+                    if answers[i] == answers[j]:
+                        number_of_concordant_pairs += 1
+                    else:
+                        number_of_discordant_pairs += 1
+        print(
+            f"{d['name']} | Coherence Index: {(number_of_concordant_pairs - number_of_discordant_pairs) / number_of_pairs}")
+
+
 def common_hard_answers(data: list[dict], n=10) -> None:
     """
     Find the common answers for the hard questions.
@@ -131,9 +158,27 @@ def main() -> None:
     :return: None
     """
     data = load_json_files()
-    calculate_agreement(data)
-    plot_seconds(data)
-    # common_hard_answers(data, 10)
+
+    while True:
+        print("\n---------------------------------------------------")
+        print("1. Plot the time spent on each question")
+        print("2. Calculate the agreement between the annotators")
+        print("3. Calculate the coherence index for each annotator")
+        print("4. Find the common answers for the hard questions")
+        print("5. Exit")
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            plot_seconds(data)
+        elif choice == "2":
+            calculate_agreement(data)
+        elif choice == "3":
+            calculate_coherence_index(data)
+        elif choice == "4":
+            common_hard_answers(data)
+        elif choice == "5":
+            break
+        else:
+            print("Invalid choice")
 
 
 if __name__ == "__main__":
