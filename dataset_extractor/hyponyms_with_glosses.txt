@@ -1,0 +1,990 @@
+Synset('piano_music.n.02'):piano music | Definition: the sound of music produced by a piano
+Synset('flashback.n.02'):flashback | Definition: an unexpected but vivid recurrence of a past experience (especially a recurrence of the effects of an hallucinogenic drug taken much earlier)
+Synset('chloroplast.n.01'):chloroplast | Definition: plastid containing chlorophyll and other pigments; in plants that carry out photosynthesis
+Synset('davenport.n.02'):davenport | Definition: a small decorative writing desk
+Synset('inositol.n.01'):inositol | Definition: an optically inactive alcohol that is a component of the vitamin B complex
+Synset('tablet.n.03'):tablet | Definition: a small flat compressed cake of some substance
+Synset('truckling.n.01'):truckling | Definition: the act of obeying meanly (especially obeying in a humble manner or for unworthy reasons)
+Synset('fish_slice.n.01'):fish slice | Definition: a food turner with a broad blade used for turning or serving fish or other food that is cooked in a frying pan
+Synset('bluff.n.01'):bluff | Definition: a high steep bank (usually formed by river erosion)
+Synset('stand.n.09'):stand | Definition: a stop made by a touring musical or theatrical group to give a performance
+Synset('radiator_cap.n.01'):radiator cap | Definition: cap on the opening in the top of a radiator through which a coolant liquid can be added
+Synset('tartlet.n.01'):tartlet | Definition: a small tart usually used as a canape
+Synset('escape.n.07'):escape,leak,leakage,outflow | Definition: the discharge of a fluid from some container
+Synset('white.n.11'):white | Definition: (board games) the lighter pieces
+Synset('weakness.n.05'):weakness | Definition: a penchant for something even though it might not be good for you
+Synset('high-low.n.01'):high-low | Definition: poker in which the high and low hands split the pot
+Synset('hook.n.06'):hook,draw,hooking | Definition: a golf shot that curves to the left for a right-handed golfer
+Synset('affine.n.01'):affine | Definition: (anthropology) kin by marriage
+Synset('cardiac_output.n.01'):cardiac output | Definition: the amount of blood pumped out by the ventricles in a given period of time
+Synset('four-hitter.n.01'):four-hitter,4-hitter | Definition: a game in which a pitcher allows the opposing team 4 hits
+Synset('dignity.n.02'):dignity,lordliness,gravitas | Definition: formality in bearing and appearance
+Synset('sifter.n.01'):sifter | Definition: a household sieve (as for flour)
+Synset('mammalogist.n.01'):mammalogist | Definition: one skilled in the study of mammals
+Synset('caddy.n.01'):caddy,tea caddy | Definition: a can for storing tea
+Synset('call.n.11'):call | Definition: a visit in an official or professional capacity
+Synset('dormitory.n.02'):dormitory,dormitory room,dorm room | Definition: a large sleeping room containing several beds
+Synset('enfilade.n.01'):enfilade,enfilade fire | Definition: gunfire directed along the length rather than the breadth of a formation
+Synset('obsessive.n.01'):obsessive | Definition: a person who has obsessions
+Synset('strange_attractor.n.01'):strange attractor,chaotic attractor | Definition: an attractor for which the approach to its final point in phase space is chaotic
+Synset('associateship.n.01'):associateship | Definition: the position of associate (as in an office or academy)
+Synset('chew.n.01'):chew,chaw,cud,quid,plug,wad | Definition: a wad of something chewable as tobacco
+Synset('craw.n.01'):craw,crop | Definition: a pouch in many birds and some lower animals that resembles a stomach for storage and preliminary maceration of food
+Synset('bailey.n.04'):bailey | Definition: the outer defensive wall that surrounds the outer courtyard of a castle
+Synset('partial_correlation.n.01'):partial correlation | Definition: a correlation between two variables when the effects of one or more related variables are removed
+Synset('early-morning_hour.n.01'):early-morning hour | Definition: an hour early in the morning
+Synset('muscat.n.03'):muscat,muscatel,muscadel,muscadelle | Definition: wine from muscat grapes
+Synset('choker.n.04'):choker,ruff,ruffle,neck ruff | Definition: a high tight collar
+Synset('grange.n.01'):grange | Definition: an outlying farm
+Synset('calash.n.02'):calash,caleche,calash top | Definition: the folding hood of a horse-drawn carriage
+Synset('custom.n.04'):custom | Definition: habitual patronage
+Synset('nawab.n.01'):nawab,nabob | Definition: a governor in India during the Mogul empire
+Synset('showerhead.n.01'):showerhead | Definition: a perforated nozzle that showers water on a bather
+Synset('nose_cone.n.01'):nose cone,ogive | Definition: front consisting of the conical head of a missile or rocket that protects the payload from heat during its passage through the atmosphere
+Synset('turtleneck_collar.n.01'):turtleneck collar,polo-neck collar | Definition: a high close-fitting turnover collar
+Synset('airdrop.n.01'):airdrop | Definition: delivery of supplies or equipment or personnel by dropping them by parachute from an aircraft
+Synset('haitian_creole.n.01'):Haitian Creole | Definition: a creole language spoken by most Haitians; based on French and various African languages
+Synset('winsomeness.n.01'):winsomeness | Definition: childlike charm or appeal
+Synset('squamule.n.01'):squamule | Definition: a minute scale
+Synset('culvert.n.01'):culvert | Definition: a transverse and totally enclosed drain under a road or railway
+Synset('toy.n.02'):toy | Definition: a nonfunctional replica of something else (frequently used as a modifier)
+Synset('vibration.n.04'):vibration,vibe | Definition: a distinctive emotional aura experienced instinctively
+Synset('tenor.n.04'):tenor | Definition: a settled or prevailing or habitual course of a person's life
+Synset('eschatologist.n.01'):eschatologist | Definition: a theologian who specializes in eschatology
+Synset('ceilidh.n.01'):ceilidh | Definition: an informal social gathering at which there is Scottish or Irish folk music and singing and folk dancing and story telling
+Synset('tremolo.n.01'):tremolo | Definition: (music) a tremulous effect produced by rapid repetition of a single tone or rapid alternation of two tones
+Synset('sprain.n.01'):sprain | Definition: a painful injury to a joint caused by a sudden wrenching of its ligaments
+Synset('audubon's_caracara.n.01'):Audubon's caracara,Polyborus cheriway audubonii | Definition: widespread from southern United States to Central America; rusty black with black-and-white breast and tail
+Synset('narrow_wale.n.01'):narrow wale | Definition: corduroy with narrow ribs
+Synset('cohort.n.01'):cohort | Definition: a company of companions or supporters
+Synset('air_force_academy.n.01'):air force academy | Definition: an academy for training air force officers
+Synset('burgh.n.01'):burgh | Definition: a borough in Scotland
+Synset('assay.n.03'):assay | Definition: a written report of the results of an analysis of the composition of some substance
+Synset('uracil.n.01'):uracil,U | Definition: a base containing nitrogen that is found in RNA (but not in DNA) and derived from pyrimidine; pairs with adenine
+Synset('harpoon.n.01'):harpoon | Definition: a spear with a shaft and barbed point for throwing; used for catching large fish or whales; a strong line is attached to it
+Synset('collar.n.05'):collar,shoe collar | Definition: the stitching that forms the rim of a shoe or boot
+Synset('retread.n.01'):retread,recap | Definition: a used automobile tire that has been remolded to give it new treads
+Synset('tortuosity.n.01'):tortuosity,tortuousness,torsion,contortion,crookedness | Definition: a tortuous and twisted shape or position
+Synset('coprolith.n.01'):coprolith,fecalith,faecalith,stercolith | Definition: a hard mass of fecal matter
+Synset('intrigue.n.01'):intrigue,machination | Definition: a crafty and involved plot to achieve your (usually sinister) ends
+Synset('positivity.n.01'):positivity,positiveness | Definition: the character of the positive electric pole
+Synset('power_company.n.01'):power company,power service,electric company,light company | Definition: a public utility that provides electricity
+Synset('shoeshine.n.02'):shoeshine | Definition: the act of shining shoes
+Synset('saddlery.n.02'):saddlery | Definition: workshop where a saddler works
+Synset('bantamweight.n.01'):bantamweight | Definition: weighs 115-126 pounds
+Synset('basset_horn.n.01'):basset horn | Definition: a tenor clarinet; pitched in the key of F below the B-flat clarinet
+Synset('halitus.n.01'):halitus,exhalation | Definition: exhaled breath
+Synset('overspill.n.01'):overspill | Definition: the relocation of people from overcrowded cities; they are accommodated in new houses or apartments in smaller towns
+Synset('system.n.08'):system | Definition: the living body considered as made up of interdependent components forming a unified whole
+Synset('gemination.n.01'):gemination | Definition: the doubling of a word or phrase (as for rhetorical effect)
+Synset('heliport.n.01'):heliport | Definition: an airport for helicopters
+Synset('meat_safe.n.01'):meat safe | Definition: a safe for storing meat
+Synset('default.n.01'):default | Definition: loss due to not showing up
+Synset('viewgraph.n.01'):viewgraph,overhead | Definition: a transparency for use with an overhead projector
+Synset('muskiness.n.01'):muskiness | Definition: having the olfactory properties of musk
+Synset('silver_certificate.n.01'):silver certificate | Definition: formerly a bank note issued by the United States Treasury and redeemable in silver
+Synset('grease-gun.n.01'):grease-gun,gun | Definition: a hand-operated pump that resembles a revolver; forces grease into parts of a machine
+Synset('left.n.02'):left,left wing | Definition: those who support varying degrees of social or political or economic change designed to promote the public welfare
+Synset('american_revolutionary_leader.n.01'):American Revolutionary leader | Definition: a nationalist leader in the American Revolution and in the creation of the United States
+Synset('barratry.n.02'):barratry | Definition: the crime of a judge whose judgment is influenced by bribery
+Synset('debriefing.n.01'):debriefing | Definition: report of a mission or task
+Synset('bonanza.n.01'):bonanza | Definition: an especially rich vein of precious ore
+Synset('hank.n.01'):hank | Definition: a coil of rope or wool or yarn
+Synset('sanctimoniousness.n.01'):sanctimoniousness,sanctimony | Definition: the quality of being hypocritically devout
+Synset('golden_age.n.01'):golden age | Definition: a time period when some activity or skill was at its peak
+Synset('art_nouveau.n.01'):art nouveau | Definition: a French school of art and architecture popular in the 1890s; characterized by stylized natural forms and sinuous outlines of such objects as leaves and vines and flowers
+Synset('interrupt.n.01'):interrupt | Definition: a signal that temporarily stops the execution of a program so that another procedure can be carried out
+Synset('technophile.n.01'):technophile | Definition: a person who is enthusiastic about new technology
+Synset('knight_templar.n.01'):Knight Templar | Definition: a man who belongs to a Masonic order in the United States
+Synset('seance.n.01'):seance,sitting,session | Definition: a meeting of spiritualists
+Synset('logjam.n.02'):logjam | Definition: an immovable mass of logs blocking a river
+Synset('secondo.n.01'):secondo | Definition: the second or lower part of a duet (especially a piano duet)
+Synset('caucus.n.01'):caucus | Definition: a closed political meeting
+Synset('borscht_circuit.n.01'):borscht circuit,borsht circuit,borscht belt,borsht belt | Definition: (informal) a resort area in the Catskill Mountains of New York that was patronized primarily by Jewish guests
+Synset('meat_grinder.n.02'):meat grinder | Definition: any action resulting in injury or destruction
+Synset('circlet.n.01'):circlet | Definition: a small circle
+Synset('texture.n.02'):texture | Definition: the essential quality of something
+Synset('urgency.n.01'):urgency | Definition: the state of being urgent; an earnest and insistent necessity
+Synset('daygirl.n.01'):daygirl | Definition: a day boarder who is a girl
+Synset('assignation.n.01'):assignation,tryst | Definition: a secret rendezvous (especially between lovers)
+Synset('cow_pie.n.01'):cow pie,cowpie | Definition: fecal matter of a cow
+Synset('terminus_ad_quem.n.01'):terminus ad quem,terminal point,limit | Definition: final or latest limiting point
+Synset('price_gouging.n.01'):price gouging | Definition: pricing above the market price when no alternative retailer is available
+Synset('nature_study.n.01'):nature study | Definition: the study of animals and plants in the natural world (usually at an elementary level)
+Synset('rally.n.03'):rally | Definition: a marked recovery of strength or spirits during an illness
+Synset('succubus.n.01'):succubus,succuba | Definition: a female demon believed to have sexual intercourse with sleeping men
+Synset('proteolysis.n.01'):proteolysis | Definition: the hydrolysis of proteins into peptides and amino acids by cleavage of their peptide bonds
+Synset('caitiff.n.01'):caitiff | Definition: a cowardly and despicable person
+Synset('rage.n.02'):rage | Definition: a state of extreme anger
+Synset('piracy.n.01'):piracy,buccaneering | Definition: hijacking on the high seas or in similar contexts; taking a ship or plane away from the control of those who are legally entitled to it
+Synset('gibson_girl.n.01'):Gibson girl | Definition: the idealized American girl of the 1890s as pictured by C. D. Gibson
+Synset('mess_of_pottage.n.01'):mess of pottage | Definition: anything of trivial value
+Synset('unix.n.01'):UNIX,UNIX system,UNIX operating system | Definition: trademark for a powerful operating system
+Synset('last_word.n.02'):last word | Definition: an authoritative statement
+Synset('stalking-horse.n.03'):stalking-horse | Definition: screen consisting of a figure of a horse behind which a hunter hides while stalking game
+Synset('logomachy.n.01'):logomachy | Definition: argument about words or the meaning of words
+Synset('putterer.n.01'):putterer,potterer | Definition: a person who putters about
+Synset('union_shop.n.01'):union shop | Definition: a company allowed to hire nonunion workers on the condition that they will join the union within a specified time
+Synset('foreboding.n.02'):foreboding | Definition: an unfavorable omen
+Synset('dalesman.n.01'):dalesman | Definition: a person who lives in the dales of northern England
+Synset('soubrette.n.02'):soubrette | Definition: a minor female role as a pert flirtatious lady's maid in a comedy
+Synset('lightning.n.02'):lightning | Definition: the flash of light that accompanies an electric discharge in the atmosphere (or something resembling such a flash); can scintillate for a second or more
+Synset('meteortropism.n.01'):meteortropism | Definition: an effect of climate on biological processes (as the effect on joint pains etc.)
+Synset('shih-tzu.n.01'):Shih-Tzu | Definition: a Chinese breed of small dog similar to a Pekingese
+Synset('zettabit.n.01'):zettabit,Zbit,Zb | Definition: a unit of information equal to 1000 exabits or 10^21 bits
+Synset('snap.n.02'):snap | Definition: a spell of cold weather
+Synset('mushroom_anchor.n.01'):mushroom anchor | Definition: an anchor used for semipermanent moorings; has a bowl-shaped head that will dig in however it falls
+Synset('eastern_church.n.02'):Eastern Church,Byzantine Church | Definition: the Catholic Church as it existed in the Byzantine Empire
+Synset('reception.n.02'):reception | Definition: a formal party of people; as after a wedding
+Synset('love_seat.n.01'):love seat,loveseat,tete-a-tete,vis-a-vis | Definition: small sofa that seats two people
+Synset('roller_coaster.n.02'):roller coaster,big dipper,chute-the-chute | Definition: elevated railway in an amusement park (usually with sharp curves and steep inclines)
+Synset('bed.n.01'):bed | Definition: a piece of furniture that provides a place to sleep
+Synset('terror.n.03'):terror,brat,little terror,holy terror | Definition: a very troublesome child
+Synset('samovar.n.01'):samovar | Definition: a metal urn with a spigot at the base; used in Russia to boil water for tea
+Synset('thunderhead.n.01'):thunderhead | Definition: a rounded projecting mass of a cumulus cloud with shining edges; often appears before a thunderstorm
+Synset('mollycoddle.n.01'):mollycoddle | Definition: a pampered darling; an effeminate man
+Synset('levee.n.02'):levee | Definition: a pier that provides a landing place on a river
+Synset('snare.n.04'):snare | Definition: strings stretched across the lower head of a snare drum; they make a rattling sound when the drum is hit
+Synset('niche.n.01'):niche | Definition: a position particularly well suited to the person who occupies it
+Synset('carpenter's_mallet.n.01'):carpenter's mallet | Definition: a short-handled mallet with a wooden head used to strike a chisel or wedge
+Synset('wire.n.03'):wire | Definition: the finishing line on a racetrack
+Synset('serigraphy.n.01'):serigraphy | Definition: the act of making a print by the silkscreen method
+Synset('meerschaum.n.02'):meerschaum | Definition: a pipe having a bowl made of meerschaum
+Synset('soy.n.01'):soy,soybean,soya bean | Definition: a source of oil; used for forage and soil improvement and as food
+Synset('paratroops.n.01'):paratroops | Definition: infantry trained and equipped to parachute
+Synset('delta_wing.n.01'):delta wing | Definition: an airplane with wings that give it the appearance of an isosceles triangle
+Synset('denticle.n.01'):denticle | Definition: small pointed ridge on the exoskeleton of an arthropod
+Synset('greece.n.02'):Greece | Definition: ancient Greece; a country of city-states (especially Athens and Sparta) that reached its peak in the fifth century BCE
+Synset('pocketbook.n.01'):pocketbook | Definition: your personal financial means
+Synset('token.n.02'):token | Definition: something serving as a sign of something else
+Synset('jet.n.03'):jet | Definition: a hard black form of lignite that takes a brilliant polish and is used in jewelry or ornamentation
+Synset('rattle.n.01'):rattle,rattling,rale | Definition: a rapid series of short loud sounds (as might be heard with a stethoscope in some types of respiratory disorders)
+Synset('fishbowl.n.02'):fishbowl,fish bowl,goldfish bowl | Definition: a transparent bowl in which small fish are kept
+Synset('extinction.n.02'):extinction,defunctness | Definition: no longer in existence
+Synset('culotte.n.01'):culotte | Definition: a divided skirt
+Synset('hairy_tongue.n.01'):hairy tongue,furry tongue,black tongue | Definition: a benign side effect of some antibiotics; dark overgrowth of the papillae of the tongue
+Synset('lutheranism.n.01'):Lutheranism | Definition: teachings of Martin Luther emphasizing the cardinal doctrine of justification by faith alone
+Synset('knobkerrie.n.01'):knobkerrie,knobkerry | Definition: a short wooden club with a heavy knob on one end; used by aborigines in southern Africa
+Synset('the_city.n.02'):the City | Definition: used to allude to the securities industry of Great Britain
+Synset('army_brat.n.01'):army brat | Definition: the child of a career officer of the United States Army
+Synset('trencher.n.02'):trencher | Definition: a wooden board or platter on which food is served or carved
+Synset('augmentation.n.02'):augmentation | Definition: the statement of a theme in notes of greater duration (usually twice the length of the original)
+Synset('lateral_thinking.n.01'):lateral thinking | Definition: a heuristic for solving problems; you try to look at the problem from many angles instead of tackling it head-on
+Synset('cannikin.n.01'):cannikin | Definition: a wooden bucket
+Synset('arm's_length.n.01'):arm's length | Definition: a distance sufficient to exclude intimacy
+Synset('proprietress.n.01'):proprietress | Definition: a woman proprietor
+Synset('fall.n.06'):fall,downfall | Definition: a sudden decline in strength or number or importance
+Synset('white_water.n.01'):white water,whitewater | Definition: frothy water as in rapids or waterfalls
+Synset('quarterlight.n.01'):quarterlight | Definition: car window consisting of a small pivoted glass vent in the door of a car
+Synset('saponification.n.01'):saponification | Definition: a chemical reaction in which an ester is heated with an alkali (especially the alkaline hydrolysis of a fat or oil to make soap)
+Synset('fuselage.n.01'):fuselage | Definition: the central body of an airplane that is designed to accommodate the crew and passengers (or cargo)
+Synset('fleet.n.03'):fleet | Definition: a group of steamships operating together under the same ownership
+Synset('false_teeth.n.01'):false teeth | Definition: a removable denture
+Synset('muse.n.02'):muse | Definition: the source of an artist's inspiration
+Synset('false_face.n.01'):false face | Definition: a mask worn as part of a masquerade costume
+Synset('counterbombardment.n.01'):counterbombardment | Definition: bombardment intended to destroy or neutralize enemy weapons
+Synset('grimes'_golden.n.01'):Grimes' golden | Definition: yellow apple that ripens in late autumn; eaten raw
+Synset('juggernaut.n.01'):juggernaut,steamroller | Definition: a massive inexorable force that seems to crush everything in its way
+Synset('helpmate.n.01'):helpmate,helpmeet | Definition: a helpful partner
+Synset('pot_metal.n.01'):pot metal | Definition: cast iron used for making cooking wares
+Synset('action_potential.n.01'):action potential | Definition: the local voltage change across the cell wall as a nerve impulse is transmitted
+Synset('athenaeum.n.01'):athenaeum,atheneum | Definition: a literary or scientific association for the promotion of learning
+Synset('mist.n.01'):mist | Definition: a thin fog with condensation near the ground
+Synset('road_rage.n.01'):road rage | Definition: violence exhibited by drivers in traffic
+Synset('page_printer.n.01'):page printer,page-at-a-time printer | Definition: a printer that prints one page at a time
+Synset('no-trump.n.01'):no-trump | Definition: a version of contract bridge in which no suit is designated as trump for the duration of the hand
+Synset('pennywhistle.n.01'):pennywhistle,tin whistle,whistle | Definition: an inexpensive fipple flute
+Synset('dynamism.n.03'):dynamism,pizzazz,pizzaz,oomph,zing | Definition: the activeness of an energetic personality
+Synset('jean.n.01'):jean,blue jean,denim | Definition: (usually plural) close-fitting trousers of heavy denim for manual work or casual wear
+Synset('simper.n.01'):simper | Definition: a silly self-conscious smile
+Synset('gawkiness.n.01'):gawkiness,ungainliness | Definition: the carriage of someone whose movements and posture are extremely ungainly and inelegant
+Synset('cunnilingus.n.01'):cunnilingus,cunnilinctus | Definition: oral stimulation of the vulva or clitoris
+Synset('tandoor.n.01'):tandoor | Definition: a clay oven used in northern India and Pakistan
+Synset('topspin.n.01'):topspin | Definition: forward spin (usually of a moving ball) that is imparted by an upward stroke
+Synset('return_on_invested_capital.n.01'):return on invested capital,return on investment,ROI | Definition: (corporate finance) the amount, expressed as a percentage, that is earned on a company's total capital calculated by dividing the total capital into earnings before interest, taxes, or dividends are paid
+Synset('calendar.n.03'):calendar | Definition: a tabular array of the days (usually for one year)
+Synset('undivided_interest.n.01'):undivided interest,undivided right | Definition: the interest in property owned by tenants whereby each tenant has an equal right to enjoy the entire property
+Synset('glow.n.05'):glow | Definition: a steady even light without flames
+Synset('idealization.n.02'):idealization,idealisation | Definition: (psychiatry) a defense mechanism that splits something you are ambivalent about into two representations--one good and one bad
+Synset('acculturation.n.03'):acculturation,assimilation | Definition: the process of assimilating new ideas into an existing cognitive structure
+Synset('descant.n.01'):descant,discant | Definition: a decorative musical accompaniment (often improvised) added above a basic melody
+Synset('pot_farm.n.01'):pot farm | Definition: a plot of ground where marijuana is grown and harvested (often hidden in a national forest)
+Synset('trap.n.06'):trap,cakehole,hole,maw,yap,gob | Definition: informal terms for the mouth
+Synset('number_one.n.01'):number one | Definition: a reference to yourself or myself etc.; `take care of number one' means to put your own interests first
+Synset('credit_application.n.01'):credit application | Definition: an application for a line of credit
+Synset('blackwater_fever.n.01'):blackwater fever | Definition: severe and often fatal malaria characterized by kidney damage resulting in dark urine
+Synset('dink.n.01'):DINK | Definition: a couple who both have careers and no children (an acronym for dual income no kids)
+Synset('rollerblade.n.01'):Rollerblade | Definition: (trademark) an in-line skate
+Synset('myonecrosis.n.01'):myonecrosis | Definition: localized death of muscle cell fibers
+Synset('sign.n.09'):sign | Definition: a gesture that is part of a sign language
+Synset('stockcar.n.01'):stockcar | Definition: boxcar with latticed sides; for transporting livestock
+Synset('oblateness.n.01'):oblateness,ellipticity | Definition: the property possessed by a round shape that is flattened at the poles
+Synset('quiff.n.01'):quiff | Definition: a prominent forelock (especially one brushed upward from the forehead)
+Synset('contingent.n.02'):contingent,detail | Definition: a temporary military unit
+Synset('stripe.n.04'):stripe | Definition: a kind or category
+Synset('marina.n.01'):marina | Definition: a fancy dock for small yachts and cabin cruisers
+Synset('deposition.n.01'):deposition,deposit | Definition: the natural process of laying down a deposit of something
+Synset('guerdon.n.01'):guerdon | Definition: a reward or payment
+Synset('silkworm_seed.n.01'):silkworm seed | Definition: eggs of a silkworm
+Synset('unitization.n.03'):unitization,unitisation | Definition: conversion of an investment trust into a unit investment trust
+Synset('halfback.n.02'):halfback | Definition: (American football) the position of a back on a football team
+Synset('worm_gear.n.01'):worm gear | Definition: gear consisting of a shaft with screw thread (the worm) that meshes with a toothed wheel (the worm wheel); changes the direction of the axis of rotary motion
+Synset('pennant.n.02'):pennant | Definition: a flag longer than it is wide (and often tapering)
+Synset('panopticon.n.02'):panopticon | Definition: a circular prison with cells distributed around a central surveillance station; proposed by Jeremy Bentham in 1791
+Synset('gazette.n.01'):gazette | Definition: a newspaper or official journal
+Synset('prix_fixe.n.01'):prix fixe | Definition: a menu listing fixed meals at fixed prices
+Synset('amati.n.02'):Amati | Definition: a violin made by Nicolo Amati or a member of his family
+Synset('inclusion.n.04'):inclusion | Definition: the act of including
+Synset('jacket.n.04'):jacket | Definition: the outer skin of a potato
+Synset('habsburg.n.01'):Habsburg,Hapsburg | Definition: a royal German family that provided rulers for several European states and wore the crown of the Holy Roman Empire from 1440 to 1806
+Synset('grist.n.01'):grist | Definition: grain intended to be or that has been ground
+Synset('mezzo-soprano.n.02'):mezzo-soprano,mezzo | Definition: the female singing voice between contralto and soprano
+Synset('penny_ante.n.01'):penny ante | Definition: a business deal on a trivial scale
+Synset('buddy.n.01'):buddy,brother,chum,crony,pal,sidekick | Definition: a close friend who accompanies his buddies in their activities
+Synset('stuff.n.07'):stuff | Definition: a critically important or characteristic component
+Synset('hegemon.n.01'):hegemon | Definition: a leading or paramount power
+Synset('muffler.n.02'):muffler | Definition: a scarf worn around the neck
+Synset('direction.n.01'):direction,way | Definition: a line leading to a place or point
+Synset('obiter_dictum.n.02'):obiter dictum,dictum | Definition: an opinion voiced by a judge on a point of law not directly bearing on the case in question and therefore not binding
+Synset('draft_board.n.01'):draft board | Definition: a board to select personnel for involuntary military service
+Synset('cherub.n.01'):cherub | Definition: a sweet innocent baby
+Synset('ink_cartridge.n.01'):ink cartridge | Definition: a cartridge that contains ink and can be replaced
+Synset('complexion.n.03'):complexion | Definition: a point of view or general attitude or inclination
+Synset('contingent.n.02'):contingent,detail | Definition: a temporary military unit
+Synset('time_and_a_half.n.01'):time and a half | Definition: a rate of pay that is 1.5 times the regular rate; for overtime work
+Synset('nib.n.01'):nib,pen nib | Definition: the writing point of a pen
+Synset('chatelaine.n.02'):chatelaine | Definition: a chain formerly worn at the waist by women; for carrying a purse or bunch of keys etc.
+Synset('level.n.07'):level,layer,stratum | Definition: an abstract place usually conceived as having depth
+Synset('conflagration.n.01'):conflagration,inferno | Definition: a very intense and uncontrolled fire
+Synset('trestle.n.02'):trestle | Definition: sawhorses used in pairs to support a horizontal tabletop
+Synset('beehive.n.02'):beehive,hive | Definition: a structure that provides a natural habitation for bees; as in a hollow tree
+Synset('american_labor_party.n.01'):American Labor Party | Definition: a former political party in the United States; formed in 1936 in New York when labor and liberals bolted the Democratic Party
+Synset('meterstick.n.01'):meterstick,metrestick | Definition: a rule one meter long (usually marked off in centimeters and millimeters)
+Synset('quickening.n.02'):quickening | Definition: the stage of pregnancy at which the mother first feels the movements of the fetus
+Synset('conformation.n.01'):conformation | Definition: a symmetrical arrangement of the parts of a thing
+Synset('perfumery.n.02'):perfumery | Definition: store where perfumes are sold
+Synset('mire.n.01'):mire,quagmire,quag,morass,slack | Definition: a soft wet area of low-lying land that sinks underfoot
+Synset('trailblazer.n.01'):trailblazer | Definition: someone who marks a trail by leaving blazes on trees
+Synset('intrinsic_factor.n.01'):intrinsic factor | Definition: a substance produced by the mucosa of the stomach and intestines that is essential for the absorption of vitamin B12
+Synset('catling.n.01'):catling | Definition: a long double-edged knife used for amputations
+Synset('oil.n.02'):oil,oil color,oil colour | Definition: oil paint containing pigment that is used by an artist
+Synset('prestidigitation.n.01'):prestidigitation,sleight of hand | Definition: manual dexterity in the execution of tricks
+Synset('particular.n.01'):particular,specific | Definition: a fact about some part (as opposed to general)
+Synset('pulsation.n.01'):pulsation,pulsing,pulse,impulse | Definition: (electronics) a sharp transient wave in the normal electrical state (or a series of such transients)
+Synset('chap.n.03'):chap | Definition: a crack in a lip caused usually by cold
+Synset('difference.n.04'):difference | Definition: a significant change
+Synset('fee_splitting.n.01'):fee splitting | Definition: payment (usually by doctors or lawyers) of part of the fee in return for the referral
+Synset('daub.n.01'):daub | Definition: material used to daub walls
+Synset('gaggle.n.01'):gaggle | Definition: a flock of geese
+Synset('loch.n.01'):loch | Definition: a long narrow inlet of the sea in Scotland (especially when it is nearly landlocked)
+Synset('libidinal_energy.n.01'):libidinal energy | Definition: (psychoanalysis) psychic energy produced by the libido
+Synset('trail.n.01'):trail | Definition: a track or mark left by something that has passed
+Synset('viaduct.n.01'):viaduct | Definition: bridge consisting of a series of arches supported by piers used to carry a road (or railroad) over a valley
+Synset('tentacle.n.01'):tentacle | Definition: something that acts like a tentacle in its ability to grasp and hold
+Synset('multitudinousness.n.01'):multitudinousness | Definition: a very large number (especially of people)
+Synset('meat_and_potatoes.n.01'):meat and potatoes | Definition: the fundamental part
+Synset('tabi.n.01'):tabi,tabis | Definition: a sock with a separation for the big toe; worn with thong sandals by the Japanese
+Synset('thrash.n.01'):thrash | Definition: a swimming kick used while treading water
+Synset('behalf.n.01'):behalf | Definition: as the agent of or on someone's part (usually expressed as  rather than )
+Synset('rubicon.n.02'):Rubicon,point of no return | Definition: a line that when crossed permits of no return and typically results in irrevocable commitment
+Synset('catapult.n.03'):catapult,arbalest,arbalist,ballista,bricole,mangonel,onager,trebuchet,trebucket | Definition: an engine that provided medieval artillery used during sieges; a heavy war engine for hurling large stones and other missiles
+Synset('workshop.n.02'):workshop | Definition: a brief intensive course for a small group; emphasizes problem solving
+Synset('insufflation.n.02'):insufflation | Definition: an act of blowing or breathing on or into something
+Synset('truck_stop.n.01'):truck stop | Definition: a roadside service station (and restaurant) that caters to truck drivers
+Synset('hand_truck.n.01'):hand truck,truck | Definition: a handcart that has a frame with two low wheels and a ledge at the bottom and handles at the top; used to move crates or other heavy objects
+Synset('berm.n.01'):berm | Definition: a narrow ledge or shelf typically at the top or bottom of a slope
+Synset('terror.n.03'):terror,brat,little terror,holy terror | Definition: a very troublesome child
+Synset('justification.n.01'):justification | Definition: something (such as a fact or circumstance) that shows an action to be reasonable or necessary
+Synset('fork.n.03'):fork,crotch | Definition: the region of the angle formed by the junction of two branches
+Synset('gazpacho.n.01'):gazpacho | Definition: a soup made with chopped tomatoes and onions and cucumbers and peppers and herbs; served cold
+Synset('charcoal_burner.n.02'):charcoal burner | Definition: a stove that burns charcoal as fuel
+Synset('bonding.n.02'):bonding | Definition: (dentistry) a technique for repairing a tooth; resinous material is applied to the surface of the tooth where it adheres to the tooth's enamel
+Synset('circus_tent.n.01'):circus tent,big top,round top,top | Definition: a canvas tent to house the audience at a circus performance
+Synset('southwest_by_west.n.01'):southwest by west,SWbW | Definition: the compass point that is one point west of southwest
+Synset('disguise.n.01'):disguise,camouflage | Definition: an outward semblance that misrepresents the true nature of something
+Synset('fieriness.n.02'):fieriness | Definition: a passionate and quick-tempered nature
+Synset('hailstone.n.01'):hailstone | Definition: small pellet of ice that falls during a hailstorm
+Synset('categorem.n.01'):categorem,categoreme | Definition: a categorematic expression; a term capable of standing alone as the subject or predicate of a logical proposition
+Synset('jaunting_car.n.01'):jaunting car,jaunty car | Definition: an open two-wheeled one-horse cart formerly widely used in Ireland
+Synset('end.n.11'):end | Definition: the part you are expected to play
+Synset('breath.n.05'):breath | Definition: a slight movement of the air
+Synset('tangerine.n.03'):tangerine | Definition: a reddish to vivid orange color
+Synset('bassinet.n.02'):bassinet | Definition: a perambulator that resembles a bassinet
+Synset('wisp.n.03'):wisp | Definition: a small bundle of straw or hay
+Synset('pyrex.n.01'):Pyrex | Definition: a borosilicate glass with a low coefficient of expansion; used for heat-resistant glassware in cooking and chemistry
+Synset('show-stopper.n.01'):show-stopper,showstopper,stopper | Definition: an act so striking or impressive that the show must be delayed until the audience quiets down
+Synset('peeper.n.02'):peeper | Definition: an informal term referring to the eye
+Synset('basset_horn.n.01'):basset horn | Definition: a tenor clarinet; pitched in the key of F below the B-flat clarinet
+Synset('play.n.06'):play | Definition: utilization or exercise
+Synset('calamagrostis.n.01'):Calamagrostis,genus Calamagrostis | Definition: reed grass
+Synset('midiron.n.01'):midiron,two iron | Definition: long iron with a nearly vertical face
+Synset('myringotomy.n.01'):myringotomy | Definition: surgical incision into the eardrum (to relieve pressure or release pus from the middle ear)
+Synset('qing.n.01'):Qing,Qing dynasty,Ch'ing,Ch'ing dynasty,Manchu,Manchu dynasty | Definition: the last imperial dynasty of China (from 1644 to 1912) which was overthrown by revolutionaries; during the Qing dynasty China was ruled by the Manchu
+Synset('last.n.05'):last | Definition: a unit of weight equal to 4,000 pounds
+Synset('voice.n.01'):voice | Definition: the distinctive quality or pitch or condition of a person's speech
+Synset('tostada.n.02'):tostada | Definition: a crisp flat tortilla
+Synset('flying_jib.n.01'):flying jib | Definition: the outermost of two or more jibs
+Synset('stick.n.02'):stick | Definition: a small thin branch of a tree
+Synset('second_nature.n.01'):second nature | Definition: acquired behavior that is practiced so long it seems innate
+Synset('fadeout.n.02'):fadeout | Definition: a gradual temporary loss of a transmitted signal due to electrical disturbances
+Synset('bibliomania.n.01'):bibliomania | Definition: preoccupation with the acquisition and possession of books
+Synset('cesium.n.01'):cesium,caesium,Cs,atomic number 55 | Definition: a soft silver-white ductile metallic element (liquid at normal temperatures); the most electropositive and alkaline metal
+Synset('counterplea.n.01'):counterplea | Definition: a plaintiff's reply to a defendant's plea
+Synset('rage.n.03'):rage,passion | Definition: something that is desired intensely
+Synset('supergiant.n.01'):supergiant | Definition: an extremely bright star of very large diameter and low density
+Synset('calligraphy.n.01'):calligraphy,penmanship,chirography | Definition: beautiful handwriting
+Synset('tarpaulin.n.01'):tarpaulin,tarp | Definition: waterproofed canvas
+Synset('relay.n.03'):relay | Definition: a fresh team to relieve weary draft animals
+Synset('internalization.n.01'):internalization,internalisation,incorporation | Definition: learning (of values or attitudes etc.) that is incorporated within yourself
+Synset('crag.n.01'):crag | Definition: a steep rugged rock or cliff
+Synset('queen_of_england.n.01'):Queen of England | Definition: the sovereign ruler of England
+Synset('gore.n.02'):gore | Definition: coagulated blood from a wound
+Synset('carpet_tack.n.01'):carpet tack | Definition: used to nail down carpets
+Synset('spectacle.n.03'):spectacle | Definition: a blunder that makes you look ridiculous; used in the phrase `make a spectacle of' yourself
+Synset('dog_racing.n.01'):dog racing | Definition: a race between dogs; usually an occasion for betting on the outcome
+Synset('pilus.n.02'):pilus | Definition: hairlike structure especially on the surface of a cell or microorganism
+Synset('net_sales.n.01'):net sales | Definition: gross sales reduced by customer discounts, returns, freight out, and allowances
+Synset('pitch.n.05'):pitch,rake,slant | Definition: degree of deviation from a horizontal plane
+Synset('sprachgefuhl.n.01'):sprachgefuhl | Definition: an intuitive feeling for the natural idiom of a language
+Synset('smack.n.05'):smack,smooch | Definition: an enthusiastic kiss
+Synset('link.n.06'):link | Definition: (computing) an instruction that connects one part of a program or an element on a list to another program or list
+Synset('raiser.n.01'):raiser | Definition: a bridge partner who increases the partner's bid
+Synset('slush.n.01'):slush | Definition: partially melted snow
+Synset('subsistence.n.01'):subsistence | Definition: minimal (or marginal) resources for subsisting
+Synset('knobkerrie.n.01'):knobkerrie,knobkerry | Definition: a short wooden club with a heavy knob on one end; used by aborigines in southern Africa
+Synset('sanguinity.n.01'):sanguinity,sanguineness | Definition: feeling sanguine; optimistically cheerful and confident
+Synset('sod.n.04'):sod | Definition: an informal British term for a youth or man
+Synset('trinity_sunday.n.01'):Trinity Sunday | Definition: eighth Sunday after Easter
+Synset('roaster.n.04'):roaster | Definition: a special cooking pan for roasting
+Synset('predetermination.n.02'):predetermination | Definition: a mental determination or resolve in advance; an antecedent intention to do something
+Synset('provision.n.04'):provision | Definition: a store or supply of something (especially of food or clothing or arms)
+Synset('essential_tremor.n.01'):essential tremor | Definition: tremor of unknown cause (usually of the hands and head) that develops in older people; often mistaken for Parkinsonism but is not life-threatening and can usually be kept under control
+Synset('load.n.05'):load | Definition: the power output of a generator or power plant
+Synset('hose.n.03'):hose,hosepipe | Definition: a flexible pipe for conveying a liquid or gas
+Synset('trudge.n.01'):trudge | Definition: a long difficult walk
+Synset('quilting.n.01'):quilting | Definition: stitching through layers of fabric and a filling so as to create a design
+Synset('bell_gable.n.01'):bell gable | Definition: an extension of a gable that serves as a bell cote
+Synset('depth.n.04'):depth | Definition: (usually plural) a low moral state
+Synset('tonsure.n.01'):tonsure | Definition: the shaved crown of a monk's or priest's head
+Synset('declamation.n.02'):declamation | Definition: recitation of a speech from memory with studied gestures and intonation as an exercise in elocution or rhetoric
+Synset('haze.n.01'):haze | Definition: atmospheric moisture or dust or smoke that causes reduced visibility
+Synset('barbell.n.01'):barbell | Definition: a bar to which heavy discs are attached at each end; used in weightlifting
+Synset('antler.n.01'):antler | Definition: deciduous horn of a member of the deer family
+Synset('daisy_cutter.n.02'):daisy cutter | Definition: a batted or served ball that skims along close to the ground
+Synset('terrain_intelligence.n.01'):terrain intelligence | Definition: tactical intelligence on the natural and man-made characteristics of an area
+Synset('tremor.n.01'):tremor,shudder | Definition: an involuntary vibration (as if from illness or fear)
+Synset('blood_brother.n.02'):blood brother | Definition: a male sworn (usually by a ceremony involving the mingling of blood) to treat another as his brother
+Synset('screw_key.n.01'):screw key | Definition: a wrench for turning a screw
+Synset('weekender.n.02'):weekender | Definition: a small suitcase to carry clothing and accessories for a weekend trip
+Synset('amarelle.n.01'):amarelle,Prunus cerasus caproniana | Definition: any of several cultivated sour cherry trees bearing pale red fruit with colorless juice
+Synset('checkpoint.n.01'):checkpoint | Definition: a place (as at a frontier) where travellers are stopped for inspection and clearance
+Synset('mode.n.05'):mode,musical mode | Definition: any of various fixed orders of the various diatonic notes within an octave
+Synset('muzzle.n.02'):muzzle | Definition: forward projecting part of the head of certain animals; includes the jaws and nose
+Synset('weeder.n.01'):weeder | Definition: a farmhand hired to remove weeds
+Synset('velleity.n.01'):velleity | Definition: a mere wish, unaccompanied by effort to obtain
+Synset('chancellor.n.03'):chancellor | Definition: the honorary or titular head of a university
+Synset('art_class.n.01'):art class | Definition: a class in which you learn to draw or paint
+Synset('calash.n.02'):calash,caleche,calash top | Definition: the folding hood of a horse-drawn carriage
+Synset('hand.n.05'):hand | Definition: a position given by its location to the side of an object
+Synset('cutworm.n.01'):cutworm | Definition: North American moth whose larvae feed on young plant stems cutting them off at the ground
+Synset('chincapin.n.01'):chincapin,chinkapin,chinquapin | Definition: small nut of either of two small chestnut trees of the southern United States; resembles a hazelnut
+Synset('alp.n.01'):alp | Definition: any high mountain
+Synset('bavarian_blue.n.01'):Bavarian blue | Definition: blue cheese of Bavaria
+Synset('set_piece.n.01'):set piece | Definition: a piece of scenery intended to stand alone as part of the stage setting
+Synset('jet_stream.n.01'):jet stream | Definition: a high-speed high-altitude airstream blowing from west to east near the top of the troposphere; has important effects of the formation of weather fronts
+Synset('broadcast_journalist.n.01'):broadcast journalist | Definition: a journalist who broadcasts on radio or television
+Synset('broiler.n.02'):broiler | Definition: flesh of a small young chicken not over 2 1/2 lb suitable for broiling
+Synset('rise.n.01'):rise | Definition: a growth in strength or number or importance
+Synset('contractor.n.02'):contractor,declarer | Definition: the bridge player in contract bridge who wins the bidding and can declare which suit is to be trumps
+Synset('instep.n.01'):instep | Definition: the arch of the foot
+Synset('granola_bar.n.01'):granola bar | Definition: cookie bar made of granola
+Synset('habituation.n.02'):habituation | Definition: a general accommodation to unchanging environmental conditions
+Synset('heterocyclic_ring.n.01'):heterocyclic ring,heterocycle | Definition: a ring of atoms of more than one kind; especially a ring of carbon atoms containing at least one atom that is not carbon
+Synset('dive.n.02'):dive,diving | Definition: a headlong plunge into water
+Synset('pawl.n.01'):pawl,detent,click,dog | Definition: a hinged catch that fits into a notch of a ratchet to move a wheel forward or prevent it from moving backward
+Synset('center_spread.n.01'):center spread,centre spread | Definition: the spread at the center of a magazine
+Synset('palace.n.03'):palace | Definition: a large ornate exhibition hall
+Synset('armageddon.n.02'):Armageddon | Definition: any catastrophically destructive battle
+Synset('pyrope.n.01'):pyrope | Definition: a deep red garnet used as a gemstone
+Synset('perpendicular.n.04'):perpendicular | Definition: an extremely steep face
+Synset('art_nouveau.n.01'):art nouveau | Definition: a French school of art and architecture popular in the 1890s; characterized by stylized natural forms and sinuous outlines of such objects as leaves and vines and flowers
+Synset('parlor_car.n.01'):parlor car,parlour car,drawing-room car,palace car,chair car | Definition: a passenger car for day travel; you pay extra fare for individual chairs
+Synset('bibliotheca.n.01'):bibliotheca | Definition: a collection of books
+Synset('fiefdom.n.01'):fiefdom | Definition: the domain controlled by a feudal lord
+Synset('annulet.n.03'):annulet | Definition: a small ring
+Synset('pinole.n.01'):pinole | Definition: meal made of finely ground corn mixed with sugar and spices
+Synset('cock-a-doodle-doo.n.01'):cock-a-doodle-doo | Definition: an imitation of the crow of a cock
+Synset('capitulum.n.03'):capitulum | Definition: an arrangement of leafy branches forming the top or head of a tree
+Synset('laager.n.01'):laager,lager | Definition: a camp defended by a circular formation of wagons
+Synset('iron_horse.n.01'):iron horse | Definition: (c. 1840) an early term for a locomotive
+Synset('mudguard.n.01'):mudguard,splash guard,splash-guard | Definition: a curved piece above the wheel of a bicycle or motorcycle to protect the rider from water or mud thrown up by the wheels
+Synset('corporatism.n.01'):corporatism | Definition: control of a state or organization by large interest groups
+Synset('title.n.01'):title,statute title,rubric | Definition: a heading that names a statute or legislative bill; may give a brief summary of the matters it deals with
+Synset('carrot.n.01'):carrot | Definition: deep orange edible root of the cultivated carrot plant
+Synset('spontaneous_combustion.n.01'):spontaneous combustion | Definition: ignition of a substance (as oily rags) resulting from an internal oxidation process
+Synset('whizbang.n.02'):whizbang,whizzbang | Definition: a firecracker that (like the whizbang shell) makes a whizzing sound followed by a loud explosion
+Synset('buttercrunch.n.01'):buttercrunch | Definition: lettuce with delicate and relatively crunchy leaves
+Synset('barrette.n.01'):barrette | Definition: a pin for holding women's hair in place
+Synset('cardigan.n.01'):cardigan | Definition: knitted jacket that is fastened up the front with buttons or a zipper
+Synset('cutaneous_sensation.n.01'):cutaneous sensation,haptic sensation,skin sensation | Definition: a sensation localized on the skin
+Synset('flintlock.n.02'):flintlock | Definition: an obsolete gunlock that has flint embedded in the hammer; the flint makes a spark that ignites the charge
+Synset('dosser.n.01'):dosser,street person | Definition: someone who sleeps in any convenient place
+Synset('fruition.n.02'):fruition | Definition: enjoyment derived from use or possession
+Synset('viticulturist.n.01'):viticulturist | Definition: a cultivator of grape vine
+Synset('deduction.n.02'):deduction,discount | Definition: an amount or percentage deducted
+Synset('nose.n.06'):nose | Definition: the sense of smell (especially in animals)
+Synset('switch.n.04'):switch | Definition: railroad track having two movable rails and necessary connections; used to turn a train from one track to another or to store rolling stock
+Synset('whiteout.n.01'):whiteout | Definition: an arctic atmospheric condition with clouds over snow produce a uniform whiteness and objects are difficult to see; occurs when the light reflected off the snow equals the light coming through the clouds
+Synset('quantity.n.02'):quantity | Definition: an adequate or large amount
+Synset('brassie.n.01'):brassie | Definition: (formerly) a golfing wood with a face more elevated that a driver but less than a spoon
+Synset('antiquark.n.01'):antiquark | Definition: the antiparticle of a quark
+Synset('affray.n.02'):affray,disturbance,fray,ruffle | Definition: a noisy fight
+Synset('red_flag.n.01'):red flag | Definition: a flag that serves as a warning signal
+Synset('safety_match.n.01'):safety match,book matches | Definition: a paper match that strikes only on a specially prepared surface
+Synset('nibble.n.02'):nibble | Definition: gentle biting
+Synset('plot_element.n.01'):plot element | Definition: a component or element of the plot of a story
+Synset('dissatisfaction.n.01'):dissatisfaction | Definition: the feeling of being displeased and discontent
+Synset('espionage_agent.n.01'):espionage agent | Definition: someone employed to spy on another country or business competitor
+Synset('fisherman's_bend.n.01'):fisherman's bend | Definition: a knot for tying a line to a spar or ring
+Synset('mikvah.n.01'):mikvah | Definition: (Hebrew) a ritual purification and cleansing bath that Orthodox Jews take on certain occasions (as before Sabbath or after menstruation)
+Synset('cutout.n.02'):cutout | Definition: a photograph from which the background has been cut away
+Synset('tempestuousness.n.01'):tempestuousness | Definition: a state of wild storminess
+Synset('edition.n.03'):edition | Definition: an issue of a newspaper
+Synset('national_capital.n.01'):national capital | Definition: the capital city of a nation
+Synset('soapwort.n.01'):soapwort,hedge pink,bouncing Bet,bouncing Bess,Saponaria officinalis | Definition: plant of European origin having pink or white flowers and leaves yielding a detergent when bruised
+Synset('shadow_cabinet.n.01'):shadow cabinet | Definition: a group of senior members of the political party that is out of power; these members would probably assume corresponding positions as ministers in the British Cabinet if their party was elected
+Synset('double_blind.n.01'):double blind | Definition: a test procedure in which the identity of those receiving the intervention is concealed from both the administrators and the subjects until after the test is completed; designed to reduce or eliminate bias in the results
+Synset('bran.n.01'):bran | Definition: broken husks of the seeds of cereal grains that are separated from the flour by sifting
+Synset('sleeper.n.09'):sleeper | Definition: an unexpected hit
+Synset('macrame.n.01'):macrame | Definition: a relatively coarse lace; made by weaving and knotting cords
+Synset('data_encryption.n.01'):data encryption | Definition: (computer science) the encryption of data for security purposes
+Synset('twinge.n.02'):twinge | Definition: a sharp stab of pain
+Synset('crest.n.05'):crest | Definition: a showy growth of e.g. feathers or skin on the head of a bird or other animal
+Synset('approbation.n.01'):approbation | Definition: official approval
+Synset('raison_d'etre.n.02'):raison d'etre | Definition: the purpose that justifies a thing's existence
+Synset('suffering.n.04'):suffering,hurt | Definition: feelings of mental or physical pain
+Synset('flame_tokay.n.01'):flame tokay | Definition: purplish-red table grape
+Synset('header.n.03'):header,coping,cope | Definition: brick that is laid sideways at the top of a wall
+Synset('playbook.n.01'):playbook | Definition: a notebook containing descriptions and diagrams of the plays that a team has practiced (especially an American football team)
+Synset('put-put.n.01'):put-put | Definition: a small gasoline engine (as on motor boat)
+Synset('toleration.n.02'):toleration | Definition: official recognition of the right of individuals to hold dissenting opinions (especially in religion)
+Synset('diminution.n.02'):diminution | Definition: the statement of a theme in notes of lesser duration (usually half the length of the original)
+Synset('bibliomania.n.01'):bibliomania | Definition: preoccupation with the acquisition and possession of books
+Synset('pop_quiz.n.01'):pop quiz | Definition: a quiz given without prior warning
+Synset('paddock.n.01'):paddock | Definition: pen where racehorses are saddled and paraded before a race
+Synset('puppetry.n.01'):puppetry | Definition: the art of making puppets and presenting puppet shows
+Synset('sou'wester.n.02'):sou'wester | Definition: waterproof hat with wide slanting brim longer in back than in front
+Synset('phasianid.n.01'):phasianid | Definition: a kind of game bird in the family Phasianidae
+Synset('real_world.n.01'):real world,real life | Definition: the practical world as opposed to the academic world
+Synset('streptobacillus.n.01'):streptobacillus | Definition: any of various rod-shaped Gram-negative bacteria
+Synset('introject.n.01'):introject | Definition: (psychoanalysis) parental figures (and their values) that you introjected as a child; the voice of conscience is usually a parent's voice internalized
+Synset('tension.n.03'):tension | Definition: a balance between and interplay of opposing elements or tendencies (especially in art or literature)
+Synset('margin.n.05'):margin | Definition: the blank space that surrounds the text on a page
+Synset('regularity.n.01'):regularity,geometrical regularity | Definition: a property of polygons: the property of having equal sides and equal angles
+Synset('epee.n.01'):epee | Definition: a fencing sword similar to a foil but with a heavier blade
+Synset('jello.n.01'):jello,Jell-O | Definition: fruit-flavored dessert (trade mark Jell-O) made from a commercially prepared gelatin powder
+Synset('purloo.n.01'):purloo,chicken purloo,poilu | Definition: thick stew made of rice and chicken and small game; southern U.S.
+Synset('nun's_habit.n.01'):nun's habit | Definition: a long loose habit worn by nuns in a convent
+Synset('skim.n.02'):skim,skimming | Definition: reading or glancing through quickly
+Synset('motmot.n.01'):motmot,momot | Definition: tropical American bird resembling a blue jay and having greenish and bluish plumage
+Synset('bolt.n.05'):bolt | Definition: a roll of cloth or wallpaper of a definite length
+Synset('second_wind.n.01'):second wind | Definition: renewed energy or strength to continue an undertaking
+Synset('businessmen.n.01'):businessmen,business community | Definition: the body of individuals who manage businesses
+Synset('eyelid.n.01'):eyelid,lid,palpebra | Definition: either of two folds of skin that can be moved to cover or open the eye
+Synset('speechlessness.n.01'):speechlessness | Definition: the property of being speechless
+Synset('phonetics.n.01'):phonetics | Definition: the branch of acoustics concerned with speech processes including its production and perception and acoustic analysis
+Synset('calf.n.02'):calf,sura | Definition: the muscular back part of the shank
+Synset('dirk.n.01'):dirk | Definition: a relatively long dagger with a straight blade
+Synset('unitization.n.04'):unitization,unitisation | Definition: the joint development of a petroleum resource that straddles territory controlled by different companies
+Synset('stemma.n.01'):stemma | Definition: a tree diagram showing a reconstruction of the transmission of manuscripts of a literary work
+Synset('salad_bar.n.01'):salad bar | Definition: a bar where diners can assemble a salad to their own taste
+Synset('blade.n.03'):blade | Definition: something long and thin resembling a blade of grass
+Synset('wiggliness.n.01'):wiggliness | Definition: a jerky back and forth kind of mobility
+Synset('rainbow.n.01'):rainbow | Definition: an arc of colored light in the sky caused by refraction of the sun's rays by rain
+Synset('fork.n.03'):fork,crotch | Definition: the region of the angle formed by the junction of two branches
+Synset('edification.n.01'):edification,sophistication | Definition: uplifting enlightenment
+Synset('administrator.n.01'):administrator,decision maker | Definition: someone who administers a business
+Synset('closed_chain.n.01'):closed chain,ring | Definition: (chemistry) a chain of atoms in a molecule that forms a closed loop
+Synset('home.n.06'):home | Definition: place where something began and flourished
+Synset('bedtime.n.01'):bedtime | Definition: the time you go to bed
+Synset('desensitization_technique.n.01'):desensitization technique,desensitisation technique,desensitization procedure,desensitisation procedure,systematic desensitization,systematic desensitisation | Definition: a technique used in behavior therapy to treat phobias and other behavior problems involving anxiety; client is exposed to the threatening situation under relaxed conditions until the anxiety reaction is extinguished
+Synset('shank's_mare.n.01'):shank's mare,shanks' mare,shank's pony,shanks' pony | Definition: you own legs
+Synset('airplane_mechanics.n.01'):airplane mechanics | Definition: the craft of building and repairing airplanes
+Synset('flywheel.n.01'):flywheel | Definition: regulator consisting of a heavy wheel that stores kinetic energy and smooths the operation of a reciprocating engine
+Synset('undertone.n.02'):undertone,undercurrent | Definition: a subdued emotional quality underlying an utterance; implicit meaning
+Synset('self-disgust.n.01'):self-disgust,self-hatred | Definition: shame resulting from strong dislike of yourself or your actions
+Synset('dink.n.01'):DINK | Definition: a couple who both have careers and no children (an acronym for dual income no kids)
+Synset('south_sea_islands.n.01'):South Sea Islands | Definition: any islands in the southern or southwestern of central parts of the Pacific Ocean
+Synset('advertence.n.01'):advertence,advertency | Definition: the process of being heedful
+Synset('jihad.n.01'):jihad,jehad,international jihad | Definition: a holy war waged by Muslims against infidels
+Synset('kimberlite.n.01'):kimberlite | Definition: a rare type of peridotite that sometimes contains diamonds; found in South Africa and Siberia
+Synset('support_level.n.01'):support level | Definition: (stock market) the price at which a certain security becomes attractive to investors
+Synset('glissade.n.01'):glissade | Definition: (ballet) a gliding or sliding step in ballet
+Synset('daub.n.01'):daub | Definition: material used to daub walls
+Synset('ketembilla.n.02'):ketembilla,kitembilla,kitambilla | Definition: maroon-purple gooseberry-like fruit of India having tart-sweet purple pulp used especially for preserves
+Synset('dog's_breakfast.n.01'):dog's breakfast,dog's dinner | Definition: a poor job; a mess
+Synset('meal.n.02'):meal | Definition: any of the occasions for eating food that occur by custom or habit at more or less fixed times
+Synset('gridlock.n.01'):gridlock | Definition: a traffic jam so bad that no movement is possible
+Synset('hearing.n.05'):hearing | Definition: a session (of a committee or grand jury) in which witnesses are called and testimony is taken
+Synset('fresco.n.01'):fresco | Definition: a mural done with watercolors on wet plaster
+Synset('slammer.n.01'):slammer | Definition: a person who closes things violently
+Synset('puzzle.n.02'):puzzle | Definition: a game that tests your ingenuity
+Synset('gravy.n.02'):gravy,pan gravy | Definition: the seasoned but not thickened juices that drip from cooking meats; often a little water is added
+Synset('el_nino.n.01'):El Nino | Definition: (oceanography) a warm ocean current that flows along the equator from the date line and south off the coast of Ecuador at Christmas time
+Synset('size_stick.n.01'):size stick | Definition: a mechanical measuring stick used by shoe fitters to measure the length and width of your foot
+Synset('kirk.n.01'):kirk | Definition: a Scottish church
+Synset('takedown.n.01'):takedown | Definition: (amateur wrestling) being brought to the mat from a standing position
+Synset('tea_cloth.n.01'):tea cloth | Definition: a small tablecloth
+Synset('kip.n.01'):kip | Definition: sleep
+Synset('spark.n.04'):spark | Definition: a small but noticeable trace of some quality that might become stronger
+Synset('taw.n.02'):taw,shooter | Definition: a large marble used for shooting in the game of marbles
+Synset('account.n.10'):account | Definition: the quality of taking advantage
+Synset('toke.n.01'):toke | Definition: a puff of a marijuana or hashish cigarette
+Synset('urim_and_thummim.n.01'):Urim and Thummim | Definition: lots thrown to determine God's answers to yes-no questions
+Synset('subsidization.n.01'):subsidization,subsidisation | Definition: money (or other benefits) obtained as a subsidy
+Synset('sucralfate.n.01'):sucralfate,Carafate | Definition: medicine consisting of a tablet (trade name Carafate) used to treat peptic ulcers; said to bind to the ulcer site and coat it
+Synset('algorism.n.02'):algorism | Definition: computation with Arabic figures
+Synset('gulag.n.01'):gulag | Definition: a Russian prison camp for political prisoners
+Synset('band.n.06'):band | Definition: a range of frequencies between two limits
+Synset('outback.n.01'):outback | Definition: the bush country of the interior of Australia
+Synset('tortoiseshell.n.01'):tortoiseshell | Definition: the mottled horny substance of the shell of some turtles
+Synset('set.n.08'):set | Definition: a unit of play in tennis or squash
+Synset('stellate_venule.n.01'):stellate venule | Definition: a star-shaped group of venules in the renal cortex
+Synset('bilge.n.01'):bilge,bilge water | Definition: water accumulated in the bilge of a ship
+Synset('consonance.n.02'):consonance,harmoniousness | Definition: the property of sounding harmonious
+Synset('easy_chair.n.01'):easy chair,lounge chair,overstuffed chair | Definition: a comfortable upholstered armchair
+Synset('chalcedony.n.01'):chalcedony,calcedony | Definition: a milky or greyish translucent to transparent quartz
+Synset('jocosity.n.01'):jocosity,jocularity | Definition: fun characterized by humor
+Synset('myocardium.n.01'):myocardium | Definition: the middle muscular layer of the heart wall
+Synset('burro.n.01'):burro | Definition: small donkey used as a pack animal
+Synset('anapest.n.01'):anapest,anapaest | Definition: a metrical unit with unstressed-unstressed-stressed syllables
+Synset('occasions.n.01'):occasions | Definition: something you have to do
+Synset('air_potato.n.01'):air potato,Dioscorea bulbifera | Definition: yam of tropical Africa and Asia cultivated for it large tubers
+Synset('burg.n.01'):burg | Definition: colloquial American term for a town
+Synset('nook_and_cranny.n.01'):nook and cranny,nooks and crannies | Definition: something remote
+Synset('praetorium.n.01'):praetorium,pretorium | Definition: the tent of an ancient Roman general
+Synset('low.n.03'):low | Definition: a low level or position or degree
+Synset('algarroba.n.03'):algarroba,algarrobilla,algarobilla | Definition: mesquite pod used in tanning and dyeing
+Synset('barren.n.01'):barren,waste,wasteland | Definition: an uninhabited wilderness that is worthless for cultivation
+Synset('gamp.n.01'):gamp,brolly | Definition: colloquial terms for an umbrella
+Synset('vane.n.04'):vane,web | Definition: the flattened weblike part of a feather consisting of a series of barbs on either side of the shaft
+Synset('indoctrination.n.01'):indoctrination | Definition: teaching someone to accept doctrines uncritically
+Synset('writing.n.03'):writing | Definition: (usually plural) the collected work of an author
+Synset('argyll.n.01'):argyll,argyle | Definition: a covered gravy holder of silver or other metal containing a detachable central vessel for hot water to keep the gravy warm
+Synset('eyelid.n.01'):eyelid,lid,palpebra | Definition: either of two folds of skin that can be moved to cover or open the eye
+Synset('money.n.02'):money | Definition: wealth reckoned in terms of money
+Synset('silver_certificate.n.01'):silver certificate | Definition: formerly a bank note issued by the United States Treasury and redeemable in silver
+Synset('venison.n.01'):venison | Definition: meat from a deer used as food
+Synset('avenue.n.02'):avenue,boulevard | Definition: a wide street or thoroughfare
+Synset('logrolling.n.01'):logrolling | Definition: act of exchanging favors for mutual gain; especially trading of influence or votes among legislators to gain passage of certain projects
+Synset('half_title.n.01'):half title,bastard title | Definition: a first page of some books displaying only the title of the book
+Synset('garden.n.03'):garden | Definition: a yard or lawn adjoining a house
+Synset('beguine.n.01'):Beguine | Definition: (Roman Catholic Church) a member of a lay sisterhood (one of several founded in the Netherlands in the 12th and 13th centuries); though not taking religious vows the sisters followed an austere life
+Synset('sterling.n.01'):sterling | Definition: British money; especially the pound sterling as the basic monetary unit of the UK
+Synset('liner.n.01'):liner,line drive | Definition: (baseball) a hit that flies straight out from the batter
+Synset('autolysis.n.01'):autolysis,self-digestion | Definition: lysis of plant or animal tissue by an internal process
+Synset('mafia.n.01'):Mafia,Maffia,Cosa Nostra | Definition: a crime syndicate in the United States; organized in families; believed to have important relations to the Sicilian Mafia
+Synset('anagnost.n.01'):anagnost | Definition: a cleric in the minor orders of the Eastern Orthodox Church who reads the lessons aloud in the liturgy (analogous to the lector in the Roman Catholic Church)
+Synset('conjunction.n.05'):conjunction,alignment | Definition: (astronomy) apparent meeting or passing of two or more celestial bodies in the same degree of the zodiac
+Synset('awn.n.01'):awn | Definition: slender bristlelike appendage found on the bracts of grasses
+Synset('flash_card.n.01'):flash card,flashcard | Definition: a card with words or numbers or pictures that is flashed to a class by the teacher
+Synset('drone.n.01'):drone | Definition: stingless male bee in a colony of social bees (especially honeybees) whose sole function is to mate with the queen
+Synset('ground_effect.n.01'):ground effect | Definition: apparent increase in aerodynamic lift experienced by an aircraft flying close to the ground
+Synset('spokeshave.n.01'):spokeshave | Definition: a small plane that has a handle on each side of its blade; used for shaping or smoothing cylindrical wooden surfaces (originally wheel spokes)
+Synset('slider.n.04'):slider | Definition: a fastball that curves slightly away from the side from which it was thrown
+Synset('shoring.n.02'):shoring,shoring up,propping up | Definition: the act of propping up with shores
+Synset('calcimine.n.01'):calcimine | Definition: a water-base paint containing zinc oxide and glue and coloring; used as a wash for walls and ceilings
+Synset('trip.n.06'):trip | Definition: a light or nimble tread
+Synset('great.n.01'):great | Definition: a person who has achieved distinction and honor in some field
+Synset('torch.n.01'):torch | Definition: a light usually carried in the hand; consists of some flammable substance
+Synset('higher_law.n.01'):higher law | Definition: a principle that takes precedent over the laws of society
+Synset('eavesdropper.n.01'):eavesdropper | Definition: a secret listener to private conversations
+Synset('saber-toothed_tiger.n.01'):saber-toothed tiger,sabertooth | Definition: any of many extinct cats of the Old and New Worlds having long swordlike upper canine teeth; from the Oligocene through the Pleistocene
+Synset('skycap.n.01'):skycap | Definition: a porter who helps passengers with their baggage at an airport
+Synset('side_yard.n.01'):side yard | Definition: the grounds at either side of a house
+Synset('sharpie.n.03'):Sharpie | Definition: a pen with indelible ink that will write on any surface
+Synset('geoduck.n.01'):geoduck | Definition: a large edible clam found burrowing deeply in sandy mud along the Pacific coast of North America; weighs up to six pounds; has siphons that can extend to several feet and cannot be withdrawn into the shell
+Synset('stature.n.01'):stature | Definition: high level of respect gained by impressive development or achievement
+Synset('rainbow.n.02'):rainbow | Definition: an illusory hope
+Synset('terrace.n.03'):terrace | Definition: a row of houses built in a similar style and having common dividing walls (or the street on which they face)
+Synset('impudence.n.01'):impudence,cheek,impertinence | Definition: an impudent statement
+Synset('milk_float.n.01'):milk float | Definition: a van (typically powered by electricity) with an open side that is used to deliver milk to houses
+Synset('soft_pretzel.n.01'):soft pretzel | Definition: a pretzel made of soft bread
+Synset('cock.n.04'):cock,rooster | Definition: adult male chicken
+Synset('napier's_bones.n.01'):Napier's bones,Napier's rods | Definition: a set of graduated rods formerly used to do multiplication and division by a method invented by John Napier
+Synset('antilogarithm.n.01'):antilogarithm,antilog | Definition: the number of which a given number is the logarithm
+Synset('greengrocery.n.02'):greengrocery | Definition: a greengrocer's grocery store
+Synset('doggie_bag.n.01'):doggie bag,doggy bag | Definition: a bag for food that a customer did not eat at a restaurant; the transparent pretense is that the food is taken home to feed the customer's dog
+Synset('seat.n.01'):seat,place | Definition: a space reserved for sitting (as in a theater or on a train or airplane)
+Synset('incandescence.n.02'):incandescence | Definition: light from heat
+Synset('overhaul.n.01'):overhaul,inspection and repair,service | Definition: periodic maintenance on a car or machine
+Synset('saltpan.n.01'):saltpan | Definition: a shallow basin in a desert region; contains salt and gypsum that was deposited by an evaporated salt lake
+Synset('turntable.n.02'):turntable,lazy Susan | Definition: a revolving tray placed on a dining table
+Synset('pastrami.n.01'):pastrami | Definition: highly seasoned cut of smoked beef
+Synset('solenoid.n.01'):solenoid | Definition: a coil of wire around an iron core; becomes a magnet when current passes through the coil
+Synset('gander.n.01'):gander | Definition: mature male goose
+Synset('cotillion.n.01'):cotillion,cotilion | Definition: a ball at which young ladies are presented to society
+Synset('koinonia.n.01'):koinonia | Definition: Christian fellowship or communion with God or with fellow Christians; said in particular of the early Christian community
+Synset('boards.n.01'):boards | Definition: the stage of a theater
+Synset('incense.n.02'):incense | Definition: the pleasing scent produced when incense is burned
+Synset('alpha_and_omega.n.02'):alpha and omega | Definition: the basic meaning of something; the crucial part
+Synset('afternoon.n.01'):afternoon | Definition: the part of the day between noon and evening
+Synset('hand.n.07'):hand | Definition: one of two sides of an issue
+Synset('chase.n.03'):chase | Definition: a rectangular metal frame used in letterpress printing to hold together the pages or columns of composed type that are printed at one time
+Synset('chincapin.n.01'):chincapin,chinkapin,chinquapin | Definition: small nut of either of two small chestnut trees of the southern United States; resembles a hazelnut
+Synset('diarist.n.01'):diarist,diary keeper,journalist | Definition: someone who keeps a diary or journal
+Synset('magnetosphere.n.01'):magnetosphere | Definition: the magnetic field of a planet; the volume around the planet in which charged particles are subject more to the planet's magnetic field than to the solar magnetic field
+Synset('puffing.n.01'):puffing | Definition: blowing tobacco smoke out into the air
+Synset('vocabulary.n.03'):vocabulary | Definition: the system of techniques or symbols serving as a means of expression (as in arts or crafts)
+Synset('pachinko.n.01'):pachinko | Definition: a Japanese pinball game played on a vertical board
+Synset('foil.n.02'):foil,enhancer | Definition: anything that serves by contrast to call attention to another thing's good qualities
+Synset('express.n.03'):express,expressage | Definition: rapid transport of goods
+Synset('latest.n.01'):latest | Definition: the most recent news or development
+Synset('mainstream.n.01'):mainstream | Definition: the prevailing current of thought
+Synset('jotter.n.01'):jotter | Definition: a small notebook for rough notes
+Synset('weighbridge.n.01'):weighbridge | Definition: platform scale flush with a roadway for weighing vehicles and cattle etc
+Synset('waders.n.01'):waders | Definition: waterproof hip boots (sometimes extending to the chest) worn by anglers
+Synset('fire.n.04'):fire | Definition: a fireplace in which a relatively small fire is burning
+Synset('porthole.n.01'):porthole | Definition: a window in a ship or airplane
+Synset('soapbox.n.01'):soapbox | Definition: a crate for packing soap
+Synset('ladies'_room.n.01'):ladies' room,powder room | Definition: a woman's restroom in a public (or semipublic) building
+Synset('quoin.n.02'):quoin,coign,coigne | Definition: the keystone of an arch
+Synset('spaghetti_western.n.01'):spaghetti Western | Definition: a low-budget Western movie produced by a European (especially an Italian) film company
+Synset('refection.n.01'):refection | Definition: a light meal or repast
+Synset('creel.n.01'):creel | Definition: a wicker basket used by anglers to hold fish
+Synset('earning_per_share.n.01'):earning per share | Definition: the portion of a company's profit allocated to each outstanding share of common stock
+Synset('pillar_of_islam.n.01'):pillar of Islam | Definition: (Islam) one of the five religious obligations accepted by all Muslims
+Synset('meritocracy.n.01'):meritocracy | Definition: a form of social system in which power goes to those with superior intellects
+Synset('plumb_bob.n.01'):plumb bob,plumb,plummet | Definition: the metal bob of a plumb line
+Synset('mull.n.01'):mull | Definition: a term used in Scottish names of promontories
+Synset('countenance.n.03'):countenance,physiognomy,phiz,visage,kisser,smiler,mug | Definition: the human face (`kisser' and `smiler' and `mug' are informal terms for `face' and `phiz' is British)
+Synset('mortarboard.n.02'):mortarboard | Definition: an academic cap with a flat square with a tassel on top
+Synset('geothermal_energy.n.01'):geothermal energy | Definition: energy derived from the heat in the interior of the earth
+Synset('filament.n.04'):filament | Definition: a thin wire (usually tungsten) that is heated white hot by the passage of an electric current
+Synset('colonialist.n.01'):colonialist | Definition: a believer in colonialism
+Synset('scald.n.01'):scald | Definition: a burn cause by hot liquid or steam
+Synset('sequella.n.01'):sequella | Definition: a secondary consequence
+Synset('epistle.n.02'):Epistle | Definition: a book of the New Testament written in the form of a letter from an Apostle
+Synset('mind_game.n.02'):mind game | Definition: deliberate actions of calculated psychological manipulation intended to intimidate or confuse (usually for competitive advantage)
+Synset('dail_eireann.n.01'):Dail Eireann,Dail | Definition: the lower house of the parliament of the Irish Republic
+Synset('argument.n.05'):argument,parameter | Definition: (computer science) a reference or value that is passed to a function, procedure, subroutine, command, or program
+Synset('blubber.n.01'):blubber | Definition: an insulating layer of fat under the skin of whales and other large marine mammals; used as a source of oil
+Synset('winchester.n.02'):Winchester | Definition: a shoulder rifle
+Synset('ogress.n.01'):ogress | Definition: (folklore) a female ogre
+Synset('protocol.n.03'):protocol | Definition: code of correct conduct
+Synset('gauntlet.n.03'):gauntlet,gantlet | Definition: a glove with long sleeve
+Synset('coot.n.01'):coot | Definition: slate-black slow-flying birds somewhat resembling ducks
+Synset('trump.n.02'):trump | Definition: (card games) the suit that has been declared to rank above all other suits for the duration of the hand
+Synset('potter's_field.n.01'):potter's field | Definition: a cemetery for unknown or indigent people
+Synset('peroration.n.02'):peroration | Definition: (rhetoric) the concluding section of an oration
+Synset('jobholder.n.01'):jobholder | Definition: an employee who holds a regular job
+Synset('ataraxia.n.01'):ataraxia | Definition: peace of mind
+Synset('crystal.n.03'):crystal,crystallization | Definition: a rock formed by the solidification of a substance; has regularly repeating internal structure; external plane faces
+Synset('one.n.02'):one | Definition: a single person or thing
+Synset('patchwork.n.01'):patchwork,hodgepodge,jumble | Definition: a theory or argument made up of miscellaneous or incongruous ideas
+Synset('magazine.n.03'):magazine,magazine publisher | Definition: a business firm that publishes magazines
+Synset('pitching_wedge.n.01'):pitching wedge | Definition: a wedge used to loft the golf ball over obstacles
+Synset('dialog_box.n.01'):dialog box,panel | Definition: (computer science) a small temporary window in a graphical user interface that appears in order to request information from the user; after the information has been provided the user dismisses the box with `okay' or `cancel'
+Synset('say.n.01'):say | Definition: the chance to speak
+Synset('recollection.n.03'):recollection | Definition: something recalled to the mind
+Synset('dilation.n.01'):dilation | Definition: a lengthy discussion (spoken or written) on a particular topic
+Synset('energizer.n.01'):energizer,energiser,vitalizer,vitaliser,animator | Definition: someone who imparts energy and vitality and spirit to other people
+Synset('april_fool.n.01'):April fool | Definition: the butt of a prank played on April 1st
+Synset('patriarchy.n.01'):patriarchy,patriarchate | Definition: a form of social organization in which a male is the family head and title is traced through the male line
+Synset('moroseness.n.01'):moroseness,glumness,sullenness | Definition: a gloomy ill-tempered feeling
+Synset('carol.n.01'):carol,Christmas carol | Definition: joyful religious song celebrating the birth of Christ
+Synset('compaction.n.01'):compaction,compression,concretion,densification | Definition: an increase in the density of something
+Synset('decolletage.n.01'):decolletage | Definition: a low-cut neckline on a woman's dress
+Synset('thelarche.n.01'):thelarche | Definition: the start of breast development in a woman at the beginning of puberty
+Synset('canard.n.01'):canard | Definition: a deliberately misleading fabrication
+Synset('collar.n.05'):collar,shoe collar | Definition: the stitching that forms the rim of a shoe or boot
+Synset('narrow.n.01'):narrow | Definition: a narrow strait connecting two bodies of water
+Synset('ormolu.n.01'):ormolu | Definition: brass that looks like gold; used to decorate furniture
+Synset('assessment.n.03'):assessment | Definition: the market value set on assets
+Synset('steel_engraving.n.02'):steel engraving | Definition: engraving on a steel plate
+Synset('model_t.n.01'):Model T | Definition: the first widely available automobile powered by a gasoline engine; mass-produced by Henry Ford from 1908 to 1927
+Synset('time_loan.n.01'):time loan | Definition: a loan that is payable on or before a specified date
+Synset('sit-in.n.01'):sit-in | Definition: a form of civil disobedience in which demonstrators occupy seats and refuse to move
+Synset('line_storm.n.01'):line storm,equinoctial storm | Definition: a violent rainstorm near the time of an equinox
+Synset('auspices.n.01'):auspices,protection,aegis | Definition: kindly endorsement and guidance
+Synset('flageolet.n.01'):flageolet,haricot | Definition: a French bean variety with light-colored seeds; usually dried
+Synset('royal_road.n.01'):royal road | Definition: an auspicious way or means to achieve something
+Synset('brass_monkey.n.01'):brass monkey | Definition: a metal stand that formerly held cannon balls on sailing ships
+Synset('litterer.n.01'):litterer,litterbug,litter lout | Definition: a person who litters public places with refuse
+Synset('yak.n.01'):yak,yack,yakety-yak,chatter,cackle | Definition: noisy talk
+Synset('colonizer.n.01'):colonizer,coloniser | Definition: someone who helps to found a colony
+Synset('trinity.n.02'):Trinity,Holy Trinity,Blessed Trinity,Sacred Trinity | Definition: the union of the Father and Son and Holy Ghost in one Godhead
+Synset('bulk.n.03'):bulk | Definition: the property possessed by a large mass
+Synset('cantle.n.01'):cantle | Definition: the back of a saddle seat
+Synset('speller.n.02'):speller | Definition: an introductory textbook to teach spelling
+Synset('coulisse.n.02'):coulisse | Definition: a timber member grooved to take a sliding panel
+Synset('quickset.n.01'):quickset | Definition: cuttings of plants set in the ground to grow as hawthorn for hedges or vines
+Synset('viewing_audience.n.01'):viewing audience,TV audience,viewers | Definition: the audience reached by television
+Synset('bumf.n.01'):bumf,bumph | Definition: reading materials (documents, written information) that you must read and deal with but that you think are extremely boring
+Synset('planter.n.03'):planter | Definition: a decorative pot for house plants
+Synset('drogue.n.01'):drogue | Definition: a funnel-shaped device towed as a target by an airplane
+Synset('epicycle.n.01'):epicycle | Definition: a circle that rolls around (inside or outside) another circle; generates an epicycloid or hypocycloid
+Synset('salter.n.01'):salter | Definition: someone who uses salt to preserve meat or fish or other foods
+Synset('dynamical_system.n.01'):dynamical system | Definition: (physics) a phase space together with a transformation of that space
+Synset('guess.n.02'):guess,guesswork,guessing,shot,dead reckoning | Definition: an estimate based on little or no information
+Synset('permanent_injunction.n.01'):permanent injunction,final injunction | Definition: injunction issued on completion of a trial
+Synset('cabin_liner.n.01'):cabin liner | Definition: a liner with cabins for passengers
+Synset('fashion.n.03'):fashion | Definition: the latest and most admired style in clothes and cosmetics and behavior
+Synset('gym_rat.n.01'):gym rat | Definition: someone who spends all leisure time playing sports or working out in a gymnasium or health spa
+Synset('carriage_return.n.01'):carriage return | Definition: the operation that prepares for the next character to be printed or displayed as the first character on a line
+Synset('regency.n.01'):regency | Definition: the period of time during which a regent governs
+Synset('camcorder.n.01'):camcorder | Definition: a portable television camera and videocassette recorder
+Synset('attic.n.03'):attic,bean,bonce,noodle,noggin,dome | Definition: informal terms for a human head
+Synset('silverfish.n.02'):silverfish | Definition: a silvery variety of Carassius auratus
+Synset('transverse_sinus.n.01'):transverse sinus,sinus transversus | Definition: a paired dural sinus; terminates in the sigmoid sinus
+Synset('sine_curve.n.01'):sine curve,sinusoid | Definition: the curve of y=sin x
+Synset('pommel.n.01'):pommel | Definition: a handgrip that a gymnast uses when performing exercises on a pommel horse
+Synset('canebrake.n.01'):canebrake | Definition: a dense growth of cane (especially giant cane)
+Synset('assurance.n.04'):assurance | Definition: a British term for some kinds of insurance
+Synset('ace_of_clubs.n.01'):ace of clubs | Definition: the ace in the club suit
+Synset('coronet.n.01'):coronet | Definition: a small crown; usually indicates a high rank but below that of sovereign
+Synset('kopje.n.01'):kopje,koppie | Definition: a small hill rising up from the African veld
+Synset('trudge.n.01'):trudge | Definition: a long difficult walk
+Synset('connoisseur.n.01'):connoisseur,cognoscente | Definition: an expert able to appreciate a field; especially in the fine arts
+Synset('bill_of_sale.n.01'):bill of sale | Definition: a deed transferring personal property
+Synset('checkmate.n.02'):checkmate,mate | Definition: a chess move constituting an inescapable and indefensible attack on the opponent's king
+Synset('millenary.n.03'):millenary | Definition: a sum or aggregate of one thousand (especially one thousand years)
+Synset('conservatory.n.02'):conservatory,conservatoire | Definition: a schoolhouse with special facilities for fine arts
+Synset('plea_bargain.n.01'):plea bargain,plea bargaining | Definition: (criminal law) a negotiation in which the defendant agrees to enter a plea of guilty to a lesser charge and the prosecutor agrees to drop a more serious charge
+Synset('coaling_station.n.01'):coaling station | Definition: a seaport where ships can take on supplies of coal
+Synset('grave.n.01'):grave | Definition: death of a person
+Synset('powerhouse.n.02'):powerhouse | Definition: a team considered to be the best of its class
+Synset('executive_clemency.n.01'):executive clemency | Definition: the power (usually of a president or governor) to pardon or commute the sentence of someone convicted in that jurisdiction
+Synset('cog.n.02'):cog,sprocket | Definition: tooth on the rim of gear wheel
+Synset('sovereignty.n.03'):sovereignty | Definition: the authority of a state to govern another state
+Synset('sea-duty.n.01'):sea-duty,service abroad,shipboard duty | Definition: naval service aboard a ship at sea
+Synset('shrillness.n.01'):shrillness | Definition: the quality of being sharp or harsh to the senses
+Synset('doubleton.n.01'):doubleton | Definition: (bridge) a pair of playing cards that are the only cards in their suit in the hand dealt to a player
+Synset('carol.n.02'):carol | Definition: a joyful song (usually celebrating the birth of Christ)
+Synset('gordon_setter.n.01'):Gordon setter | Definition: a Scottish breed with a black-and-tan coat
+Synset('anima.n.01'):anima | Definition: (Jungian psychology) the inner self (not the external persona) that is in touch with the unconscious
+Synset('rescript.n.01'):rescript | Definition: a reply by a Pope to an inquiry concerning a point of law or morality
+Synset('continental_shelf.n.01'):continental shelf | Definition: the relatively shallow (up to 200 meters) seabed surrounding a continent
+Synset('designation.n.03'):designation,identification | Definition: the act of designating or identifying something
+Synset('barbecue.n.02'):barbecue,barbeque | Definition: a cookout in which food is cooked over an open fire; especially a whole animal carcass roasted on a spit
+Synset('striving.n.01'):striving,nisus,pains,strain | Definition: an effortful attempt to attain a goal
+Synset('bridgehead.n.02'):bridgehead | Definition: a defensive post at the end of a bridge nearest to the enemy
+Synset('alms-giving.n.01'):alms-giving,almsgiving | Definition: making voluntary contributions to aid the poor
+Synset('scoreboard.n.01'):scoreboard | Definition: a large board for displaying the score of a contest (and some other information)
+Synset('absolute_pitch.n.01'):absolute pitch,perfect pitch | Definition: the ability to identify the pitch of a tone
+Synset('groupie.n.01'):groupie | Definition: an enthusiastic young fan (especially a young woman who follows rock groups around)
+Synset('foreshock.n.01'):foreshock | Definition: a tremor preceding an earthquake
+Synset('punt.n.03'):punt,punting | Definition: (football) a kick in which the football is dropped from the hands and kicked before it touches the ground
+Synset('zeal.n.02'):zeal | Definition: excessive fervor to do something or accomplish some end
+Synset('feeder.n.03'):feeder,tributary,confluent,affluent | Definition: a branch that flows into the main stream
+Synset('thimble.n.02'):thimble | Definition: a small metal cap to protect the finger while sewing; can be used as a small container
+Synset('doggedness.n.01'):doggedness,perseverance,persistence,persistency,tenacity,tenaciousness,pertinacity | Definition: persistent determination
+Synset('shiva.n.01'):shiva,shivah,shibah | Definition: (Judaism) a period of seven days of mourning after the death of close relative
+Synset('ground.n.05'):ground | Definition: a position to be won or defended in battle (or as if in battle)
+Synset('stopcock.n.01'):stopcock,cock,turncock | Definition: faucet consisting of a rotating device for regulating flow of a liquid
+Synset('loop_gain.n.01'):loop gain | Definition: (telecommunication) the gain of a feedback amplifier or system as a function of how much output is fed back to the input
+Synset('infiltrator.n.01'):infiltrator | Definition: someone who takes up a position surreptitiously for the purpose of espionage
+Synset('ham_hock.n.01'):ham hock | Definition: a small cut of meat from the leg just above the foot
+Synset('lightness.n.04'):lightness | Definition: having a light color
+Synset('conning_tower.n.02'):conning tower | Definition: a raised bridge on a submarine; often used for entering and exiting
+Synset('promptness.n.01'):promptness,promptitude | Definition: the characteristic of doing things without delay
+Synset('reputation.n.03'):reputation,report | Definition: the general estimation that the public has for a person
+Synset('incipiency.n.01'):incipiency,incipience | Definition: beginning to exist or to be apparent
+Synset('mantel.n.01'):mantel,mantelpiece,mantle,mantlepiece,chimneypiece | Definition: shelf that projects from wall above fireplace
+Synset('imprint.n.04'):imprint,embossment | Definition: an impression produced by pressure or printing
+Synset('action.n.05'):action | Definition: the series of events that form a plot
+Synset('caravanning.n.01'):caravanning | Definition: the practice of taking holidays in a caravan
+Synset('brownie.n.01'):Brownie | Definition: a junior Girl Scout
+Synset('demitasse.n.02'):demitasse | Definition: small coffee cup; for serving black coffee
+Synset('drove.n.02'):drove,horde,swarm | Definition: a moving crowd
+Synset('emerald.n.02'):emerald | Definition: a transparent piece of emerald that has been cut and polished and is valued as a precious gem
+Synset('feast.n.02'):feast | Definition: something experienced with great delight
+Synset('novelization.n.01'):novelization,novelisation | Definition: converting something into the form of a novel
+Synset('depolarization.n.01'):depolarization,depolarisation | Definition: a loss of polarity or polarization
+Synset('meteorological_observation_post.n.01'):meteorological observation post,weather station | Definition: one of a network of observation posts where meteorological data is recorded
+Synset('obstacle_race.n.01'):obstacle race | Definition: a race in which competitors must negotiate obstacles
+Synset('bugle.n.03'):bugle | Definition: a tubular glass or plastic bead sewn onto clothing for decoration
+Synset('uzi.n.01'):Uzi | Definition: a type of submachine gun that is designed and manufactured in Israel
+Synset('wiffle.n.01'):Wiffle,Wiffle Ball | Definition: (trademark) a hollow plastic ball with cutouts
+Synset('demonstrative_pronoun.n.01'):demonstrative pronoun,demonstrative | Definition: a pronoun that points out an intended referent
+Synset('card.n.08'):card,scorecard | Definition: (golf) a record of scores (as in golf)
+Synset('name_tag.n.01'):name tag | Definition: a tag showing the name of the person who wears it
+Synset('baedeker.n.02'):baedeker | Definition: any of a series of travel guidebooks published by the German firm founded by Karl Baedeker
+Synset('frontal.n.02'):frontal | Definition: a drapery that covers the front of an altar
+Synset('klieg_light.n.01'):klieg light | Definition: carbon arc lamp that emits an intense light used in producing films
+Synset('kasbah.n.01'):kasbah,casbah | Definition: an older or native quarter of many cities in northern Africa; the quarter in which the citadel is located
+Synset('worm_gear.n.01'):worm gear | Definition: gear consisting of a shaft with screw thread (the worm) that meshes with a toothed wheel (the worm wheel); changes the direction of the axis of rotary motion
+Synset('second_growth.n.01'):second growth | Definition: a second growth of trees covering an area where the original stand was destroyed by fire or cutting
+Synset('cyborg.n.01'):cyborg,bionic man,bionic woman | Definition: a human being whose body has been taken over in whole or in part by electromechanical devices
+Synset('lye_hominy.n.01'):lye hominy | Definition: hominy prepared by bleaching in lye
+Synset('mailer.n.03'):mailer | Definition: an advertisement that is sent by mail
+Synset('velocipede.n.01'):velocipede | Definition: any of several early bicycles with pedals on the front wheel
+Synset('pinnacle.n.03'):pinnacle | Definition: a lofty peak
+Synset('mainmast.n.01'):mainmast | Definition: the chief mast of a sailing vessel with two or more masts
+Synset('tucker.n.04'):tucker | Definition: a detachable yoke of linen or lace worn over the breast of a low-cut dress
+Synset('gas_burner.n.01'):gas burner,gas jet | Definition: burner such that combustible gas issues from a nozzle to form a steady flame
+Synset('stage.n.07'):stage | Definition: any scene regarded as a setting for exhibiting or doing something; --Shakespeare
+Synset('diffuseness.n.01'):diffuseness | Definition: the spatial property of being spread out over a wide area or through a large volume
+Synset('tangerine.n.03'):tangerine | Definition: a reddish to vivid orange color
+Synset('neve.n.01'):neve | Definition: the upper part of a glacier (beyond the limit of perpetual snow) where the snow turns to ice
+Synset('night_letter.n.01'):night letter | Definition: a cheaper form of telegram sent for delivery the next day
+Synset('golden_rule.n.02'):Golden Rule | Definition: a command based on Jesus' words in the Sermon on the Mount;  (Matthew 7:12)
+Synset('wayside.n.01'):wayside,roadside | Definition: edge of a way or road or path
+Synset('strand.n.01'):strand | Definition: a pattern forming a unity within a larger structural whole
+Synset('lift.n.11'):lift | Definition: a ride in a car
+Synset('carillon.n.01'):carillon | Definition: set of bells hung in a bell tower
+Synset('deep.n.03'):deep | Definition: literary term for an ocean
+Synset('adar.n.01'):Adar | Definition: the sixth month of the civil year; the twelfth month of the ecclesiastic year in the Jewish calendar (in February and March)
+Synset('bioremediation.n.02'):bioremediation | Definition: the act of treating waste or pollutants by the use of microorganisms (as bacteria) that can break down the undesirable substances
+Synset('behalf.n.01'):behalf | Definition: as the agent of or on someone's part (usually expressed as  rather than )
+Synset('cannon.n.01'):cannon | Definition: a large artillery gun that is usually on wheels
+Synset('expense_account.n.01'):expense account,travel and entertainment account | Definition: an account to which salespersons or executives can charge travel and entertainment expenses
+Synset('aficionado.n.01'):aficionado | Definition: a fan of bull fighting
+Synset('pore.n.01'):pore | Definition: any tiny hole admitting passage of a liquid (fluid or gas)
+Synset('seltzer.n.01'):seltzer | Definition: naturally effervescent mineral water
+Synset('schutzstaffel.n.01'):Schutzstaffel,SS | Definition: special police force in Nazi Germany founded as a personal bodyguard for Adolf Hitler in 1925; the SS administered the concentration camps
+Synset('washbasin.n.01'):washbasin,basin,washbowl,washstand,lavatory | Definition: a bathroom sink that is permanently installed and connected to a water supply and drainpipe; where you can wash your hands and face
+Synset('snuff.n.02'):snuff | Definition: a pinch of smokeless tobacco inhaled at a single time
+Synset('public_defender.n.01'):public defender | Definition: a lawyer who represents indigent defendants at public expense
+Synset('armageddon.n.02'):Armageddon | Definition: any catastrophically destructive battle
+Synset('hatchel.n.01'):hatchel,heckle | Definition: a comb for separating flax fibers
+Synset('sight.n.04'):sight | Definition: a range of mental vision
+Synset('pruning_shears.n.01'):pruning shears | Definition: shears with strong blades used for light pruning of woody plants
+Synset('vote_of_confidence.n.01'):vote of confidence | Definition: an expression of approval and encouragement
+Synset('cocktail_lounge.n.01'):cocktail lounge | Definition: a barroom in a hotel or restaurant where cocktails are served
+Synset('higher_law.n.01'):higher law | Definition: a principle that takes precedent over the laws of society
+Synset('arboriculture.n.01'):arboriculture,tree farming | Definition: the cultivation of tree for the production of timber
+Synset('pinpoint.n.01'):pinpoint | Definition: a very brief moment
+Synset('trainband.n.01'):trainband | Definition: a company of militia in England or America from the 16th century to the 18th century
+Synset('cere.n.01'):cere | Definition: the fleshy, waxy covering at the base of the upper beak of some birds
+Synset('low-fat_milk.n.01'):low-fat milk | Definition: milk from which some of the cream has been removed
+Synset('layer.n.04'):layer | Definition: a hen that lays eggs
+Synset('ensemble.n.02'):ensemble,supporting players | Definition: a cast other than the principals
+Synset('market_letter.n.01'):market letter | Definition: a newsletter written by an analyst of the stock market and sold to subscribers
+Synset('closed_curve.n.01'):closed curve | Definition: a curve (such as a circle) having no endpoints
+Synset('elver.n.01'):elver | Definition: young eel; may be sauteed or batter-fried
+Synset('hermitage.n.01'):hermitage | Definition: the abode of a hermit
+Synset('filament.n.02'):filament | Definition: the stalk of a stamen
+Synset('ruse.n.01'):ruse,artifice | Definition: a deceptive maneuver (especially to avoid capture)
+Synset('prodigy.n.03'):prodigy | Definition: an impressive or wonderful example of a particular quality
+Synset('running.n.03'):running | Definition: the state of being in operation
+Synset('spondee.n.01'):spondee | Definition: a metrical unit with stressed-stressed syllables
+Synset('blighty_wound.n.01'):blighty wound | Definition: a wound that would cause an English soldier to be sent home from service abroad
+Synset('lady's_smock.n.01'):lady's smock,cuckooflower,cuckoo flower,meadow cress,Cardamine pratensis | Definition: a bitter cress of Europe and America
+Synset('gravity-assist.n.01'):gravity-assist | Definition: (spaceflight) a trajectory that passes close to a planetary body in order to gain energy from its gravitational field
+Synset('bluebottle.n.02'):bluebottle,Calliphora vicina | Definition: blowfly with iridescent blue body; makes a loud buzzing noise in flight
+Synset('contractor.n.01'):contractor | Definition: someone (a person or firm) who contracts to build things
+Synset('hammerlock.n.01'):hammerlock | Definition: a wrestling hold in which the opponent's arm is twisted up behind his back
+Synset('palestra.n.01'):palestra,palaestra | Definition: a public place in ancient Greece or Rome devoted to the training of wrestlers and other athletes
+Synset('bail.n.02'):bail | Definition: the legal system that allows an accused person to be temporarily released from custody (usually on condition that a sum of money guarantees their appearance at trial)
+Synset('vitamin_pill.n.01'):vitamin pill | Definition: a pill containing one or more vitamins; taken as a dietary supplement
+Synset('cross_section.n.03'):cross section | Definition: (physics) the probability that a particular interaction (as capture or ionization) will take place between particles; measured in barns
+Synset('ship's_company.n.01'):ship's company,company | Definition: crew of a ship including the officers; the whole force or personnel of a ship
+Synset('north_american_free_trade_agreement.n.01'):North American Free Trade Agreement,NAFTA | Definition: an agreement for free trade between the United States and Canada and Mexico; became effective in 1994 for ten years
+Synset('a_cappella_singing.n.01'):a cappella singing,a capella singing | Definition: singing without instrumental accompaniment
+Synset('silver_perch.n.01'):silver perch,mademoiselle,Bairdiella chrysoura | Definition: small silvery drumfish often mistaken for white perch; found along coasts of United States from New York to Mexico
+Synset('backpacker.n.01'):backpacker,packer | Definition: a hiker who wears a backpack
+Synset('brush.n.05'):brush | Definition: a bushy tail or part of a bushy tail (especially of the fox)
+Synset('cashmere.n.02'):cashmere | Definition: the wool of the Kashmir goat
+Synset('pinstripe.n.01'):pinstripe | Definition: a suit made from a fabric with very thin stripes
+Synset('boucle.n.01'):boucle | Definition: a fabric of uneven yarn that has an uneven knobby effect
+Synset('alcalde.n.01'):alcalde | Definition: a mayor or chief magistrate of a Spanish town
+Synset('scurf.n.01'):scurf | Definition: (botany) a covering that resembles scales or bran that covers some plant parts
+Synset('chine.n.02'):chine | Definition: backbone of an animal
+Synset('heavy_metal.n.02'):heavy metal,heavy metal music | Definition: loud and harsh sounding rock music with a strong beat; lyrics usually involve violent or fantastic imagery
+Synset('troika.n.01'):troika | Definition: a Russian carriage pulled by three horses abreast
+Synset('stationary_stochastic_process.n.01'):stationary stochastic process | Definition: a stochastic process in which the distribution of the random variables is the same for any value of the variable parameter
+Synset('sunburst.n.03'):sunburst | Definition: a jeweled brooch with a pattern resembling the sun
+Synset('holy_year.n.01'):Holy Year | Definition: (Roman Catholic Church) a period of remission from sin (usually granted every 25 years)
+Synset('megasporophyll.n.01'):megasporophyll | Definition: in non-flowering plants, a sporophyll that bears only megasporangia
+Synset('parquet.n.02'):parquet | Definition: seating on the main floor between the orchestra and the parquet circle
+Synset('bluster.n.03'):bluster | Definition: a violent gusty wind
+Synset('half_title.n.01'):half title,bastard title | Definition: a first page of some books displaying only the title of the book
+Synset('preponderance.n.03'):preponderance | Definition: exceeding in heaviness; having greater weight
+Synset('leg-pull.n.01'):leg-pull,leg-pulling | Definition: as a joke: trying to make somebody believe something that is not true
+Synset('cusp.n.01'):cusp | Definition: point formed by two intersecting arcs (as from the intrados of a Gothic arch)
+Synset('natural_order.n.01'):natural order | Definition: the physical universe considered as an orderly system subject to natural (not human or supernatural) laws
+Synset('wallow.n.02'):wallow | Definition: an indolent or clumsy rolling about
+Synset('effusion.n.02'):effusion | Definition: flow under pressure
+Synset('supergrass.n.01'):supergrass,grass | Definition: a police informer who implicates many people
+Synset('fulcrum.n.01'):fulcrum | Definition: the pivot about which a lever turns
+Synset('myringotomy.n.01'):myringotomy | Definition: surgical incision into the eardrum (to relieve pressure or release pus from the middle ear)
+Synset('harmonization.n.01'):harmonization,harmonisation | Definition: a piece of harmonized music
+Synset('margin_of_safety.n.01'):margin of safety,safety margin,margin of error | Definition: the margin required in order to insure safety
+Synset('astringency.n.01'):astringency,astringence | Definition: a sharp astringent taste; the taste experience when a substance causes the mouth to pucker
+Synset('klaxon.n.01'):klaxon,claxon | Definition: a kind of loud horn formerly used on motor vehicles
+Synset('ruse.n.01'):ruse,artifice | Definition: a deceptive maneuver (especially to avoid capture)
+Synset('latitude.n.01'):latitude | Definition: the angular distance between an imaginary line around a heavenly body parallel to its equator and the equator itself
+Synset('logjam.n.01'):logjam | Definition: any stoppage attributable to unusual activity
+Synset('panzer.n.01'):panzer | Definition: an armored vehicle or tank
+Synset('charm.n.04'):charm | Definition: (physics) one of the six flavors of quark
+Synset('distaff.n.01'):distaff | Definition: the sphere of work by women
+Synset('comicality.n.01'):comicality | Definition: the quality of being comical
+Synset('gnome.n.01'):gnome,dwarf | Definition: a legendary creature resembling a tiny old man; lives in the depths of the earth and guards buried treasure
+Synset('rhythm.n.04'):rhythm,speech rhythm | Definition: the arrangement of spoken words alternating stressed and unstressed elements
+Synset('southwest_by_west.n.01'):southwest by west,SWbW | Definition: the compass point that is one point west of southwest
+Synset('milt.n.02'):milt | Definition: seminal fluid produced by male fish
+Synset('glaze.n.02'):glaze | Definition: a glossy finish on a fabric
+Synset('wipeout.n.02'):wipeout | Definition: a spill in some sport (as a fall from a bicycle or while skiing or being capsized on a surfboard)
+Synset('technical_knockout.n.01'):technical knockout,TKO | Definition: a knockout declared by the referee who judges one boxer unable to continue
+Synset('rummer.n.01'):rummer | Definition: a large drinking glass (ovoid bowl on a stem) for drinking toasts
+Synset('pinprick.n.02'):pinprick | Definition: small puncture (as if made by a pin)
+Synset('cusp.n.01'):cusp | Definition: point formed by two intersecting arcs (as from the intrados of a Gothic arch)
+Synset('borough.n.02'):borough | Definition: an English town that forms the constituency of a member of parliament
+Synset('armrest.n.01'):armrest | Definition: a support for the arm
+Synset('calvaria.n.01'):calvaria,skullcap | Definition: the dome of the skull
+Synset('batting_order.n.01'):batting order,card,lineup | Definition: (baseball) a list of batters in the order in which they will bat
+Synset('fire_chief.n.01'):fire chief,fire marshal | Definition: the head of a fire department
+Synset('hosanna.n.01'):hosanna | Definition: a cry of praise or adoration (to God)
+Synset('skydiving.n.01'):skydiving | Definition: performing acrobatics in free fall before pulling the ripcord of a parachute
+Synset('illustration.n.01'):illustration | Definition: artwork that helps make something clear or attractive
+Synset('eve.n.02'):eve | Definition: the day before
+Synset('tarantula.n.02'):tarantula | Definition: large hairy tropical spider with fangs that can inflict painful but not highly venomous bites
+Synset('translation.n.01'):translation,interlingual rendition,rendering,version | Definition: a written communication in a second language having the same meaning as the written communication in a first language
+Synset('bilge.n.02'):bilge | Definition: where the sides of the vessel curve in to form the bottom
+Synset('siren.n.04'):siren | Definition: an acoustic device producing a loud often wailing sound as a signal or warning
+Synset('homo_sapiens.n.01'):Homo sapiens | Definition: the only surviving hominid; species to which modern man belongs; bipedal primate having language and ability to make and use complex tools; brain volume at least 1400 cc
+Synset('trumpet_section.n.01'):trumpet section | Definition: the section of a band or orchestra that plays trumpets or cornets
+Synset('default.n.01'):default | Definition: loss due to not showing up
+Synset('moocher.n.01'):moocher,mooch,cadger,scrounger | Definition: someone who mooches or cadges (tries to get something free)
+Synset('eye-beaming.n.01'):eye-beaming | Definition: a radiant glance of the eye
+Synset('person.n.02'):person | Definition: a human body (usually including the clothing)
+Synset('inversion.n.08'):inversion,upending | Definition: turning upside down; setting on end
+Synset('doll.n.01'):doll,dolly | Definition: a small replica of a person; used as a toy
+Synset('jump_ball.n.01'):jump ball | Definition: (basketball) the way play begins or resumes when possession is disputed; an official tosses the ball up between two players who jump in an effort to tap it to a teammate
+Synset('lift.n.11'):lift | Definition: a ride in a car
+Synset('calving.n.01'):calving | Definition: giving birth to a calf
+Synset('olympian_zeus.n.01'):Olympian Zeus | Definition: a seated statue of the supreme god of ancient Greek mythology created for the temple at Olympia; the statue was 40 feet tall and rested on a base that was 12 feet high
+Synset('providence.n.02'):providence | Definition: the guardianship and control exercised by a deity
+Synset('brush_cut.n.01'):brush cut | Definition: a short haircut with hairs standing up like a brush
+Synset('pabulum.n.02'):pabulum | Definition: insipid intellectual nourishment
+Synset('ergodicity.n.01'):ergodicity | Definition: an attribute of stochastic systems; generally, a system that tends in probability to a limiting form that is independent of the initial conditions
+Synset('echinus.n.01'):echinus | Definition: ovolo molding between the shaft and the abacus of a Doric column
+Synset('swiss.n.01'):Swiss,Swiss people | Definition: the natives or inhabitants of Switzerland
+Synset('eiderdown.n.02'):eiderdown | Definition: down of the eider duck
+Synset('thalweg.n.02'):thalweg | Definition: a line following the lowest points of a valley
+Synset('samovar.n.01'):samovar | Definition: a metal urn with a spigot at the base; used in Russia to boil water for tea
+Synset('put-put.n.01'):put-put | Definition: a small gasoline engine (as on motor boat)
+Synset('triclinium.n.02'):triclinium | Definition: a dining table with couches along three sides in ancient Rome
+Synset('trapeze.n.01'):trapeze | Definition: a swing used by circus acrobats
+Synset('snap.n.02'):snap | Definition: a spell of cold weather
+Synset('recording_studio.n.01'):recording studio | Definition: studio where tapes and records are recorded
+Synset('metallic.n.02'):metallic | Definition: a yarn made partly or entirely of metal
+Synset('poverty_trap.n.01'):poverty trap | Definition: a situation in which an increase in income results in a loss of benefits so that you are no better off
+Synset('puerpera.n.01'):puerpera | Definition: a woman in childbirth or shortly thereafter
+Synset('circumference.n.02'):circumference,circuit | Definition: the boundary line encompassing an area or object
+Synset('percussion.n.02'):percussion | Definition: the act of exploding a percussion cap
+Synset('baronduki.n.01'):baronduki,baranduki,barunduki,burunduki,Eutamius asiaticus,Eutamius sibiricus | Definition: terrestrial Siberian squirrel
+Synset('landfall.n.02'):landfall | Definition: the first sighting of land from the sea after a voyage (or flight over water)
+Synset('outtake.n.01'):outtake | Definition: a scene that is filmed but is not used in the final editing of the film
+Synset('running.n.03'):running | Definition: the state of being in operation
+Synset('trample.n.01'):trample,trampling | Definition: the sound of heavy treading or stomping
+Synset('cyrillic_alphabet.n.01'):Cyrillic alphabet,Cyrillic | Definition: an alphabet derived from the Greek alphabet and used for writing Slavic languages (Russian, Bulgarian, Serbian, Ukrainian, and some other Slavic languages)
+Synset('scientific_fact.n.01'):scientific fact | Definition: an observation that has been confirmed repeatedly and is accepted as true (although its truth is never final)
+Synset('brownie.n.01'):Brownie | Definition: a junior Girl Scout
+Synset('requiem.n.02'):Requiem | Definition: a musical setting for a Mass celebrating the dead
+Synset('bain-marie.n.01'):bain-marie | Definition: a large pan that is filled with hot water; smaller pans containing food can be set in the larger pan to keep food warm or to cook food slowly
+Synset('questionnaire.n.01'):questionnaire | Definition: a form containing a set of questions; submitted to people to gain statistical information
+Synset('adonic.n.01'):Adonic,Adonic line | Definition: a verse line with a dactyl followed by a spondee or trochee; supposedly used in laments by Adonis
+Synset('write-off.n.01'):write-off,write-down | Definition: (accounting) reduction in the book value of an asset
+Synset('holding_cell.n.01'):holding cell | Definition: a jail in a courthouse where accused persons can be confined during a trial
