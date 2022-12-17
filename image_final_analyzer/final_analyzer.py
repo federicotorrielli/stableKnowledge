@@ -1,6 +1,7 @@
 import os
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 class FinalAnalyzer:
@@ -37,14 +38,27 @@ class FinalAnalyzer:
                     f"{self.folder_path_advanced}/{folder.replace(' ', '_').replace(',', '-')}/cosine_scores.txt"):
                 advanced_folders.append(folder)
                 advanced_scores.append(score)
+        # Reorder the folders based on the scores (in a gaussian distribution)
+        basic_folders = [x for _, x in sorted(zip(basic_scores, basic_folders))]
+        basic_scores = sorted(basic_scores)
+        advanced_folders = [x for _, x in sorted(zip(advanced_scores, advanced_folders))]
+        advanced_scores = sorted(advanced_scores)
 
-        mean_basic = sum(basic_scores) / len(basic_scores)
-        mean_advanced = sum(advanced_scores) / len(advanced_scores)
-        fig, ax = plt.subplots()
-        ax.barh(basic_folders, basic_scores, label=f"basic: {mean_basic:.3f}")
-        ax.barh(advanced_folders, advanced_scores, label=f"advanced: {mean_advanced:.3f}")
-        ax.set_xlabel("Cosine similarity")
-        ax.legend()
+        mean_basic = round(sum(basic_scores) / len(basic_scores), 4)
+        mean_advanced = round(sum(advanced_scores) / len(advanced_scores), 4)
+        # Create a plot with two subplots (barplot) overlayed on each other
+        # The advanced must be on top of the basic
+        indices = np.arange(len(basic_folders))
+        indices2 = np.arange(len(advanced_folders))
+        fig = plt.figure(figsize=(20, 10))
+        ax = fig.add_subplot(111)
+        ax.bar(x=indices, height=basic_scores, width=0.4, color='b', align='center')
+        ax.bar(x=indices2, height=advanced_scores, width=0.4, color='r', align='center')
+        ax.set_xticks(indices)
+        plt.xlabel("Concepts")
+        plt.ylabel("Cosine Similarity")
+        plt.title(f"Mean Cosine Similarity: Basic = {mean_basic}, Advanced = {mean_advanced}")
+        plt.legend(["Basic", "Advanced"])
         plt.show()
 
 
