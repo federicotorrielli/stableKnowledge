@@ -24,8 +24,8 @@ class Evaluation:
 
     def print_to_file(self) -> None:
         """
-        Print the results to two files "cosine_scores.txt" and "normalized_scores.txt"
-        for each folder, grouping the content of each cosine similarity and normalized similarity
+        Print the results to two files "cosine_scores.txt"
+        for each folder, grouping the content of each cosine similarity
         """
 
         def process_folder_name(name):
