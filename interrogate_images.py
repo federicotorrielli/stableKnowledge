@@ -3,6 +3,7 @@ import os
 import torch
 from PIL import Image
 from lavis.models import load_model_and_preprocess
+from sentence_transformers import util, SentenceTransformer
 from tqdm import tqdm
 
 
@@ -13,6 +14,7 @@ class ImageInterrogator:
         self.images = self.load_images()
         self.interrogations = {}
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.evaluation_model = SentenceTransformer('all-MiniLM-L6-v2')
         print("Loaded images - Ready to interrogate")
 
     def load_images(self) -> dict:
@@ -22,15 +24,14 @@ class ImageInterrogator:
         Load them in the images dict, with the key being the folder name and the value being a
         list of images in that folder
         """
-        images = {}
-        pbar = tqdm(os.listdir(self.images_path))
-        for folder in pbar:
-            pbar.set_description(f"Loading images from {folder}")
-            images[folder] = []
-            for image in os.listdir(os.path.join(self.images_path, folder)):
-                if image.endswith(".png"):
-                    images[folder].append(Image.open(os.path.join(self.images_path, folder, image)).convert("RGB"))
-        return images
+        return {
+            folder: [
+                Image.open(os.path.join(self.images_path, folder, image)).convert("RGB")
+                for image in os.listdir(os.path.join(self.images_path, folder))
+                if image.endswith(".png")
+            ]
+            for folder in tqdm(os.listdir(self.images_path))
+        }
 
     def interrogate(self) -> None:
         """
@@ -44,17 +45,22 @@ class ImageInterrogator:
             # Interrogate folder only if it has not been interrogated yet (so there is not a interrogations.txt file)
             if not os.path.exists(os.path.join(self.images_path, folder, "interrogations.txt")):
                 pbar.set_description(f"Interrogating images from {folder}")
-                self.interrogations[folder] = self.interrogate_folder(images, vis_processors, model)
+                self.interrogations[folder] = self.interrogate_folder(images, vis_processors, model, folder)
                 self.save_interrogations(folder)
 
-    def interrogate_folder(self, images: list, vis_processors, model) -> list:
+    def interrogate_folder(self, images: list, vis_processors, model, folder_name: str) -> list:
         """
         Interrogates a list of images
         """
+        name = folder_name.replace('_', ' ').replace('-', ',')
+        name_embedding = self.evaluation_model.encode(name)
         interrogations = []
         for raw_image in images:
             image = vis_processors["eval"](raw_image).unsqueeze(0).to(self.device)
-            interrogations.append(model.generate({"image": image})[0])
+            captions = model.generate({"image": image}, use_nucleus_sampling=True, num_captions=5)
+            best_caption = max(captions, key=lambda x: util.pytorch_cos_sim(self.evaluation_model.encode(x),
+                                                                            name_embedding).item())
+            interrogations.append(best_caption)
         return interrogations
 
     def save_interrogations(self, folder: str) -> None:

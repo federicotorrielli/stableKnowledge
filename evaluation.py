@@ -11,33 +11,36 @@ class Evaluation:
         self.cosine_scores = self.compute_cosine_scores()
 
     def prepare_folder_names(self):
-        temp = [folder.replace('_', ' ').replace('-', ',') for folder in os.listdir(self.generated_phrases_path)]
-        returnvalue = {}
-        for folder in temp:
-            returnvalue[folder] = []
-            with open(f"{self.generated_phrases_path}/{folder.replace(' ', '_').replace(',', '-')}/interrogations.txt",
-                      "r") as f:
-                returnvalue[folder] = f.readlines()
-        return returnvalue
+        def process_folder_name(name):
+            return name.replace('_', ' ').replace('-', ',')
+
+        folder_names = {}
+        for folder in os.listdir(self.generated_phrases_path):
+            processed_folder_name = process_folder_name(folder)
+            folder_names[processed_folder_name] = []
+            with open(f"{self.generated_phrases_path}/{folder}/interrogations.txt", "r") as f:
+                folder_names[processed_folder_name] = f.readlines()
+        return folder_names
 
     def print_to_file(self) -> None:
         """
         Print the results to two files "cosine_scores.txt" and "normalized_scores.txt"
         for each folder, grouping the content of each cosine similarity and normalized similarity
         """
-        for folder in self.cosine_scores:
-            if len(self.cosine_scores[folder]) > 0:
-                with open(
-                        f"{self.generated_phrases_path}/{folder.replace(' ', '_').replace(',', '-')}/cosine_scores.txt",
-                        "w") as f:
-                    for score in self.cosine_scores[folder]:
+
+        def process_folder_name(name):
+            return name.replace(' ', '_').replace(',', '-')
+
+        for folder, scores in self.cosine_scores.items():
+            if scores:
+                with open(f"{self.generated_phrases_path}/{process_folder_name(folder)}/cosine_scores.txt", "w") as f:
+                    for score in scores:
                         f.write(f"{score}\n")
-                    f.write(f"Mean: {sum(self.cosine_scores[folder]) / len(self.cosine_scores[folder])}\n")
+                    f.write(f"Mean: {sum(scores) / len(scores)}\n")
 
     def compute_cosine_scores(self):
         """
         Compute the cosine similarity between the generated phrases and the folder name
-        :return:
         """
         cosine_scores = {}
         for folder, phrases in self.folder_names.items():
