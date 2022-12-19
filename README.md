@@ -13,7 +13,7 @@ Creating only one for the two will cause dependency problems.
 ```bash
 conda create -n Generation
 conda activate Generation
-conda install -c conda-forge diffusers transformers accelerate ftfy tqdm scipy
+conda install -c conda-forge diffusers transformers accelerate tqdm scipy matplotlib safetensors
 ```
 
 ### Image interrogator module
