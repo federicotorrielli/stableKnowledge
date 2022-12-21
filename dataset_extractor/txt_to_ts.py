@@ -9,3 +9,5 @@ for i in range(1, 11):
         lines = [line.replace("\n", "") for line in lines]
         with open(f"data_{i}.ts", "w") as data_file:
             data_file.write(f"export const data_{i} = {lines}")
+
+print("Done")

@@ -40,6 +40,27 @@ def plot_seconds(data: list[dict]) -> None:
     plt.show()
 
 
+def list_shared_items(coders: list) -> list:
+    # Create a dictionary to store the answers for each item
+    item_answers = {}
+
+    # Iterate through the tuples and add the answers to the dictionary
+    for coder, item, answer in coders:
+        if item not in item_answers:
+            item_answers[item] = []
+        item_answers[item].append(answer)
+
+    # Create a list to store the shared items
+    shared_items = []
+
+    # Iterate through the dictionary and check if all the answers are True
+    for item, answers in item_answers.items():
+        if all(answers):
+            shared_items.append(item)
+
+    return shared_items
+
+
 def calculate_agreement(data: list[dict]) -> None:
     """
     Calculate the agreement between the annotators.
@@ -53,8 +74,8 @@ def calculate_agreement(data: list[dict]) -> None:
     taskdata = []
     for i in range(length):
         for coder in data:
-            taskdata.append((coder["name"], coder["dataset"][i], coder["answers"][i]))
-            # print(coder["name"], coder["dataset"][i], coder["answers"][i])
+            taskdata.append((coder["name"], coder["dataset"][i], "0" if coder["answers"][i] == "middle" else "1"))
+            # we append to taskdata tuples of the form (coder, item, label)
 
     # Create the AnnotationTask object
     ratingtask = agreement.AnnotationTask(data=taskdata)
