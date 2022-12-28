@@ -52,8 +52,13 @@ def create_dataset(sorted_synsets):
         already_used_lemmas = set()
         i = 0
         for synset, related_synset in sorted_synsets:
-            if synset.lemma_names()[0] not in already_used_lemmas and related_synset.lemma_names()[
-                0] not in already_used_lemmas:
+            ln = synset.lemma_names()[0]
+            rln = related_synset.lemma_names()[0]
+            censored_words = ['semen', 'cunnilingus', 'sex', 'oral_sex']
+            if ln not in censored_words \
+                    and rln not in censored_words \
+                    and ln not in already_used_lemmas \
+                    and rln not in already_used_lemmas:
                 write_synset_to_file(synset, related_synset, f, f)
                 already_used_lemmas.add(synset.lemma_names()[0])
                 already_used_lemmas.add(related_synset.lemma_names()[0])
@@ -90,8 +95,8 @@ def main() -> None:
     with open("../dataset_extractor/synsets_with_glosses.txt", 'a') as f1, open(
             "../dataset_extractor/hyponyms_with_glosses.txt", 'a') as f2:
         for synset, related_synset in sorted_synsets:
-            if synset.lemmas()[0].name() not in already_used_lemmas and related_synset.lemmas()[
-                0].name() not in already_used_lemmas:
+            if synset.lemmas()[0].name() not in already_used_lemmas \
+                    and related_synset.lemmas()[0].name() not in already_used_lemmas:
                 write_synset_to_file(synset, related_synset, f1, f2)
                 already_used_lemmas.add(synset.lemmas()[0].name())
                 already_used_lemmas.add(related_synset.lemmas()[0].name())

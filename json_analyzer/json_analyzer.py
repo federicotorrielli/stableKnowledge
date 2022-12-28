@@ -110,8 +110,11 @@ def calculate_coherence_index(data: list[dict]) -> None:
                         number_of_concordant_pairs += 1
                     else:
                         number_of_discordant_pairs += 1
-        print(
-            f"{d['name']} | Coherence Index: {(number_of_concordant_pairs - number_of_discordant_pairs) / number_of_pairs}")
+        if number_of_pairs > 0:
+            print(
+                f"{d['name']} | Coherence Index: {(number_of_concordant_pairs - number_of_discordant_pairs) / number_of_pairs}")
+        else:
+            print("No pairs found")
 
 
 def common_hard_answers(data: list[dict], n=10) -> None:
