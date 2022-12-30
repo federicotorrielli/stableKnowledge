@@ -142,6 +142,41 @@ def common_hard_answers(data: list[dict], n=10) -> None:
     pprint(counter.most_common(n))
 
 
+def common_middle_advanced_answers(data: list[dict], n=0, middle=True) -> None:
+    """
+    Return the top-n answers that every annotator thought as middle or as advanced
+    :param middle: If True, return the middle answers, else return the advanced answers.
+    :param data: The data to analyze.
+    :param n: The number of common answers to print.
+    :return: None
+    """
+    middle_answer_count = {}
+    advanced_answer_count = {}
+    number_of_annotators = n if n > 0 else len(data)
+    # We print only the answers that every annotator thought as middle (or advanced)
+    for d in data:
+        for i, answer in enumerate(d["answers"]):
+            if answer == "middle":
+                if d["dataset"][i] not in middle_answer_count:
+                    middle_answer_count[d["dataset"][i]] = 1
+                middle_answer_count[d["dataset"][i]] += 1
+            elif answer == "advanced":
+                if d["dataset"][i] not in advanced_answer_count:
+                    advanced_answer_count[d["dataset"][i]] = 1
+                advanced_answer_count[d["dataset"][i]] += 1
+
+    if middle:
+        print("Middle answers:")
+        for answer, count in middle_answer_count.items():
+            if count == number_of_annotators:
+                print(answer)
+    else:
+        print("Advanced answers:")
+        for answer, count in advanced_answer_count.items():
+            if count == number_of_annotators:
+                print(answer)
+
+
 def load_json_files() -> list[dict]:
     """
     Load all the json files in the current directory.
@@ -189,7 +224,8 @@ def main() -> None:
         print("2. Calculate the agreement between the annotators")
         print("3. Calculate the coherence index for each annotator")
         print("4. Find the common answers for the hard questions")
-        print("5. Exit")
+        print("5. Find the answers that everybody thought as middle or advanced")
+        print("6. Exit")
         choice = input("Enter your choice: ")
         if choice == "1":
             plot_seconds(data)
@@ -200,6 +236,9 @@ def main() -> None:
         elif choice == "4":
             common_hard_answers(data)
         elif choice == "5":
+            common_middle_advanced_answers(data, int(input(f"How many annotators (max is {len(data)}): ")),
+                                           input("Middle or advanced? (m/a): ") == "m")
+        elif choice == "6":
             break
         else:
             print("Invalid choice")
