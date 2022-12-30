@@ -1,5 +1,6 @@
 import glob
 import json
+import pickle
 import sys
 from collections import Counter
 from pprint import pprint
@@ -87,34 +88,18 @@ def calculate_agreement(data: list[dict]) -> None:
     print("scotts " + str(ratingtask.pi()))
 
 
-def calculate_coherence_index(data: list[dict]) -> None:
-    """
-    For each annotator, calculate the coherence index
-    using a Kendall's tau function.
-    :param data:
-    :return:
-    """
-    for d in data:
-        # Take the dataset
-        dataset = d["dataset"]
-        # Take the answers of the annotator
-        answers = d["answers"][:len(dataset)]
-        number_of_concordant_pairs = 0
-        number_of_discordant_pairs = 0
-        number_of_pairs = 0
-        for i in range(len(dataset)):
-            for j in range(i + 1, len(dataset)):
-                if dataset[i] == dataset[j]:
-                    number_of_pairs += 1
-                    if answers[i] == answers[j]:
-                        number_of_concordant_pairs += 1
-                    else:
-                        number_of_discordant_pairs += 1
-        if number_of_pairs > 0:
-            print(
-                f"{d['name']} | Coherence Index: {(number_of_concordant_pairs - number_of_discordant_pairs) / number_of_pairs}")
-        else:
+def calculate_coherence_index(data: list[dict]):
+    for annotator in data:
+        dataset = annotator["dataset"]
+        answers = annotator["answers"][:len(dataset)]
+        coherence_index = sum(
+            (answers[i] == answers[j]) == (dataset[i] == dataset[j]) for i in range(len(dataset)) for j in
+            range(i + 1, len(dataset)))
+        total_pairs = sum(dataset[i] == dataset[j] for i in range(len(dataset)) for j in range(i + 1, len(dataset)))
+        if total_pairs == 0:
             print("No pairs found")
+        else:
+            print(f"{annotator['name']} | Coherence Index: {coherence_index / total_pairs}")
 
 
 def common_hard_answers(data: list[dict], n=10) -> None:
@@ -211,12 +196,25 @@ def load_json_files() -> list[dict]:
     return dicts
 
 
-def main() -> None:
-    """
-    Main function.
-    :return: None
-    """
-    data = load_json_files()
+def main():
+    pickle_file = "data.pickle"
+    try:
+        with open(pickle_file, "rb") as file:
+            data = pickle.load(file)
+    except FileNotFoundError:
+        data = load_json_files()
+        with open(pickle_file, "wb") as file:
+            pickle.dump(data, file)
+
+    options = {
+        1: plot_seconds,
+        2: calculate_agreement,
+        3: calculate_coherence_index,
+        4: common_hard_answers,
+        5: lambda _: common_middle_advanced_answers(data, int(input(f"How many annotators (max is {len(data)}): ")),
+                                                    input("Middle or advanced? (m/a): ") == "m"),
+        6: exit
+    }
 
     while True:
         print("\n---------------------------------------------------")
@@ -227,20 +225,9 @@ def main() -> None:
         print("5. Find the answers that everybody thought as middle or advanced")
         print("6. Exit")
         choice = input("Enter your choice: ")
-        if choice == "1":
-            plot_seconds(data)
-        elif choice == "2":
-            calculate_agreement(data)
-        elif choice == "3":
-            calculate_coherence_index(data)
-        elif choice == "4":
-            common_hard_answers(data)
-        elif choice == "5":
-            common_middle_advanced_answers(data, int(input(f"How many annotators (max is {len(data)}): ")),
-                                           input("Middle or advanced? (m/a): ") == "m")
-        elif choice == "6":
-            break
-        else:
+        try:
+            options[int(choice)](data)
+        except (KeyError, ValueError):
             print("Invalid choice")
 
 
