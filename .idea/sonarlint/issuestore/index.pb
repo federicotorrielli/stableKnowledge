@@ -1,15 +1,11 @@
 
-Z
-*dataset_extractor/synsets_with_glosses.txt,e/e/ee99453a1fe40c2e14122f39327559f006d9a5c5
-[
-+dataset_extractor/hyponyms_with_glosses.txt,5/5/55b41fdb3d2372f35c9bcc83c5135a64ff478405
-M
-dataset_extractor/dataset.txt,d/0/d09fe4f342c0e815b47697f4ebda8d954c975a18
 N
 dataset_extractor/txt_to_ts.py,a/c/ac18a3d503786cd7d0bfd01a1bc0b85e44103b70
-I
-dataset_extractor/data.ts,1/7/17e9e31f9973e71f44ee2aa70aa2e6f8d9008c59
 Z
 *synset_selector/reorder_based_on_semcor.py,4/0/40f09b1ac1d266be25ac27064d5d096ac984ad78
-I
-json_analyzer/data.pickle,6/a/6a9061056886992c0fc0c99acc6bc36dc46ab592
+P
+ json_analyzer/elena-torassa.json,e/7/e74bf83525df96f3e641a9d271df4e23fd42f154
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+N
+json_analyzer/json_analyzer.py,0/e/0e111d79a916ab9358c3d9614cf15a5707c8574c
