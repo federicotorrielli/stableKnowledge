@@ -1,6 +1,5 @@
 import glob
 import json
-import pickle
 import sys
 from collections import Counter
 from pprint import pprint
@@ -88,6 +87,32 @@ def calculate_agreement(data: list[dict]) -> None:
     print("scotts " + str(ratingtask.pi()))
 
 
+def calculate_agreement_sliding_window(data: list[dict], window_size=100) -> None:
+    """
+    Calculate the agreement between the annotators using a sliding window.
+    :param data: The data to analyze.
+    :param window_size: The size of the sliding window.
+    :return: None
+    """
+    # Truncate the arrays to the lowest of them if they are different in size
+    length = min([len(d["answers"]) for d in data])
+
+    # Create a list of tuples (coder, item, label)
+    taskdata = []
+    for i in range(length):
+        for coder in data:
+            taskdata.append((coder["name"], coder["dataset"][i], "0" if coder["answers"][i] == "middle" else "1"))
+            # we append to taskdata tuples of the form (coder, item, label)
+
+    # Create n ratingtasks, each with a window_size
+    ratingtasks = []
+    for i in range(0, length, window_size):
+        ratingtasks.append(agreement.AnnotationTask(data=taskdata[i:i + window_size]))
+
+    # Print the kappa, fleiss, alpha, and scotts scores
+    print("kappa " + str([task.kappa() for task in ratingtasks]))
+
+
 def calculate_coherence_index(data: list[dict]):
     for annotator in data:
         dataset = annotator["dataset"]
@@ -100,6 +125,29 @@ def calculate_coherence_index(data: list[dict]):
             print("No pairs found")
         else:
             print(f"{annotator['name']} | Coherence Index: {coherence_index / total_pairs}")
+
+
+def calculate_hard_probability(data: list[dict]) -> None:
+    """
+    Calculate the probability of every question being middle/advanced if it's hard.
+    :param data: The data to analyze.
+    :return: None
+    """
+    # Find the common answers for the hard questions
+    hard_middle_answers = []
+    hard_advanced_answers = []
+    for d in data:
+        for i, is_hard in enumerate(d["isHard"]):
+            if is_hard:
+                if d["answers"][i] == "middle":
+                    hard_middle_answers.append(d["dataset"][i])
+                else:
+                    hard_advanced_answers.append(d["dataset"][i])
+
+    print(
+        f"Hard middle probability: {len(hard_middle_answers) / (len(hard_middle_answers) + len(hard_advanced_answers))}")
+    print(
+        f"Hard advanced probability: {len(hard_advanced_answers) / (len(hard_middle_answers) + len(hard_advanced_answers))}")
 
 
 def common_hard_answers(data: list[dict], n=10) -> None:
@@ -162,6 +210,27 @@ def common_middle_advanced_answers(data: list[dict], n=0, middle=True) -> None:
                 print(answer)
 
 
+def create_ground_truth(data: list[dict]) -> None:
+    """
+    Create a ground truth (super annotator) for the data.
+    Use majority vote for the answers and the dataset.
+    Create a file "super_annotator.txt" with each line like the following:
+    <dataset> <answer>
+    :param data: The data to analyze.
+    :return: None
+    """
+    # Find the common answers for the hard questions
+    dataset = []
+    answers = []
+    for i in range(len(data[0]["dataset"])):
+        answers.append(Counter([d["answers"][i] for d in data]).most_common(1)[0][0])
+        dataset.append(Counter([d["dataset"][i] for d in data]).most_common(1)[0][0])
+
+    with open("super_annotator.txt", "w") as f:
+        for i in range(len(dataset)):
+            f.write(f"{dataset[i]} --> {answers[i].replace('middle', 'basic')}\n")
+
+
 def load_json_files() -> list[dict]:
     """
     Load all the json files in the current directory.
@@ -197,33 +266,32 @@ def load_json_files() -> list[dict]:
 
 
 def main():
-    pickle_file = "data.pickle"
-    try:
-        with open(pickle_file, "rb") as file:
-            data = pickle.load(file)
-    except FileNotFoundError:
-        data = load_json_files()
-        with open(pickle_file, "wb") as file:
-            pickle.dump(data, file)
+    data = load_json_files()
 
     options = {
         1: plot_seconds,
         2: calculate_agreement,
-        3: calculate_coherence_index,
-        4: common_hard_answers,
-        5: lambda _: common_middle_advanced_answers(data, int(input(f"How many annotators (max is {len(data)}): ")),
+        3: calculate_agreement_sliding_window,
+        4: calculate_coherence_index,
+        5: common_hard_answers,
+        6: lambda _: common_middle_advanced_answers(data, int(input(f"How many annotators (max is {len(data)}): ")),
                                                     input("Middle or advanced? (m/a): ") == "m"),
-        6: exit
+        7: calculate_hard_probability,
+        8: create_ground_truth,
+        9: exit
     }
 
     while True:
         print("\n---------------------------------------------------")
         print("1. Plot the time spent on each question")
         print("2. Calculate the agreement between the annotators")
-        print("3. Calculate the coherence index for each annotator")
-        print("4. Find the common answers for the hard questions")
-        print("5. Find the answers that everybody thought as middle or advanced")
-        print("6. Exit")
+        print("3. Calculate the agreement between the annotators with a sliding window of 100")
+        print("4. Calculate the coherence index for each annotator")
+        print("5. Find the common answers for the hard questions")
+        print("6. Find the answers that everybody thought as middle or advanced")
+        print("7. Calculate the probability of a question being advanced/middle if it's hard")
+        print("8. Create a ground truth (super annotator)")
+        print("9. Exit")
         choice = input("Enter your choice: ")
         try:
             options[int(choice)](data)
