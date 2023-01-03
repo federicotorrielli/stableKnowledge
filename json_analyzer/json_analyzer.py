@@ -1,5 +1,6 @@
 import glob
 import json
+import os
 import sys
 from collections import Counter
 from pprint import pprint
@@ -8,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from nltk import agreement
-from sklearn.metrics import cohen_kappa_score, confusion_matrix, classification_report
+from sklearn.metrics import cohen_kappa_score, classification_report
 
 
 def reject_outliers(data, m=2.):
@@ -255,7 +256,7 @@ def k_humans_vs_opt(data: list[dict]) -> None:
     super_annotator_dict = {}
     for line in super_annotator:
         synset, answer = line.split(" --> ")
-        super_annotator_dict[synset] = answer
+        super_annotator_dict[synset] = answer.replace("\n", "")
 
     # Create a opt_dict where the key is the synset or the hyponym and the value is "basic" if it is in synsets
     # and "advanced" if it is in hyponyms
@@ -267,17 +268,105 @@ def k_humans_vs_opt(data: list[dict]) -> None:
         if hyponym.strip() in super_annotator_dict or hyponym in super_annotator_dict:
             opt_dict[hyponym.strip()] = "advanced"
 
-    # Evaluate kohen's kappa for the super annotator vs the opt
+    # Evaluate Cohen's kappa for the super annotator vs opt
     super_annotator_answers = []
     opt_answers = []
     for synset, answer in super_annotator_dict.items():
-        super_annotator_answers.append(answer.replace("\n", ""))
+        super_annotator_answers.append(answer)
         opt_answers.append(opt_dict[synset])
 
     print(
-        f"Kohen's kappa for the super annotator vs the opt: {cohen_kappa_score(super_annotator_answers, opt_answers)}")
-    print(confusion_matrix(super_annotator_answers, opt_answers))
+        f"Cohen's kappa for the super annotator vs the opt: {cohen_kappa_score(super_annotator_answers, opt_answers)}")
     print(classification_report(super_annotator_answers, opt_answers))
+
+
+def special_cases(synset_name: str):
+    if "showstopper" in synset_name:
+        synset_name = synset_name.replace("show, stopper", "show-stopper")
+    if "yak, yack" in synset_name:
+        synset_name = synset_name.replace("yakety, yak", "yakety-yak")
+    if "give, and, take" in synset_name:
+        synset_name = synset_name.replace("give, and, take", "give-and-take")
+    if "moving, picture show" in synset_name:
+        synset_name = synset_name.replace("moving, picture show", "moving-picture show").replace("motion, picture show",
+                                                                                                 "motion-picture show")
+    if "eye, beaming" in synset_name:
+        synset_name = synset_name.replace("eye, beaming", "eye-beaming")
+    if "sea, duty" in synset_name:
+        synset_name = synset_name.replace("sea, duty", "sea-duty")
+    if "early, morning" in synset_name:
+        synset_name = synset_name.replace("early, morning", "early-morning")
+    if "nitty, gritty" in synset_name:
+        synset_name = synset_name.replace("nitty, gritty", "nitty-gritty")
+    if "get, go" in synset_name:
+        synset_name = synset_name.replace("get, go", "get-go")
+    if "self, digestion" in synset_name:
+        synset_name = synset_name.replace("self, digestion", "self-digestion")
+    return synset_name
+
+
+def k_humans_vs_stable_diffusion(data: list[dict]) -> None:
+    def get_cos_scores(path_folder_inside, synset_name, image_dict, treshold=0.4):
+        # Get the files inside
+        files = os.listdir(path_folder_inside)
+        for file in files:
+            if file == "cosine_scores.txt":
+                path_file = os.path.join(path_folder_inside, file)
+                with open(path_file, "r") as f:
+                    lines = f.readlines()
+                max_score = max([float(line.replace("\n", "")) for line in lines[:5]])
+                if max_score > treshold:
+                    image_dict[synset_name] = "basic"
+                else:
+                    image_dict[synset_name] = "advanced"
+        return image_dict
+
+    path_stable_diffusion_folder = "/media/evilscript/DATAX/SD2.1/"
+    with open("super_annotator.txt", "r") as f:
+        super_annotator = f.readlines()
+    super_annotator_dict = {}
+    for line in super_annotator:
+        synset, answer = line.split(" --> ")
+        super_annotator_dict[synset] = answer.replace("\n", "")
+
+    # Open the folder in path_stable_diffusion_folder and get the folders inside
+    image_dict = {}
+    folders = os.listdir(path_stable_diffusion_folder)  # output_middle and output_advanced
+
+    path_folder1 = os.path.join(path_stable_diffusion_folder, folders[0])
+    path_folder2 = os.path.join(path_stable_diffusion_folder, folders[1])
+    if os.path.isdir(path_folder1) and os.path.isdir(path_folder2):
+        # Get the folders inside
+        folders_inside = os.listdir(path_folder1) + os.listdir(path_folder2)
+        for folder_inside in folders_inside:
+            synset_name = folder_inside.replace("_", " ").replace("-", ", ")
+            synset_name = special_cases(synset_name)
+            for key in super_annotator_dict.keys():
+                part_to_consider = key.split(" | ")[0].split("):")[1]
+                if synset_name == part_to_consider:
+                    synset_name = key
+                    break
+
+            if synset_name.startswith("Synset"):
+                path_folder_inside1 = os.path.join(path_folder1, folder_inside)
+                path_folder_inside2 = os.path.join(path_folder2, folder_inside)
+                if os.path.isdir(path_folder_inside1):
+                    image_dict = get_cos_scores(path_folder_inside1, synset_name, image_dict, treshold=0.2788)
+                elif os.path.isdir(path_folder_inside2):
+                    image_dict = get_cos_scores(path_folder_inside2, synset_name, image_dict, treshold=0.2788)
+                else:
+                    print(f"{path_folder_inside1} or {path_folder_inside2} is not a folder")
+
+    # Evaluate Cohen's kappa for the super annotator vs stable diffusion
+    super_annotator_answers = []
+    stable_diffusion_answers = []
+    for synset, answer in super_annotator_dict.items():
+        super_annotator_answers.append(answer)
+        stable_diffusion_answers.append(image_dict[synset])
+
+    print(f"Cohen's kappa for the super annotator vs the stable diffusion: "
+          f"{cohen_kappa_score(super_annotator_answers, stable_diffusion_answers)}")
+    print(classification_report(super_annotator_answers, stable_diffusion_answers))
 
 
 def load_json_files() -> list[dict]:
@@ -328,7 +417,8 @@ def main():
         7: calculate_hard_probability,
         8: create_ground_truth,
         9: k_humans_vs_opt,
-        10: exit
+        10: k_humans_vs_stable_diffusion,
+        11: exit
     }
 
     while True:
@@ -342,8 +432,10 @@ def main():
         print("7. Calculate the probability of a question being advanced/middle if it's hard")
         print("8. Create a ground truth (super annotator)")
         print("9. Calculate the agreement between the super annotator and opt")
-        print("10. Exit")
+        print("10. Calculate the agreement between the super annotator and stable diffusion")
+        print("11. Exit")
         choice = input("Enter your choice: ")
+        options[int(choice)](data)
         try:
             options[int(choice)](data)
         except (KeyError, ValueError):
