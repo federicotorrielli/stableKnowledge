@@ -15,5 +15,3 @@ P
  json_analyzer/luigi-di-caro.json,6/5/6562082c63eb208828fdd4de11a92e5dea2c3cb5
 Q
 !json_analyzer/davide-audrito.json,c/1/c10c77b246d3b1fe8f9046604f4d2390a6c0aff1
-Q
-!json_analyzer/super_annotator.txt,a/5/a56e0b6daa9d73b74a5473b18405f8037f307d43

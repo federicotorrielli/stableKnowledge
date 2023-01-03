@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from nltk import agreement
+from sklearn.metrics import cohen_kappa_score, confusion_matrix, classification_report
 
 
 def reject_outliers(data, m=2.):
@@ -222,13 +223,61 @@ def create_ground_truth(data: list[dict]) -> None:
     # Find the common answers for the hard questions
     dataset = []
     answers = []
+    is_hard = []
     for i in range(len(data[0]["dataset"])):
         answers.append(Counter([d["answers"][i] for d in data]).most_common(1)[0][0])
         dataset.append(Counter([d["dataset"][i] for d in data]).most_common(1)[0][0])
+        is_hard.append(Counter([d["isHard"][i] for d in data]).most_common(1)[0][0])
 
     with open("super_annotator.txt", "w") as f:
         for i in range(len(dataset)):
             f.write(f"{dataset[i]} --> {answers[i].replace('middle', 'basic')}\n")
+
+    # Now write a super_annotator.json just like the other annotators
+    with open("super_annotator.json", "w") as f:
+        json.dump({
+            "name": "super_annotator",
+            "dataset": dataset,
+            "answers": answers,
+            "isHard": is_hard
+        }, f)
+
+
+def k_humans_vs_opt(data: list[dict]) -> None:
+    with open("../synset_selector/synsets_with_glosses.txt", "r") as f:
+        synsets = f.readlines()
+    with open("../synset_selector/hyponyms_with_glosses.txt", "r") as f:
+        hyponyms = f.readlines()
+    with open("super_annotator.txt", "r") as f:
+        super_annotator = f.readlines()
+    # Create a dictionary of the super annotator: key = synset, value = answer
+    # Every line in super annotator is like: <synset> --> <answer>
+    super_annotator_dict = {}
+    for line in super_annotator:
+        synset, answer = line.split(" --> ")
+        super_annotator_dict[synset] = answer
+
+    # Create a opt_dict where the key is the synset or the hyponym and the value is "basic" if it is in synsets
+    # and "advanced" if it is in hyponyms
+    opt_dict = {}
+    for synset in synsets:
+        if synset.strip() in super_annotator_dict or synset in super_annotator_dict:
+            opt_dict[synset.strip()] = "basic"
+    for hyponym in hyponyms:
+        if hyponym.strip() in super_annotator_dict or hyponym in super_annotator_dict:
+            opt_dict[hyponym.strip()] = "advanced"
+
+    # Evaluate kohen's kappa for the super annotator vs the opt
+    super_annotator_answers = []
+    opt_answers = []
+    for synset, answer in super_annotator_dict.items():
+        super_annotator_answers.append(answer.replace("\n", ""))
+        opt_answers.append(opt_dict[synset])
+
+    print(
+        f"Kohen's kappa for the super annotator vs the opt: {cohen_kappa_score(super_annotator_answers, opt_answers)}")
+    print(confusion_matrix(super_annotator_answers, opt_answers))
+    print(classification_report(super_annotator_answers, opt_answers))
 
 
 def load_json_files() -> list[dict]:
@@ -278,7 +327,8 @@ def main():
                                                     input("Middle or advanced? (m/a): ") == "m"),
         7: calculate_hard_probability,
         8: create_ground_truth,
-        9: exit
+        9: k_humans_vs_opt,
+        10: exit
     }
 
     while True:
@@ -291,7 +341,8 @@ def main():
         print("6. Find the answers that everybody thought as middle or advanced")
         print("7. Calculate the probability of a question being advanced/middle if it's hard")
         print("8. Create a ground truth (super annotator)")
-        print("9. Exit")
+        print("9. Calculate the agreement between the super annotator and opt")
+        print("10. Exit")
         choice = input("Enter your choice: ")
         try:
             options[int(choice)](data)
