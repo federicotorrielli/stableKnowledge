@@ -1,8 +1,6 @@
 
 N
 dataset_extractor/txt_to_ts.py,a/c/ac18a3d503786cd7d0bfd01a1bc0b85e44103b70
-Z
-*synset_selector/reorder_based_on_semcor.py,4/0/40f09b1ac1d266be25ac27064d5d096ac984ad78
 P
  json_analyzer/elena-torassa.json,e/7/e74bf83525df96f3e641a9d271df4e23fd42f154
 9
@@ -15,3 +13,9 @@ P
  json_analyzer/luigi-di-caro.json,6/5/6562082c63eb208828fdd4de11a92e5dea2c3cb5
 Q
 !json_analyzer/davide-audrito.json,c/1/c10c77b246d3b1fe8f9046604f4d2390a6c0aff1
+Q
+!json_analyzer/super_annotator.txt,a/5/a56e0b6daa9d73b74a5473b18405f8037f307d43
+F
+image_title_creator.py,6/6/66ea4da9b8055a78443c50233bc769a77d0c6950
+V
+&dataset_extractor/dataset_generator.py,0/5/050db90b9b2d8c19e249456144817ec55f239957

@@ -435,7 +435,6 @@ def main():
         print("10. Calculate the agreement between the super annotator and stable diffusion")
         print("11. Exit")
         choice = input("Enter your choice: ")
-        options[int(choice)](data)
         try:
             options[int(choice)](data)
         except (KeyError, ValueError):
