@@ -13,9 +13,7 @@ P
  json_analyzer/luigi-di-caro.json,6/5/6562082c63eb208828fdd4de11a92e5dea2c3cb5
 Q
 !json_analyzer/davide-audrito.json,c/1/c10c77b246d3b1fe8f9046604f4d2390a6c0aff1
-Q
-!json_analyzer/super_annotator.txt,a/5/a56e0b6daa9d73b74a5473b18405f8037f307d43
 F
 image_title_creator.py,6/6/66ea4da9b8055a78443c50233bc769a77d0c6950
-V
-&dataset_extractor/dataset_generator.py,0/5/050db90b9b2d8c19e249456144817ec55f239957
+R
+"synset_selector/synset_selector.py,6/0/604d85cd65df4e6cdd4e1b019c39b905d891ba13

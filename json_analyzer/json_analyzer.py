@@ -305,20 +305,31 @@ def special_cases(synset_name: str):
     return synset_name
 
 
-def k_humans_vs_stable_diffusion(data: list[dict]) -> None:
-    def get_cos_scores(path_folder_inside, synset_name, image_dict, treshold=0.4):
+def k_humans_vs_stable_diffusion(data: list[dict], t: float, m: bool) -> None:
+    def get_cos_scores(path_folder_inside, synset_name, image_dict, treshold, mean=False):
         # Get the files inside
         files = os.listdir(path_folder_inside)
         for file in files:
             if file == "cosine_scores.txt":
-                path_file = os.path.join(path_folder_inside, file)
-                with open(path_file, "r") as f:
-                    lines = f.readlines()
-                max_score = max([float(line.replace("\n", "")) for line in lines[:5]])
-                if max_score > treshold:
-                    image_dict[synset_name] = "basic"
+                if not mean:
+                    path_file = os.path.join(path_folder_inside, file)
+                    with open(path_file, "r") as f:
+                        lines = f.readlines()
+                    max_score = max([float(line.replace("\n", "")) for line in lines[:5]])
+                    if max_score > treshold:
+                        image_dict[synset_name] = "basic"
+                    else:
+                        image_dict[synset_name] = "advanced"
                 else:
-                    image_dict[synset_name] = "advanced"
+                    path_file = os.path.join(path_folder_inside, file)
+                    with open(path_file, "r") as f:
+                        lines = f.readlines()
+                    scores = [float(line.replace("\n", "")) for line in lines[:5]]
+                    if sum(scores) / len(scores) > treshold:
+                        image_dict[synset_name] = "basic"
+                    else:
+                        image_dict[synset_name] = "advanced"
+
         return image_dict
 
     path_stable_diffusion_folder = "/media/evilscript/DATAX/SD2.1/"
@@ -351,9 +362,9 @@ def k_humans_vs_stable_diffusion(data: list[dict]) -> None:
                 path_folder_inside1 = os.path.join(path_folder1, folder_inside)
                 path_folder_inside2 = os.path.join(path_folder2, folder_inside)
                 if os.path.isdir(path_folder_inside1):
-                    image_dict = get_cos_scores(path_folder_inside1, synset_name, image_dict, treshold=0.2788)
+                    image_dict = get_cos_scores(path_folder_inside1, synset_name, image_dict, treshold=t, mean=m)
                 elif os.path.isdir(path_folder_inside2):
-                    image_dict = get_cos_scores(path_folder_inside2, synset_name, image_dict, treshold=0.2788)
+                    image_dict = get_cos_scores(path_folder_inside2, synset_name, image_dict, treshold=t, mean=m)
                 else:
                     print(f"{path_folder_inside1} or {path_folder_inside2} is not a folder")
 
@@ -417,7 +428,8 @@ def main():
         7: calculate_hard_probability,
         8: create_ground_truth,
         9: k_humans_vs_opt,
-        10: k_humans_vs_stable_diffusion,
+        10: lambda _: k_humans_vs_stable_diffusion(data, float(input("Treshold (0.2788 best): ")),
+                                                   input("Mean? (y/n): ") == "y"),
         11: exit
     }
 
