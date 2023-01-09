@@ -12,7 +12,8 @@ class ImageGenerator:
         self.folder_name = folder_name
         # The user needs to be logged-in with huggingface-cli
         self.generator = self._initialize_generator()
-        weights = "stabilityai/stable-diffusion-2-1-base"
+        # weights = "stabilityai/stable-diffusion-2-1-base"
+        weights = "runwayml/stable-diffusion-v1-5"
 
         torch.backends.cudnn.benchmark = True  # enabling cuDNN auto-tuner for faster convolution
         self.pipe = StableDiffusionPipeline.from_pretrained(
