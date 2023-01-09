@@ -89,7 +89,7 @@ def calculate_agreement(data: list[dict]) -> None:
     print("scotts " + str(ratingtask.pi()))
 
 
-def calculate_agreement_sliding_window(data: list[dict], window_size=100) -> None:
+def calculate_agreement_sliding_window(data: list[dict], window_size=130) -> None:
     """
     Calculate the agreement between the annotators using a sliding window.
     :param data: The data to analyze.
@@ -200,16 +200,21 @@ def common_middle_advanced_answers(data: list[dict], n=0, middle=True) -> None:
                     advanced_answer_count[d["dataset"][i]] = 1
                 advanced_answer_count[d["dataset"][i]] += 1
 
+    result = []
     if middle:
         print("Middle answers:")
         for answer, count in middle_answer_count.items():
             if count == number_of_annotators:
+                result.append(answer)
                 print(answer)
+        print(f"Number of middle answers: {len(result)}")
     else:
         print("Advanced answers:")
         for answer, count in advanced_answer_count.items():
             if count == number_of_annotators:
+                result.append(answer)
                 print(answer)
+        print(f"Number of advanced answers: {len(result)}")
 
 
 def create_ground_truth(data: list[dict]) -> None:
@@ -374,10 +379,18 @@ def k_humans_vs_stable_diffusion(data: list[dict], t: float, m: bool) -> None:
     for synset, answer in super_annotator_dict.items():
         super_annotator_answers.append(answer)
         stable_diffusion_answers.append(image_dict[synset])
+        if answer == image_dict[synset]:
+            print(f"Humans and Stable Diffusion agree on {synset.split(':')[0]} being {answer}")
 
     print(f"Cohen's kappa for the super annotator vs the stable diffusion: "
           f"{cohen_kappa_score(super_annotator_answers, stable_diffusion_answers)}")
     print(classification_report(super_annotator_answers, stable_diffusion_answers))
+
+    # Print to a file called "stable_diffusion_basic.txt" only the basic answers
+    with open("stable_diffusion_basic.txt", "w") as f:
+        for synset, answer in image_dict.items():
+            if answer == "basic":
+                f.write(f"{synset}\n")
 
 
 def load_json_files() -> list[dict]:
