@@ -1,7 +1,7 @@
 import os
 
 import numpy as np
-from sklearn.metrics import cohen_kappa_score
+from sklearn.metrics import cohen_kappa_score, classification_report
 
 
 def get_concreteness_from_file(file_name: str):
@@ -41,30 +41,14 @@ def get_cossim_score_from_folders(folder_path: str):
     return cossim_dict
 
 
-def calculate_agreement(concreteness_dict: dict, cosine_dict: dict, concreteness_threshold: int,
-                        cosine_threshold: float):
-    """
-    Given a concreteness dictionary and a cosine similarity dictionary, calculate
-    the agreement between the two dictionaries
-    :param concreteness_dict:
-    :param cosine_dict:
-    :return:
-    """
-    ncd = {}
-    ncsd = {}
-    for word in concreteness_dict:
-        if concreteness_dict[word] > concreteness_threshold:
-            ncd[word] = "concrete"
-        else:
-            ncd[word] = "abstract"
-    for word in cosine_dict:
-        if cosine_dict[word] > cosine_threshold:
-            ncsd[word] = "concrete"
-        else:
-            ncsd[word] = "abstract"
-
-    concr_list = [ncd[key] for key in sorted(ncd.keys())]
-    cossim_list = [ncsd[key] for key in sorted(ncsd.keys())]
+def calculate_agreement(concreteness_dict, cosine_dict, concreteness_threshold, cosine_threshold, report=False):
+    ncd = {word: "concrete" if concreteness_dict[word] > concreteness_threshold else "abstract" for word in
+           concreteness_dict}
+    ncsd = {word: "concrete" if cosine_dict[word] > cosine_threshold else "abstract" for word in cosine_dict}
+    concr_list = [ncd[word] for word in sorted(ncd)]
+    cossim_list = [ncsd[word] for word in sorted(ncsd)]
+    if report:
+        return classification_report(concr_list, cossim_list)
     return cohen_kappa_score(concr_list, cossim_list, labels=["abstract", "concrete"])
 
 
@@ -79,16 +63,39 @@ def find_correct_threshold(concreteness_dict: dict, cosine_dict: dict):
     max_agreement = 0
     best_concr_threshold = 0
     best_cos_threshold = 0
-    for concr_threshold in np.arange(450, 550, 1):
+    agreements_with_thresholds = []
+    for concr_threshold in range(492, 510, 1):
         for cos_threshold in np.arange(0, 1, 0.000001):
             agreement = calculate_agreement(concreteness_dict, cosine_dict, concr_threshold, cos_threshold)
+            agreements_with_thresholds.append((agreement, concr_threshold, cos_threshold))
             if agreement > max_agreement:
-                print(
-                    f"New max agreement: {agreement}| Concrete threshold: {concr_threshold}| Cosine threshold: {cos_threshold}")
+                print(f"New max agreement: {agreement}|"
+                      f" Concrete threshold: {concr_threshold}|"
+                      f" Cosine threshold: {cos_threshold}")
                 max_agreement = agreement
                 best_concr_threshold = concr_threshold
                 best_cos_threshold = cos_threshold
-    return max_agreement, best_concr_threshold, best_cos_threshold
+    return max_agreement, best_concr_threshold, best_cos_threshold, agreements_with_thresholds, calculate_agreement(
+        concreteness_dict, cosine_dict, best_concr_threshold, best_cos_threshold, report=True)
+
+
+def plot_agreements(agreements_with_thresholds: list[tuple]) -> None:
+    import matplotlib.pyplot as plt
+
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+
+    xs = [agreement[1] for agreement in agreements_with_thresholds]
+    ys = [agreement[2] for agreement in agreements_with_thresholds]
+    zs = [agreement[0] for agreement in agreements_with_thresholds]
+
+    ax.scatter(xs, ys, zs)
+
+    ax.set_xlabel('Concrete threshold')
+    ax.set_ylabel('Cosine threshold')
+    ax.set_zlabel('Agreement')
+
+    plt.show()
 
 
 def main():
@@ -103,9 +110,13 @@ def main():
     print(f"Number of words in cossim_dict: {len(cossim_dict)}")
 
     # Find the best threshold
-    max_agreement, best_concr_threshold, best_cos_threshold = find_correct_threshold(concr_dict, cossim_dict)
-    print(
-        f"Max agreement: {max_agreement}| Concrete threshold: {best_concr_threshold}| Cosine threshold: {best_cos_threshold}")
+    max_agreement, best_concr_threshold, best_cos_threshold, agreements_with_thresholds, report = find_correct_threshold(
+        concr_dict, cossim_dict)
+    print(f"Max agreement: {max_agreement}|"
+          f" Concrete threshold: {best_concr_threshold}|"
+          f" Cosine threshold: {best_cos_threshold}")
+    print(report)
+    plot_agreements(agreements_with_thresholds)
 
 
 if __name__ == '__main__':

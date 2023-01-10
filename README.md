@@ -13,19 +13,28 @@ Creating only one for the two will cause dependency problems.
 ```bash
 conda create -n Generation
 conda activate Generation
-conda install -c conda-forge diffusers transformers accelerate tqdm scipy matplotlib safetensors
+conda install -c conda-forge diffusers transformers accelerate tqdm scipy matplotlib sentence-transformers
+python3 pipeline.py generate
 ```
 
 ### Image interrogator module
 
 ```bash
-conda create -n Interrogation
-conda activate Interrogation
+conda create -n Interrogator
+conda activate Interrogator
 git clone https://github.com/salesforce/LAVIS.git
 cd LAVIS
-pip install .
+pip install -e .
+pip install spacy pillow
+python3 -m spacy download en_core_web_sm
+python3 pipeline.py interrogate
 ```
 
 ### Image evaluation module
 
-You can use the StableDiffusion conda environment.
+```bash
+conda create -n Evaluator
+conda activate Evaluator
+conda install -c conda-forge sentence-transformers
+python3 pipeline.py evaluate
+```
