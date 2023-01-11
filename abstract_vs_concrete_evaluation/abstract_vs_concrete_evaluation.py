@@ -1,7 +1,10 @@
 import os
+import pickle
 
+import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import cohen_kappa_score, classification_report
+from tqdm import tqdm
 
 
 def get_concreteness_from_file(file_name: str):
@@ -64,8 +67,8 @@ def find_correct_threshold(concreteness_dict: dict, cosine_dict: dict):
     best_concr_threshold = 0
     best_cos_threshold = 0
     agreements_with_thresholds = []
-    for concr_threshold in range(492, 510, 1):
-        for cos_threshold in np.arange(0, 1, 0.000001):
+    for concr_threshold in tqdm(range(350, 550, 1)):
+        for cos_threshold in np.arange(0, 0.7, 0.0001):
             agreement = calculate_agreement(concreteness_dict, cosine_dict, concr_threshold, cos_threshold)
             agreements_with_thresholds.append((agreement, concr_threshold, cos_threshold))
             if agreement > max_agreement:
@@ -80,34 +83,39 @@ def find_correct_threshold(concreteness_dict: dict, cosine_dict: dict):
 
 
 def plot_agreements(agreements_with_thresholds: list[tuple]) -> None:
-    import matplotlib.pyplot as plt
-
+    """
+    Plot the agreements with x-axis being the cosine similarity threshold and y-axis being the concreteness threshold.
+    :param agreements_with_thresholds:
+    :return:
+    """
     fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
-
-    xs = [agreement[1] for agreement in agreements_with_thresholds]
-    ys = [agreement[2] for agreement in agreements_with_thresholds]
-    zs = [agreement[0] for agreement in agreements_with_thresholds]
-
-    ax.scatter(xs, ys, zs)
-
-    ax.set_xlabel('Concrete threshold')
-    ax.set_ylabel('Cosine threshold')
-    ax.set_zlabel('Agreement')
-
+    ax = fig.add_subplot(111)
+    ax.set_xlabel("Cosine similarity threshold")
+    ax.set_ylabel("Concreteness threshold")
+    ax.set_title("Agreement Heatmap")
+    agreements = [agreement for agreement, _, _ in agreements_with_thresholds]
+    concr_thresholds = [concr_threshold for _, concr_threshold, _ in agreements_with_thresholds]
+    cos_thresholds = [cos_threshold for _, _, cos_threshold in agreements_with_thresholds]
+    ax.scatter(cos_thresholds, concr_thresholds, c=agreements, cmap="inferno")
     plt.show()
+    # Save the plot to a file
+    fig.savefig("agreement_heatmap.png")
 
 
 def main():
     filename = "abs_concr.txt"
-    folder_path = "/media/evilscript/DATAX/SD2.1/"
+    folder_path = "/media/evilscript/DATAX/SD1.5/"
     concr_dict = get_concreteness_from_file(filename)
     cossim_dict = get_cossim_score_from_folders(folder_path)
     # Make concr_dict only have shared words
     concr_dict = {word: concr_dict[word] for word in concr_dict if word in cossim_dict}
     cossim_dict = {word: cossim_dict[word] for word in cossim_dict if word in concr_dict}
-    print(f"Number of words in concr_dict: {len(concr_dict)}")
-    print(f"Number of words in cossim_dict: {len(cossim_dict)}")
+    pickle_path = "agreements_with_thresholds.pkl"
+
+    if os.path.exists(pickle_path):
+        with open(pickle_path, 'rb') as f:
+            agreements_with_thresholds = pickle.load(f)
+            plot_agreements(agreements_with_thresholds)
 
     # Find the best threshold
     max_agreement, best_concr_threshold, best_cos_threshold, agreements_with_thresholds, report = find_correct_threshold(
@@ -116,7 +124,9 @@ def main():
           f" Concrete threshold: {best_concr_threshold}|"
           f" Cosine threshold: {best_cos_threshold}")
     print(report)
-    plot_agreements(agreements_with_thresholds)
+    # Save agreements_with_thresholds to a pickle
+    with open(pickle_path, 'wb') as f:
+        pickle.dump(agreements_with_thresholds, f)
 
 
 if __name__ == '__main__':

@@ -187,7 +187,7 @@ def common_middle_advanced_answers(data: list[dict], n=0, middle=True) -> None:
     """
     middle_answer_count = {}
     advanced_answer_count = {}
-    number_of_annotators = n if n > 0 else len(data)
+    number_of_annotators = n if n > -1 else len(data)
     # We print only the answers that every annotator thought as middle (or advanced)
     for d in data:
         for i, answer in enumerate(d["answers"]):
@@ -310,7 +310,7 @@ def special_cases(synset_name: str):
     return synset_name
 
 
-def k_humans_vs_stable_diffusion(data: list[dict], t: float, m: bool) -> None:
+def k_humans_vs_stable_diffusion(data: list[dict], m: bool) -> None:
     def get_cos_scores(path_folder_inside, synset_name, image_dict, treshold, mean=False):
         # Get the files inside
         files = os.listdir(path_folder_inside)
@@ -337,8 +337,8 @@ def k_humans_vs_stable_diffusion(data: list[dict], t: float, m: bool) -> None:
 
         return image_dict
 
-    path_stable_diffusion_folder = "/media/evilscript/DATAX/SD2.1/"
-    with open("super_annotator.txt", "r") as f:
+    path_stable_diffusion_folder = "/media/evilscript/DATAX/SD1.5/"
+    with open("../abstract_vs_concrete_identifier/super_annotator_concrete.txt", "r") as f:
         super_annotator = f.readlines()
     super_annotator_dict = {}
     for line in super_annotator:
@@ -351,39 +351,44 @@ def k_humans_vs_stable_diffusion(data: list[dict], t: float, m: bool) -> None:
 
     path_folder1 = os.path.join(path_stable_diffusion_folder, folders[0])
     path_folder2 = os.path.join(path_stable_diffusion_folder, folders[1])
-    if os.path.isdir(path_folder1) and os.path.isdir(path_folder2):
-        # Get the folders inside
-        folders_inside = os.listdir(path_folder1) + os.listdir(path_folder2)
-        for folder_inside in folders_inside:
-            synset_name = folder_inside.replace("_", " ").replace("-", ", ")
-            synset_name = special_cases(synset_name)
-            for key in super_annotator_dict.keys():
-                part_to_consider = key.split(" | ")[0].split("):")[1]
-                if synset_name == part_to_consider:
-                    synset_name = key
-                    break
+    best_k = 0
+    best_threshold = 0
+    for tr in np.arange(0, 0.7, 0.0001):
+        if os.path.isdir(path_folder1) and os.path.isdir(path_folder2):
+            # Get the folders inside
+            folders_inside = os.listdir(path_folder1) + os.listdir(path_folder2)
+            for folder_inside in folders_inside:
+                synset_name = folder_inside.replace("_", " ").replace("-", ", ")
+                synset_name = special_cases(synset_name)
+                for key in super_annotator_dict.keys():
+                    part_to_consider = key.split(" | ")[0].split("):")[1]
+                    if synset_name == part_to_consider:
+                        synset_name = key
+                        break
 
-            if synset_name.startswith("Synset"):
-                path_folder_inside1 = os.path.join(path_folder1, folder_inside)
-                path_folder_inside2 = os.path.join(path_folder2, folder_inside)
-                if os.path.isdir(path_folder_inside1):
-                    image_dict = get_cos_scores(path_folder_inside1, synset_name, image_dict, treshold=t, mean=m)
-                elif os.path.isdir(path_folder_inside2):
-                    image_dict = get_cos_scores(path_folder_inside2, synset_name, image_dict, treshold=t, mean=m)
-                else:
-                    print(f"{path_folder_inside1} or {path_folder_inside2} is not a folder")
+                if synset_name.startswith("Synset"):
+                    path_folder_inside1 = os.path.join(path_folder1, folder_inside)
+                    path_folder_inside2 = os.path.join(path_folder2, folder_inside)
+                    if os.path.isdir(path_folder_inside1):
+                        image_dict = get_cos_scores(path_folder_inside1, synset_name, image_dict, treshold=tr, mean=m)
+                    elif os.path.isdir(path_folder_inside2):
+                        image_dict = get_cos_scores(path_folder_inside2, synset_name, image_dict, treshold=tr, mean=m)
+                    else:
+                        print(f"{path_folder_inside1} or {path_folder_inside2} is not a folder")
 
-    # Evaluate Cohen's kappa for the super annotator vs stable diffusion
-    super_annotator_answers = []
-    stable_diffusion_answers = []
-    for synset, answer in super_annotator_dict.items():
-        super_annotator_answers.append(answer)
-        stable_diffusion_answers.append(image_dict[synset])
-        if answer == image_dict[synset]:
-            print(f"Humans and Stable Diffusion agree on {synset.split(':')[0]} being {answer}")
+        # Evaluate Cohen's kappa for the super annotator vs stable diffusion
+        super_annotator_answers = []
+        stable_diffusion_answers = []
+        for synset, answer in super_annotator_dict.items():
+            super_annotator_answers.append(answer)
+            stable_diffusion_answers.append(image_dict[synset])
+        k = cohen_kappa_score(super_annotator_answers, stable_diffusion_answers)
+        if k > best_k:
+            print(f"New best k: {k} with threshold {tr}")
+            best_k = k
+            best_threshold = tr
 
-    print(f"Cohen's kappa for the super annotator vs the stable diffusion: "
-          f"{cohen_kappa_score(super_annotator_answers, stable_diffusion_answers)}")
+    print(f"Best k: {best_k} with threshold: {best_threshold}")
     print(classification_report(super_annotator_answers, stable_diffusion_answers))
 
     # Print to a file called "stable_diffusion_basic.txt" only the basic answers
@@ -441,8 +446,7 @@ def main():
         7: calculate_hard_probability,
         8: create_ground_truth,
         9: k_humans_vs_opt,
-        10: lambda _: k_humans_vs_stable_diffusion(data, float(input("Treshold (0.2788 best): ")),
-                                                   input("Mean? (y/n): ") == "y"),
+        10: lambda _: k_humans_vs_stable_diffusion(data, input("Mean? (y/n): ") == "y"),
         11: exit
     }
 
