@@ -25,3 +25,5 @@ N
 dataset_extractor/txt_to_ts.py,a/c/ac18a3d503786cd7d0bfd01a1bc0b85e44103b70
 Z
 *synset_selector/reorder_based_on_semcor.py,4/0/40f09b1ac1d266be25ac27064d5d096ac984ad78
+7
+LICENSE,0/3/0398ccd0f49298b10a3d76a47800d2ebecd49859
