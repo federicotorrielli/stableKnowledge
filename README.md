@@ -13,7 +13,7 @@ Creating only one for the two will cause dependency problems.
 ```bash
 conda create -n Generation
 conda activate Generation
-conda install -c conda-forge diffusers transformers accelerate tqdm scipy matplotlib sentence-transformers
+conda install -c conda-forge diffusers transformers safetensors accelerate tqdm
 python3 pipeline.py generate
 ```
 
@@ -35,6 +35,6 @@ python3 pipeline.py interrogate
 ```bash
 conda create -n Evaluator
 conda activate Evaluator
-conda install -c conda-forge sentence-transformers
+conda install -c conda-forge sentence-transformers scipy matplotlib
 python3 pipeline.py evaluate
 ```
