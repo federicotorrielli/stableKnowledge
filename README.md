@@ -5,32 +5,29 @@ to discover new frontiers in the world of Natural Language Processing!
 
 ## Installation
 
-Generating and interrogating images MUST be split in two different envs.
-Creating only one for the two will cause dependency problems.
+Generating, Interrogating and Evaluating images MUST be split in three different envs.
+Creating only one for the three will cause dependency problems.
 
-### Image generator module
+### Image Generator module
 
 ```bash
 conda create -n Generation
 conda activate Generation
-conda install -c conda-forge diffusers transformers safetensors accelerate tqdm
+conda install -c conda-forge diffusers transformers safetensors accelerate tqdm xformers
 python3 pipeline.py generate
 ```
 
-### Image interrogator module
+### Image Interrogator module
 
 ```bash
 conda create -n Interrogator
 conda activate Interrogator
-git clone https://github.com/salesforce/LAVIS.git
-cd LAVIS
-pip install -e .
-pip install spacy pillow
+pip install -U salesforce-lavis spacy pillow
 python3 -m spacy download en_core_web_sm
 python3 pipeline.py interrogate
 ```
 
-### Image evaluation module
+### Image Evaluation module
 
 ```bash
 conda create -n Evaluator
