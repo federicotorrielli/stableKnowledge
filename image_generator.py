@@ -25,6 +25,7 @@ class ImageGenerator:
         self.pipe.scheduler = DPMSolverMultistepScheduler.from_config(self.pipe.scheduler.config)
         self.pipe = self.pipe.to("cuda")
         self.pipe.enable_attention_slicing()
+        self.pipe.enable_xformers_memory_efficient_attention()
         self.warmup_pass()
 
     def warmup_pass(self):
