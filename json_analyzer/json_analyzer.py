@@ -8,6 +8,7 @@ from pprint import pprint
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+import xlsxwriter
 from nltk import agreement
 from sklearn.metrics import cohen_kappa_score, classification_report
 
@@ -127,6 +128,56 @@ def calculate_coherence_index(data: list[dict]):
             print("No pairs found")
         else:
             print(f"{annotator['name']} | Coherence Index: {coherence_index / total_pairs}")
+
+
+def calculate_basicness_score(data: list[dict]) -> None:
+    """
+    Given a list of dictionaries, calculate the basicness score for each annotated term.
+    The basicness score is the number of times a term was annotated as basic divided by the total number of times it was
+    annotated. Create a excel file with the results: term, basicness score and a X if the term has the majority of teh "isHard"
+    on true.
+    :param data:
+    :return:
+    """
+    # Create a dictionary to store the basicness score for each term
+    basicness_scores = {}
+
+    # Iterate through the data and calculate the basicness score for each term
+    for d in data:
+        for term, answer, hard in zip(d["dataset"], d["answers"], d["isHard"]):
+            if term not in basicness_scores:
+                basicness_scores[term] = [0, 0, "X" if hard else ""]
+            if answer == "middle":
+                basicness_scores[term][0] += 1
+            else:
+                basicness_scores[term][1] += 1
+
+    # Create a list to store the results
+    results = []
+
+    # Iterate through the dictionary and calculate the basicness score
+    for term, scores in basicness_scores.items():
+        results.append((term, scores[0] / (scores[0] + scores[1]), scores[2]))
+
+    # Sort the results by the basicness score (reverse)
+    results.sort(key=lambda x: x[1], reverse=True)
+
+    # Create the excel file
+    workbook = xlsxwriter.Workbook('basicness_scores.xlsx')
+    worksheet = workbook.add_worksheet()
+
+    # Write the headers
+    worksheet.write(0, 0, "Term")
+    worksheet.write(0, 1, "Basicness Score (1 is basic, 0 is advanced)")
+    worksheet.write(0, 2, "Is Hard")
+
+    # Write the results to the excel file
+    for i, result in enumerate(results):
+        worksheet.write(i + 1, 0, str(result[0]).split('):')[1].split('|')[0])
+        worksheet.write(i + 1, 1, result[1])
+        worksheet.write(i + 1, 2, result[2])
+
+    workbook.close()
 
 
 def calculate_hard_probability(data: list[dict]) -> None:
@@ -447,7 +498,8 @@ def main():
         8: create_ground_truth,
         9: k_humans_vs_opt,
         10: lambda _: k_humans_vs_stable_diffusion(data, input("Mean? (y/n): ") == "y"),
-        11: exit
+        11: calculate_basicness_score,
+        12: exit
     }
 
     while True:
@@ -462,7 +514,8 @@ def main():
         print("8. Create a ground truth (super annotator)")
         print("9. Calculate the agreement between the super annotator and opt")
         print("10. Calculate the agreement between the super annotator and stable diffusion")
-        print("11. Exit")
+        print("11. Calculate basicness score")
+        print("12. Exit")
         choice = input("Enter your choice: ")
         try:
             options[int(choice)](data)
