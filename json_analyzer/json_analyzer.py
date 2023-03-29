@@ -163,7 +163,7 @@ def calculate_basicness_score(data: list[dict]) -> None:
     results.sort(key=lambda x: x[1], reverse=True)
 
     # Create the excel file
-    workbook = xlsxwriter.Workbook('basicness_scores.xlsx')
+    workbook = xlsxwriter.Workbook('../plot_scores_concreteness_basicness/basicness_scores.xlsx')
     worksheet = workbook.add_worksheet()
 
     # Write the headers
@@ -291,7 +291,7 @@ def create_ground_truth(data: list[dict]) -> None:
             f.write(f"{dataset[i]} --> {answers[i].replace('middle', 'basic')}\n")
 
     # Now write a super_annotator.json just like the other annotators
-    with open("super_annotator.json", "w") as f:
+    with open("../abstract_vs_concrete_evaluation/super_annotator.json", "w") as f:
         json.dump({
             "name": "super_annotator",
             "dataset": dataset,
