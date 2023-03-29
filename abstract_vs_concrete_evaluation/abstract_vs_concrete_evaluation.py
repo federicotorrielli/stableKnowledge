@@ -99,7 +99,7 @@ def plot_agreements(agreements_with_thresholds: list[tuple]) -> None:
     ax.scatter(cos_thresholds, concr_thresholds, c=agreements, cmap="inferno")
     plt.show()
     # Save the plot to a file
-    fig.savefig("agreement_heatmap.png")
+    fig.savefig("hm.png")
 
 
 def main():
